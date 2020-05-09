@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #916100;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+  font-family: "Roboto Slab", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing {
+  margin: 15vh auto;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+.landing h1 {
+  margin-bottom: 0;
+  margin-top: 5vh;
+}
+.landing h2 {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.landing #brand {
+  font-size: 5rem;
+  margin: 0 auto 2vh;
+  font-family: "Monda", sans-serif;
+  text-shadow: 3px 3px black;
+}
+.landing .landing-links {
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
+}
+.landing .landing-links a {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.landing .connect > a {
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  border: 1px solid red;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header h1 {
+  color: white;
+  font-size: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nav {
+  background: darkblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
 }
+.Nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.Home {
+  border: 1px solid yellow;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+}
+.Home .ServicesLanding {
+  border-bottom: 1px dotted green;
+  width: 100%;
+  height: 33.3vh;
+}
+.Home .AboutLanding {
+  border-bottom: 1px dotted purple;
+  width: 100%;
+  height: 33.3vh;
+  display: flex;
+  justify-content: space-around;
+}
+.Home .AboutLanding img {
+  height: 25vh;
+  width: 12vw;
+}
+.Home .ContactLanding {
+  border-bottom: 1px dotted pink;
+  width: 100%;
+  height: 33.3vh;
+}
+
+footer {
+  border: 1px solid grey;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  color: rgba(219, 219, 221, 0.2);
+}
+
+/*# sourceMappingURL=App.css.map */
