@@ -3,16 +3,18 @@ import React, { Component } from 'react';
 // COMPONENTS //
 import Header from './components/Header.js';
 import Nav from './components/Nav.js';
-import Home from './components/Home.js';
-import Contact from './components/Contact.js';
-import Services from './components/Services.js';
-import Gallery from './components/Gallery.js';
-import About from './components/About.js';
+  import Home from './components/Home.js';
+  import Contact from './components/Contact.js';
+  import Services from './components/Services.js';
+  import Gallery from './components/Gallery.js';
+  import About from './components/About.js';
 import Footer from './components/Footer.js';
 
+
 // TEMP COMPONENTS //
-import TempLanding from './components/TempLanding.js';
+// import TempLanding from './components/TempLanding.js';
 import Jason from './imgs/Jason.JPG'
+
 
 
 // STYLING //
@@ -27,7 +29,9 @@ class App extends Component {
     services: false,
     gallery: false,
     about: false,
-    contact: false
+    contact: false,
+    color:'',
+    display:'none'
   }
 
   // Toggle View
@@ -76,13 +80,47 @@ class App extends Component {
   }
 
 
+  // LISTEN TO SCROLL
+  listenScrollEvent = e => {
+    if (window.scrollY > 350) { // WHEN SCROLLING
+      this.setState({
+        color: 'black', // NAV
+        display:'inline', // NAV-HEADER
+        sticky:'sticky' // NAV
+      })
+    } else {
+      this.setState({ // ON LOAD
+        color: 'snow', // NAV
+        display:'none' // NAV-HEADER
+      })
+    }
+  }
+
+  // COMPONENT DID MOUNT
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent) // ON SCROLL
+  }
+
   render() {
     return (
       <div className='App'>
-        <TempLanding />
-          <footer>
-            Liscense #10644287 | Bonded and Insured <br/> Designed by Gianni Nola
-          </footer>
+        <Header />
+        <Nav
+          display={this.state.display}
+          color={this.state.color}
+          toggleView={this.toggleView}
+          home={this.state.home}
+          services={this.state.services}
+          gallery={this.state.gallery}
+          about={this.state.about}
+          contact={this.state.contact}
+        />
+          {this.state.home ? <Home /> : null}
+          {this.state.services ? <Services /> : null}
+          {this.state.about ? <About jason={this.state.jason} /> : null}
+          {this.state.gallery ? <Gallery /> : null}
+          {this.state.contact ? <Contact /> : null}
+        <Footer />
       </div>
     );
   }
@@ -90,13 +128,7 @@ class App extends Component {
 
 export default App;
 
-
-
-// <Header />
-// <Nav toggleView={this.toggleView} home={this.state.home} services={this.state.services} gallery={this.state.gallery} about={this.state.about} contact={this.state.contact}/>
-//   {this.state.home ? <Home /> : null}
-//   {this.state.services ? <Services /> : null}
-//   {this.state.about ? <About jason={this.state.jason} /> : null}
-//   {this.state.gallery ? <Gallery /> : null}
-//   {this.state.contact ? <Contact /> : null}
-// <Footer />
+// <TempLanding />
+//   <footer>
+//     Liscense #10644287 | Bonded and Insured <br/> Designed by Gianni Nola
+//   </footer>

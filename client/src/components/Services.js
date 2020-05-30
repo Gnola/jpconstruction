@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // COMPONENTS //
 
@@ -11,7 +11,7 @@ const Services = (props) => {
       <div className='Interior'>
         <div className='TitleAndImage'>
           <h1>Interior Services</h1>
-          <img src='https://images.unsplash.com/photo-1521783593447-5702b9bfd267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=821&q=80' />
+          <img src='https://images.unsplash.com/photo-1521783593447-5702b9bfd267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=821&q=80' alt='placeholder'/>
         </div>
         <div className='ServicesList'>
           <ul>
@@ -51,13 +51,13 @@ const Services = (props) => {
         </div>
         <div className='TitleAndImage'>
           <h1>Exterior Services</h1>
-          <img src='https://images.unsplash.com/photo-1574120583586-de8847ae992c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' />
+          <img src='https://images.unsplash.com/photo-1574120583586-de8847ae992c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='placeholder'/>
         </div>
       </div>
       <div className='Other'>
         <div className='TitleAndImage'>
           <h1>Other Services</h1>
-          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' />
+          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
         </div>
         <div className='ServicesList'>
           <ul>

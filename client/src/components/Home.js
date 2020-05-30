@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // COMPONENTS //
 import AboutLanding from './Home/AboutLanding.js';

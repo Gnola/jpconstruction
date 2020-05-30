@@ -9,15 +9,15 @@ class TempLanding extends Component {
         <h2>This site is currently under construction but will be live shortly!</h2>
         <h3>In the meantime, feel free to contact Jason at:</h3>
         <div className='landing-links'>
-          <a href='tel:707-812-5516' target='_blank'>(707) 812-5516</a>
+          <a href='tel:707-812-5516' target='_blank' rel="noopener noreferrer">(707) 812-5516</a>
           |
-          <a href='mailto:phillipscons@gmail.com' target='_blank'>phillipscons@gmail.com</a>
+          <a href='mailto:phillipscons@gmail.com' target='_blank' rel="noopener noreferrer">phillipscons@gmail.com</a>
         </div>
         <h4>And connect with us here:
           <span className='connect'>
-            <a href='https://www.facebook.com/Phillips-Construction-104652161211306/' target='_blank'>Facebook</a>
+            <a href='https://www.facebook.com/Phillips-Construction-104652161211306/' target='_blank' rel="noopener noreferrer">Facebook</a>
               |
-            <a href='https://www.instagram.com/jphillipsconstruction/' target='_blank'>Instagram</a>
+            <a href='https://www.instagram.com/jphillipsconstruction/' target='_blank' rel="noopener noreferrer">Instagram</a>
           </span>
         </h4>
       </div>
