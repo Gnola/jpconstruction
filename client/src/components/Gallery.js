@@ -7,9 +7,7 @@ import React, { Component } from 'react';
 const Gallery = (props) => {
   return (
     <div className='Gallery'>
-      <ServicesLanding />
-      <AboutLanding jason={props.jason} />
-      <ContactLanding />
+      <p>GALLERY PAGE</p>
     </div>
   );
 }

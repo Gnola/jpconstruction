@@ -7,9 +7,8 @@ import React, { Component } from 'react';
 const About = (props) => {
   return (
     <div className='About'>
-      <ServicesLanding />
-      <AboutLanding jason={props.jason} />
-      <ContactLanding />
+      <p>ABOUT PAGE</p>
+      <img className='Jason' src={props.jason} />
     </div>
   );
 }

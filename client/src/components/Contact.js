@@ -7,9 +7,13 @@ import React, { Component } from 'react';
 const Contact = (props) => {
   return (
     <div className='Contact'>
-      <ServicesLanding />
-      <AboutLanding jason={props.jason} />
-      <ContactLanding />
+      <p>CONTACT PAGE</p>
+      <div>
+        <form className='ContactForm'>
+          <label>Name:</label>
+          <input type='text' />
+        </form>
+      </div>
     </div>
   );
 }

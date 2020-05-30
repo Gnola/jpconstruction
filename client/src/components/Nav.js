@@ -4,11 +4,11 @@ import React from 'react';
 const Nav = (props) => {
   return (
     <div className='Nav'>
-      <a href='#'>Home</a>
-      <a href='#'>Services</a>
-      <a href='#'>Gallery</a>
-      <a href='#'>About</a>
-      <a href='#'>Contact</a>
+      <p className={props.home ? 'a-clicked' : null} onClick={() => props.toggleView('home')}>Home</p>
+      <p className={props.services ? 'a-clicked' : null} onClick={() => props.toggleView('services')}>Services</p>
+      <p className={props.gallery ? 'a-clicked' : null} onClick={() => props.toggleView('gallery')}>Gallery</p>
+      <p className={props.about ? 'a-clicked' : null} onClick={() => props.toggleView('about')}>About</p>
+      <p className={props.contact ? 'a-clicked' : null} onClick={() => props.toggleView('contact')}>Contact</p>
     </div>
   )
 }

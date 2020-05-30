@@ -1,3 +1,5 @@
+// sass --watch src/style.scss src/App.css
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +11,7 @@ body {
   background-color: #916100;
   background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
   font-family: 'Roboto Slab', serif;
+  overflow-x: hidden
 }
 
 // TEMP LANDING //
@@ -70,31 +73,42 @@ body {
 
   // HEADER //
   .Header {
-    border: 1px solid red;
     width: 100%;
-    height: 20vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./imgs/Napa.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     h1 {
       color: white;
+      text-shadow: 3px 3px black;
       font-size: 4rem;
     }
   }
 
   // NAV //
   .Nav {
-    background: darkblue;
+    background: rgba(0,0,0,0.5);
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 5vh;
 
-    a {
+    p {
       color: white;
       text-decoration: none;
+      cursor: pointer;
+    }
+    p:hover {
+      color: yellow;
+    }
+    .a-clicked {
+      color: yellow;
     }
   }
 
@@ -102,37 +116,80 @@ body {
   .Home {
     border: 1px solid yellow;
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
     .ServicesLanding {
       border-bottom: 1px dotted green;
       width: 100%;
-      height: 33.3vh;
+      height: 50vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     .AboutLanding {
       border-bottom: 1px dotted purple;
       width: 100%;
-      height: 33.3vh;
+      height: 30vh;
       display: flex;
       justify-content: space-around;
+      align-items: center;
 
       img {
-        height: 25vh;
-        width: 12vw;
+        height: 80%;
+        width: 15%;
+      }
+
+      .AboutLandingText {
+        border: 1px solid black;
+        width: 50%;
+        height: 90%;
+        text-align: center;
       }
     }
     .ContactLanding {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       border-bottom: 1px dotted pink;
       width: 100%;
-      height: 33.3vh;
+      height: 20vh;
+
+      .ContactLandingLinks {
+        font-size: 1.5rem;
+      }
     }
   }
 
   // SERVICES //
   .Services {
+    .ServicesHeading {
+      text-align: center;
+    }
+    .Interior, .Exterior, .Other {
+      border: 1px solid white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .ServicesList {
+      color: blue;
+    }
+    .TitleAndImage {
+      color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5vh;
 
+      img {
+        width: 40vw;
+        height: 50vh;
+      }
+    }
   }
   // GALLERY //
   .Gallery {
@@ -140,20 +197,33 @@ body {
   }
   // ABOUT //
   .About {
-
+    .Jason {
+      height: 20vh;
+      width: 20vw;
+    }
   }
   // CONTACT //
   .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    .ContactForm {
+      border: 1px solid white;
+      height: 60vh;
+      width: 40vw;
+      margin-bottom: 10vh;
+    }
   }
 
   // FOOTER //
   footer {
+    background: rgba(0,0,0,0.8);
     border: 1px solid grey;
     text-align: center;
     width: 100%;
     bottom: 0;
-    position: absolute;
-    color: rgba(219,219,221,.2);
+    // position: relative;
+    // color: rgba(219,219,221,.2);
   }
 // APP //
