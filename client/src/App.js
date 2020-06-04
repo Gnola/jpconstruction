@@ -82,15 +82,15 @@ class App extends Component {
 
   // LISTEN TO SCROLL
   listenScrollEvent = e => {
-    if (window.scrollY > 350) { // WHEN SCROLLING
+    if (window.scrollY > 400) { // WHEN SCROLLING
       this.setState({
-        color: 'black', // NAV
+        // color: 'black', // NAV
         display:'inline', // NAV-HEADER
         sticky:'sticky' // NAV
       })
     } else {
       this.setState({ // ON LOAD
-        color: 'snow', // NAV
+        // color: 'snow', // NAV
         display:'none' // NAV-HEADER
       })
     }
@@ -104,7 +104,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Header />
+        <Header toggleView={this.toggleView} />
         <Nav
           display={this.state.display}
           color={this.state.color}
@@ -115,7 +115,7 @@ class App extends Component {
           about={this.state.about}
           contact={this.state.contact}
         />
-          {this.state.home ? <Home /> : null}
+          {this.state.home ? <Home toggleView={this.toggleView}/> : null}
           {this.state.services ? <Services /> : null}
           {this.state.about ? <About jason={this.state.jason} /> : null}
           {this.state.gallery ? <Gallery /> : null}

@@ -4,7 +4,7 @@ import React from 'react';
 const Header = (props) => {
   return (
     <div className='Header'>
-      <h1>Phillips Construction</h1>
+      <h1 onClick={()=>props.toggleView('home')}>Phillips Construction</h1>
     </div>
   )
 }
