@@ -15,53 +15,53 @@ body {
 }
 
 // TEMP LANDING //
-.landing {
-  // width: 80vw;
-  // height: 80vh;
-  // margin: 5vh auto;
-  margin: 15vh auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  text-align: center;
-
-  h1 {
-    margin-bottom: 0;
-    margin-top: 5vh;
-  }
-  h2 {
-    font-style: italic;
-    font-size: 1.4rem;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-  #brand {
-    font-size: 5rem;
-    margin: 0 auto 2vh;
-    font-family: 'Monda', sans-serif;
-    text-shadow: 3px 3px black;
-  }
-  .landing-links {
-    width: 25vw;
-    display: flex;
-    justify-content: space-around;
-
-    a {
-      text-decoration: underline;
-      color: whitesmoke;
-    }
-  }
-  .connect > a{
-    font-size: 1rem;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-  }
-}
+// .landing {
+//   // width: 80vw;
+//   // height: 80vh;
+//   // margin: 5vh auto;
+//   margin: 15vh auto;
+//   height: 100%;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   color: white;
+//   text-align: center;
+//
+//   h1 {
+//     margin-bottom: 0;
+//     margin-top: 5vh;
+//   }
+//   h2 {
+//     font-style: italic;
+//     font-size: 1.4rem;
+//     margin-top: 1vh;
+//     margin-bottom: 1vh;
+//   }
+//   #brand {
+//     font-size: 5rem;
+//     margin: 0 auto 2vh;
+//     font-family: 'Monda', sans-serif;
+//     text-shadow: 3px 3px black;
+//   }
+//   .landing-links {
+//     width: 25vw;
+//     display: flex;
+//     justify-content: space-around;
+//
+//     a {
+//       text-decoration: underline;
+//       color: whitesmoke;
+//     }
+//   }
+//   .connect > a{
+//     font-size: 1rem;
+//     margin-left: 10px;
+//     margin-right: 10px;
+//     color: white;
+//   }
+// }
 
 // footer {
 //   background: rgba(0,0,0,0.8);
@@ -76,14 +76,15 @@ body {
 // APP //
 .App {
 
-}
 
   // HEADER //
   .Header {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     display: flex;
-    justify-content: center;
+    flex-direction:column;
+    // justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     // background-image: url("./imgs/Napa.jpeg");
     // background-position: center;
@@ -92,13 +93,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    h1 {
+    h1 { // Phillips Construction
       color: white;
       text-shadow: 3px 3px black;
-      font-size: 4rem;
+      font-size: 4.5rem;
+      margin-bottom: 0;
+      margin-top: 2em;
+      // margin-top: 0;
       cursor: pointer;
     }
+
+    h2 { // Proudly serving...
+      font-size: 1.5rem;
+      margin-top: .5em;
+      font-style: italic;
+      color: white;
+      text-shadow: 2px 2px black;
+    }
   }
+  // HEADER //
 
   // NAV //
   .Nav {
@@ -115,7 +128,8 @@ body {
     z-index: 1;
     transition: .5s ease-in;
 
-    .nav-header {
+
+    .nav-header { // Phillips Construction
       color: white;
       opacity: 1;
       text-shadow: 3px 3px black;
@@ -123,6 +137,7 @@ body {
       cursor: pointer;
     }
 
+    // Links //
     p {
       color: white;
       text-decoration: none;
@@ -137,37 +152,41 @@ body {
       font-weight: bold;
       color: rgba(255,255,255,0.7);
     }
+    // Links //
   }
+  // NAV //
 
   // HOME //
   .Home {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
 
+    // SERVICE LANDING //
     .ServicesLanding {
       border-bottom: 3px solid white;
       width: 100%;
-      height: 60%;
+      height: 65vh;
 
       .ServiceText {
         text-align: center;
         color: white;
       }
 
+      // SLIDER //
       .Slider {
         position: relative;
         width: 100%;
-        max-height: 50vh;
+        max-height: 55vh;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         display: flex;
         align-items: center;
         overflow: hidden;
-        // background: black;
 
+        // IMAGES //
         .SliderImg {
           position: relative;
           min-width: 100%;
@@ -180,7 +199,9 @@ body {
             height: 100%;
           }
         }
+        // IMAGES //
 
+        // BUTTONS //
         %btn-styles {
           position: absolute;
           top: 50%;
@@ -205,21 +226,20 @@ body {
           right: 0;
           @extend %btn-styles;
         }
+        // BUTTONS //
       }
+      // SLIDER //
     }
+    // SERVICE LANDING //
 
+    // ABOUT LANDING //
     .AboutLanding {
       border-bottom: 3px solid white;
       width: 100%;
-      height: 30%;
+      height: 40vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
-
-      img {
-        height: 80%;
-        width: 15%;
-      }
 
       .AboutLandingText {
         border: 1px solid black;
@@ -228,13 +248,16 @@ body {
         text-align: center;
       }
     }
+    // ABOUT LANDING //
+
+    // CONTACT LANDING //
     .ContactLanding {
       border-bottom: 3px solid white;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      height: 40%;
+      height: 30vh;
 
       h1 {
         margin-top: .5em;
@@ -248,7 +271,7 @@ body {
       .ContactLandingContainer {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 70%;
         justify-content: space-evenly;
         text-align: center;
         margin-bottom: 1em;
@@ -263,9 +286,9 @@ body {
       }
       .ContactLandingRight {
         width: 50%;
+        display: flex;
         align-items: center;
-
-
+        justify-content: center;
 
         #contact-link {
           cursor: pointer;
@@ -274,7 +297,9 @@ body {
         }
       }
     }
+    // CONTACT LANDING //
   }
+  // HOME //
 
   // SERVICES //
   .Services {
@@ -304,18 +329,16 @@ body {
     }
   }
 
-  // GALLERY //
-  .Gallery {
-
-  }
-  // ABOUT //
+  // ABOUT PAGE //
   .About {
     .Jason {
       height: 20vh;
       width: 20vw;
     }
   }
-  // CONTACT //
+  // ABOUT PAGE //
+
+  // CONTACT PAGE //
   .Contact {
     display: flex;
     flex-direction: column;
@@ -328,12 +351,14 @@ body {
       margin-bottom: 10vh;
     }
   }
+  // CONTACT PAGE //
 
   // FOOTER //
   footer {
     background: rgba(0,0,0,0.8);
-    width: 100%;
     bottom: 0;
+    width: 100%;
+    height: 12.5vh;
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -354,6 +379,10 @@ body {
       color: white;
       opacity: .8;
 
+      h4 {
+        cursor: pointer;
+      }
+
       span {
         font-size: .9rem;
       }
@@ -365,7 +394,7 @@ body {
     }
 
     .FooterInfo {
-      margin-top: .3em;
+      margin-top: .8em;
 
 
       p {
@@ -378,7 +407,7 @@ body {
       #design-link {
         font-size: .8rem;
         margin-bottom: 0;
-        margin-top: 1.5em;
+        margin-top: 1.2em;
         color: inherit;
         opacity: .7;
 
@@ -391,17 +420,21 @@ body {
     .FooterConnect {
       margin-top: .3em;
 
-
       i {
         margin-top: .3em;
         color: white;
         opacity: .8;
         cursor: pointer;
       }
+
       #IG {
         margin-left: .5em;
       }
     }
 
+
   }
+  // FOOTER //
+
+}
 // APP //

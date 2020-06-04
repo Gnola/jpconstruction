@@ -1,4 +1,5 @@
 import React from 'react';
+import Jason from '../imgs/Jason.JPG'
 
 // COMPONENTS //
 
@@ -8,7 +9,7 @@ const About = (props) => {
   return (
     <div className='About'>
       <p>ABOUT PAGE</p>
-      <img className='Jason' src={props.jason} alt='jason'/>
+      <img className='Jason' src={Jason} alt='jason'/>
     </div>
   );
 }

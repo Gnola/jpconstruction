@@ -12,6 +12,11 @@ const Contact = (props) => {
         <form className='ContactForm'>
           <label>Name:</label>
           <input type='text' />
+          <label>Email:</label>
+          <input type='text' />
+            <label>Inquire:</label>
+            <textarea type='text' />
+          <button>Submit</button>
         </form>
       </div>
     </div>

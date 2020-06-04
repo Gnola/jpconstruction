@@ -7,7 +7,7 @@ const ContactLanding = (props) => {
       <h3>Monday - Friday | 9am - 5pm</h3>
       <div className='ContactLandingContainer'>
         <div className='ContactLandingLeft'>
-          <p>Contact Jason Directly here:</p>
+          <h3>Contact Jason Directly here:</h3>
           <span><i className="fas fa-phone fa-1x"></i> <a href='tel:707-812-5516' target='_blank' rel="noopener noreferrer">(707) 812-5516</a></span><br/>
           <span><i className="fas fa-envelope fa-1x"></i> <a href='mailto:phillipscons@gmail.com' target='_blank' rel="noopener noreferrer">phillipscons@gmail.com</a></span>
         </div>

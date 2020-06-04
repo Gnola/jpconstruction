@@ -6,14 +6,13 @@ import Nav from './components/Nav.js';
   import Home from './components/Home.js';
   import Contact from './components/Contact.js';
   import Services from './components/Services.js';
-  import Gallery from './components/Gallery.js';
   import About from './components/About.js';
 import Footer from './components/Footer.js';
 
 
 // TEMP COMPONENTS //
 // import TempLanding from './components/TempLanding.js';
-import Jason from './imgs/Jason.JPG'
+
 
 
 
@@ -24,10 +23,8 @@ import './App.css';
 class App extends Component {
 
   state = {
-    jason: Jason,
     home: true,
     services: false,
-    gallery: false,
     about: false,
     contact: false,
     color:'',
@@ -118,9 +115,8 @@ class App extends Component {
           {this.state.home ? <Home toggleView={this.toggleView}/> : null}
           {this.state.services ? <Services /> : null}
           {this.state.about ? <About jason={this.state.jason} /> : null}
-          {this.state.gallery ? <Gallery /> : null}
           {this.state.contact ? <Contact /> : null}
-        <Footer />
+        <Footer toggleView={this.toggleView}/>
       </div>
     );
   }

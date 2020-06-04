@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Images from './Images.js';
 import one from './sliderimgs/one.jpeg';
 import two from './sliderimgs/2.jpeg';
@@ -27,6 +27,21 @@ const Slider = () => {
     x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
     console.log(x);
   }
+
+  // Timeout
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     next()
+  //   }, 5000);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
+  // Interval
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     next()
+  //   }, 5000);
+  // });
 
   return (
     <div className='Slider'>
