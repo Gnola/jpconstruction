@@ -294,6 +294,7 @@ body {
           cursor: pointer;
           color: blue;
           text-decoration: underline;
+          background-image: url();
         }
       }
     }
@@ -306,17 +307,16 @@ body {
     .ServicesHeading {
       text-align: center;
     }
-    .Interior, .Exterior, .Other {
+    .New-Construction, .Remodeling, .Renovations, .Restorations, .AdditionalServices {
       border: 1px solid white;
       display: flex;
       justify-content: space-around;
       align-items: center;
     }
-    .ServicesList {
+    .ServicesTitleandList {
       color: blue;
     }
-    .TitleAndImage {
-      color: red;
+    .ServicesImage {
       display: flex;
       flex-direction: column;
       align-items: center;

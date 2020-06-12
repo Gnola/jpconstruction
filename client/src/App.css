@@ -181,27 +181,27 @@ body {
   cursor: pointer;
   color: blue;
   text-decoration: underline;
+  background-image: url();
 }
 .App .Services .ServicesHeading {
   text-align: center;
 }
-.App .Services .Interior, .App .Services .Exterior, .App .Services .Other {
+.App .Services .New-Construction, .App .Services .Remodeling, .App .Services .Renovations, .App .Services .Restorations, .App .Services .AdditionalServices {
   border: 1px solid white;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.App .Services .ServicesList {
+.App .Services .ServicesTitleandList {
   color: blue;
 }
-.App .Services .TitleAndImage {
-  color: red;
+.App .Services .ServicesImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5vh;
 }
-.App .Services .TitleAndImage img {
+.App .Services .ServicesImage img {
   width: 40vw;
   height: 50vh;
 }

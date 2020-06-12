@@ -1,17 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import Images from './Images.js';
-import one from './sliderimgs/one.jpeg';
-import two from './sliderimgs/2.jpeg';
-import three from './sliderimgs/3.jpeg';
-import four from './sliderimgs/4.jpeg';
+
 
 const Slider = () => {
 
   let sliderArr = [
-    <Images src={one}/>,
-    <Images src={two}/>,
-    <Images src={three}/>,
-    <Images src={four}/>
+    <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>,
+    <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>,
+    <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>
   ]
 
   const [x, setX] = useState(0)

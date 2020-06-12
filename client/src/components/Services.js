@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 // COMPONENTS //
 
 
@@ -8,12 +10,12 @@ const Services = (props) => {
   return (
     <div className='Services'>
       <h1 className='ServicesHeading'>SERVICES PAGE</h1>
-      <div className='Interior'>
-        <div className='TitleAndImage'>
-          <h1>Interior Services</h1>
-          <img src='https://images.unsplash.com/photo-1521783593447-5702b9bfd267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=821&q=80' alt='placeholder'/>
+      <div className='New-Construction'>
+        <div className='ServicesImage'>
+          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
         </div>
-        <div className='ServicesList'>
+        <div className='ServicesTitleandList'>
+          <h1>New Construction</h1>
           <ul>
             <li>Attic Conversion & Restoration</li>
             <li>Baseboard Installation</li>
@@ -33,8 +35,9 @@ const Services = (props) => {
           </ul>
         </div>
       </div>
-      <div className='Exterior'>
-        <div className='ServicesList'>
+      <div className='Remodeling'>
+        <div className='ServicesTitleandList'>
+          <h1>Remodeling</h1>
           <ul>
             <li>Carport Installation</li>
             <li>Cedar & Wood Siding</li>
@@ -49,17 +52,42 @@ const Services = (props) => {
             <li>Soffit Installation & Repair</li>
           </ul>
         </div>
-        <div className='TitleAndImage'>
-          <h1>Exterior Services</h1>
-          <img src='https://images.unsplash.com/photo-1574120583586-de8847ae992c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='placeholder'/>
-        </div>
-      </div>
-      <div className='Other'>
-        <div className='TitleAndImage'>
-          <h1>Other Services</h1>
+        <div className='ServicesImage'>
           <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
         </div>
-        <div className='ServicesList'>
+      </div>
+      <div className='Renovations'>
+        <div className='ServicesImage'>
+          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
+        </div>
+        <div className='ServicesTitleandList'>
+          <h1>Renovations</h1>
+          <ul>
+            <li>Barn Design & Construction</li>
+            <li>Demolition</li>
+            <li>Earthquake Retrofitting</li>
+          </ul>
+        </div>
+      </div>
+      <div className='Restorations'>
+        <div className='ServicesTitleandList'>
+          <h1>Restorations</h1>
+          <ul>
+            <li>Barn Design & Construction</li>
+            <li>Demolition</li>
+            <li>Earthquake Retrofitting</li>
+          </ul>
+        </div>
+        <div className='ServicesImage'>
+          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
+        </div>
+      </div>
+      <div className='AdditionalServices'>
+        <div className='ServicesImage'>
+          <img src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80' alt='placeholder'/>
+        </div>
+        <div className='ServicesTitleandList'>
+          <h1>Additional Services</h1>
           <ul>
             <li>Barn Design & Construction</li>
             <li>Demolition</li>
