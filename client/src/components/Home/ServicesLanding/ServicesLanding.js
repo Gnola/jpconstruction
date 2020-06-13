@@ -1,14 +1,15 @@
 import React from 'react';
-import Slider from './Slider';
-import ServiceText from './ServiceText';
+import Slider from './Slider/Slider';
 
 
 const ServicesLanding = (props) => {
 
   return (
     <div className='ServicesLanding'>
-      <ServiceText />
-      <Slider />
+      <div className='ServiceText'>
+        <h1>ServiceText</h1>
+      </div>
+      <Slider toggleView={props.toggleView}/>
     </div>
   )
 }

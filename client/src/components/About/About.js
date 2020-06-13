@@ -1,5 +1,5 @@
 import React from 'react';
-import Jason from '../imgs/Jason.JPG'
+import Jason from '../../imgs/Jason.JPG'
 
 // COMPONENTS //
 

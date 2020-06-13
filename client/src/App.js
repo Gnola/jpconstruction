@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 // COMPONENTS //
 import Header from './components/Header.js';
 import Nav from './components/Nav.js';
-  import Home from './components/Home.js';
-  import Contact from './components/Contact.js';
-  import Services from './components/Services.js';
-  import About from './components/About.js';
+  import Home from './components/Home/Home.js';
+  import Contact from './components/Contact/Contact.js';
+  import Services from './components/Services/Services.js';
+  import About from './components/About/About.js';
 import Footer from './components/Footer.js';
 
 

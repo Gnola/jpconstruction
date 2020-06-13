@@ -178,13 +178,12 @@ body {
       .Slider {
         position: relative;
         width: 100%;
-        max-height: 55vh;
+        max-height: 60vh;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        display: flex;
-        align-items: center;
         overflow: hidden;
+        display: flex;
 
         // IMAGES //
         .SliderImg {
@@ -193,20 +192,67 @@ body {
           max-height: 100%;
           transition: 0.5s;
           overflow: hidden;
+          height: 55vh;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
 
-          img {
-            width: 100%;
-            height: 100%;
+          .SliderText {
+            border: 1px solid red;
+            color:blue;
+            height: 80%;
+            width: 25%;
+            align-self: center;
+
+            #LearnMore {
+              color: red;
+              cursor: pointer;
+              text-decoration: underline;
+              font-weight: lighter;
+              font-size: .8rem;
+            }
           }
-        }
-        // IMAGES //
+
+          %titles {
+            font-size: 4rem;
+          }
+
+          %descriptions {
+            font-size: 1.5rem;
+          }
+
+          .SliderTitle {
+
+            @extend %titles
+
+          }
+          .SliderTitleAlt {
+
+            @extend %titles
+
+          }
+          .SliderDescription {
+
+            @extend %descriptions
+
+          }
+          .SliderDescriptionAlt {
+
+            @extend %descriptions
+
+          }
+        } // IMAGES //
+
+
 
         // BUTTONS //
         %btn-styles {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          width: 10%;
+          width: 5%;
           height: 100%;
           background: none;
           border: none;
@@ -307,26 +353,41 @@ body {
     .ServicesHeading {
       text-align: center;
     }
-    .New-Construction, .Remodeling, .Renovations, .Restorations, .AdditionalServices {
+
+    %Services {
       border: 1px solid white;
       display: flex;
       justify-content: space-around;
       align-items: center;
-    }
-    .ServicesTitleandList {
-      color: blue;
-    }
-    .ServicesImage {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 5vh;
 
-      img {
-        width: 40vw;
-        height: 50vh;
+      .ServicesTitleandList {
+        border: 1px solid red;
+        width: 50%;
+      }
+
+      .ServicesImage {
+        border: 1px solid blue;
+        width: 50%;
+
+        img {
+          width: 40vw;
+          height: 50vh;
+        }
       }
     }
+
+    .ServiceLeft {
+      color: blue;
+      flex-direction: row-reverse;
+      @extend %Services
+
+    }
+    .ServiceRight {
+      color: red;
+      @extend %Services
+    }
+
+
   }
 
   // ABOUT PAGE //

@@ -87,13 +87,12 @@ body {
 .App .Home .ServicesLanding .Slider {
   position: relative;
   width: 100%;
-  max-height: 55vh;
+  max-height: 60vh;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
   overflow: hidden;
+  display: flex;
 }
 .App .Home .ServicesLanding .Slider .SliderImg {
   position: relative;
@@ -101,16 +100,38 @@ body {
   max-height: 100%;
   transition: 0.5s;
   overflow: hidden;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.App .Home .ServicesLanding .Slider .SliderImg img {
-  width: 100%;
-  height: 100%;
+.App .Home .ServicesLanding .Slider .SliderImg .SliderText {
+  border: 1px solid red;
+  color: blue;
+  height: 80%;
+  width: 25%;
+  align-self: center;
+}
+.App .Home .ServicesLanding .Slider .SliderImg .SliderText #LearnMore {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.App .Home .ServicesLanding .Slider .SliderImg .SliderTitleAlt, .App .Home .ServicesLanding .Slider .SliderImg .SliderTitle {
+  font-size: 4rem;
+}
+.App .Home .ServicesLanding .Slider .SliderImg .SliderDescriptionAlt, .App .Home .ServicesLanding .Slider .SliderImg .SliderDescription {
+  font-size: 1.5rem;
 }
 .App .Home .ServicesLanding .Slider #next, .App .Home .ServicesLanding .Slider #prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 10%;
+  width: 5%;
   height: 100%;
   background: none;
   border: none;
@@ -186,24 +207,30 @@ body {
 .App .Services .ServicesHeading {
   text-align: center;
 }
-.App .Services .New-Construction, .App .Services .Remodeling, .App .Services .Renovations, .App .Services .Restorations, .App .Services .AdditionalServices {
+.App .Services .ServiceRight, .App .Services .ServiceLeft {
   border: 1px solid white;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.App .Services .ServicesTitleandList {
-  color: blue;
+.App .Services .ServiceRight .ServicesTitleandList, .App .Services .ServiceLeft .ServicesTitleandList {
+  border: 1px solid red;
+  width: 50%;
 }
-.App .Services .ServicesImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5vh;
+.App .Services .ServiceRight .ServicesImage, .App .Services .ServiceLeft .ServicesImage {
+  border: 1px solid blue;
+  width: 50%;
 }
-.App .Services .ServicesImage img {
+.App .Services .ServiceRight .ServicesImage img, .App .Services .ServiceLeft .ServicesImage img {
   width: 40vw;
   height: 50vh;
+}
+.App .Services .ServiceLeft {
+  color: blue;
+  flex-direction: row-reverse;
+}
+.App .Services .ServiceRight {
+  color: red;
 }
 .App .About .Jason {
   height: 20vh;
