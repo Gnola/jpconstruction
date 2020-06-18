@@ -13,6 +13,7 @@ const Service = (props) => {
             <li>{text}</li>
           )}
         </ul>
+        <p id='inquire' onClick={()=>props.toggleView('contact')}>Inquire about our {props.title} services ></p>
       </div>
     </div>
   )

@@ -5,24 +5,30 @@ import Service from './Service.js'
 
 // IMAGES //
 import Stone from './servicesimgs/Stone.jpg';
+import Bar from './servicesimgs/Bar.jpg';
+import Kitchen from './servicesimgs/Kitchen.jpg';
+// import Bathroom from './servicesimgs/Bathroom.jpeg';
+// import LivingRoom from './servicesimgs/LivingRoom.jpeg';
+import Bathroom2 from './servicesimgs/Bathroom2.jpeg';
+import School from './servicesimgs/School.jpg';
 
 // SERVICES //
 let newConstruction = {
   title:'New Construction',
   services: ['Attic Conversion & Restoration', 'Baseboard Installation'],
-  img:'https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+  img:Kitchen,
   cssClass:'ServiceLeft'
 }
 let remodeling = {
   title:'Remodeling',
   services: ['Carport Installation', 'Cedar & Wood Siding'],
-  img:'https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+  img:Bathroom2,
   cssClass:'ServiceRight'
 }
 let renovations = {
   title:'Renovations',
   services: ['Carport Installation', 'Cedar & Wood Siding'],
-  img:'https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+  img:Bar,
   cssClass:'ServiceLeft'
 }
 let restorations = {
@@ -34,7 +40,7 @@ let restorations = {
 let additionalServices = {
   title:'Additional Services',
   services: ['Carport Installation', 'Cedar & Wood Siding'],
-  img:'https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+  img:School,
   cssClass:'ServiceLeft'
 }
 
@@ -45,12 +51,13 @@ const Services = (props) => {
 
   return (
     <div className='Services'>
-      <h1 className='ServicesHeading'>SERVICES PAGE</h1>
-      <Service title={newConstruction.title} array={newConstruction.services} img={newConstruction.img} cssClass={newConstruction.cssClass}/>
-      <Service title={remodeling.title} array={remodeling.services} img={remodeling.img} cssClass={remodeling.cssClass}/>
-      <Service title={renovations.title} array={renovations.services} img={renovations.img} cssClass={renovations.cssClass}/>
-      <Service title={restorations.title} array={restorations.services} img={restorations.img} cssClass={restorations.cssClass}/>
-      <Service title={additionalServices.title} array={additionalServices.services} img={additionalServices.img} cssClass={additionalServices.cssClass}/>
+      <h1 className='PageTitle'>Services</h1>
+      <p style={{textAlign:'center'}}>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations</p>
+      <Service title={newConstruction.title} array={newConstruction.services} img={newConstruction.img} cssClass={newConstruction.cssClass} toggleView={props.toggleView}/>
+      <Service title={remodeling.title} array={remodeling.services} img={remodeling.img} cssClass={remodeling.cssClass} toggleView={props.toggleView}/>
+      <Service title={renovations.title} array={renovations.services} img={renovations.img} cssClass={renovations.cssClass} toggleView={props.toggleView}/>
+      <Service title={restorations.title} array={restorations.services} img={restorations.img} cssClass={restorations.cssClass} toggleView={props.toggleView}/>
+      <Service title={additionalServices.title} array={additionalServices.services} img={additionalServices.img} cssClass={additionalServices.cssClass} toggleView={props.toggleView}/>
     </div>
   );
 }

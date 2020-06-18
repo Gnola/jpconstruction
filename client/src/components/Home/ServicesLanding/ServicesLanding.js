@@ -7,7 +7,7 @@ const ServicesLanding = (props) => {
   return (
     <div className='ServicesLanding'>
       <div className='ServiceText'>
-        <h1>ServiceText</h1>
+        <h2>Proudly serving the Napa Valley</h2>
       </div>
       <Slider toggleView={props.toggleView}/>
     </div>

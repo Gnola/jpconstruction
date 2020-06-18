@@ -25,15 +25,15 @@ const Slider = (props) => {
   ]
 
   let titleTextArr = [
-    'New Construction',
+    'Residential Construction',
     'Commercial Construction',
     'Additional Services'
   ]
 
   let descriptionTextArr = [
-    'heres something',
-    'heres more',
-    'and this too'
+    'Energy-Efficient Homes, Green Building, Modular Homes and Multigenerational Homes',
+    'Wineries, Businesses, Schools and Historic Buildings',
+    'Demolition, Storm Shelters, Barn Design & Construction and Earthquake Retrofitting'
   ]
 
   const [x, setX] = useState(0)
@@ -57,10 +57,10 @@ const Slider = (props) => {
         {
           sliderArr.map((src, index) => {
             return (
-              <div className='SliderImg' style={{backgroundImage:`url(${src})`,transform:`translateX(${x}%)`}}>
+              <div className='SliderImg' style={{backgroundImage:`url(${src})`,transform:`translateX(${x}%)`}} key={index}>
                 <div className='SliderText'>
-                  <h1 className={index % 2 === 0 ? 'SliderTitle' : 'SliderTitleAlt'} key={index}>{titleTextArr[index]}</h1>
-                  <p className={index % 2 === 0 ? 'SliderDescription' : 'SliderDescriptionAlt'} key={index}>{descriptionTextArr[index]}</p>
+                  <h1 className='SliderTitle' key={index}>{titleTextArr[index]}</h1>
+                  <p className='SliderDescription' key={index+1}>{descriptionTextArr[index]}</p>
                   <a id='LearnMore' onClick={()=> props.toggleView('services')}>Learn More ></a>
                 </div>
               </div>

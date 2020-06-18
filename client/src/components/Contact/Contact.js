@@ -7,16 +7,21 @@ import React from 'react';
 const Contact = (props) => {
   return (
     <div className='Contact'>
-      <p>CONTACT PAGE</p>
+      <h1 className='PageTitle'>Contact</h1>
       <div>
         <form className='ContactForm'>
-          <label>Name:</label>
-          <input type='text' />
-          <label>Email:</label>
-          <input type='text' />
-            <label>Inquire:</label>
-            <textarea type='text' />
-          <button>Submit</button>
+          <div className='ContactFormInfo'>
+          <span><label>Name </label> <input type='text' /></span>
+          <span><label>Email </label> <input type='text' /></span>
+          <span><label>Phone </label> <input type='text' placeholder='(555) 555-5555'/></span>
+          </div>
+          <div className='ContactFormInquire'>
+            <label>Inquire </label>
+            <textarea type='text' placeholder='I would love to know more about your service...'/>
+          </div>
+          <div className='ContactFormButton'>
+            <button>Submit</button>
+          </div>
         </form>
       </div>
     </div>

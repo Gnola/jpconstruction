@@ -113,7 +113,7 @@ class App extends Component {
           contact={this.state.contact}
         />
           {this.state.home ? <Home toggleView={this.toggleView}/> : null}
-          {this.state.services ? <Services /> : null}
+          {this.state.services ? <Services toggleView={this.toggleView}/> : null}
           {this.state.about ? <About jason={this.state.jason} /> : null}
           {this.state.contact ? <Contact /> : null}
         <Footer toggleView={this.toggleView}/>

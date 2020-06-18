@@ -3,7 +3,7 @@ import React from 'react';
 const ContactLanding = (props) => {
   return (
     <div className='ContactLanding'>
-      <h1>Contact Us!</h1>
+      <h1 className='LandingText'>Contact Us!</h1>
       <h3>Monday - Friday | 9am - 5pm</h3>
       <div className='ContactLandingContainer'>
         <div className='ContactLandingLeft'>

@@ -1,11 +1,12 @@
 import React from 'react';
+// import Logo from './headerimgs/Logo.png';
+import Logo2 from './headerimgs/Logo2.png';
 
 // HEADER
 const Header = (props) => {
   return (
     <div className='Header'>
-      <h1 onClick={()=>props.toggleView('home')}>Phillips Construction</h1>
-      <h2>Proudly serving the Napa Valley</h2>
+      <img id='Logo' alt='Logo' src={Logo2} onClick={()=>props.toggleView('home')}/>
     </div>
   )
 }
