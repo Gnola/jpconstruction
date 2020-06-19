@@ -5,8 +5,8 @@ const Footer = (props) => {
   return (
     <footer className='Footer'>
       <div className='FooterContact'>
-        <h4 onClick={()=>props.toggleView('contact')}>Contact us:</h4>
-        <span><i className="far fa-clock fa-1x"></i> <p style={{display:'inline', marginLeft:'1.5px'}}>Mon - Fri | 9am - 5pm</p></span><br/>
+        <h4>Contact us:</h4>
+        <span><i className="far fa-clock fa-1x"></i> <p style={{display:'inline', marginLeft:'1.5px'}} onClick={()=>props.toggleView('contact')}>Mon - Fri | 9am - 5pm</p></span><br/>
         <span><i className="fas fa-phone fa-1x"></i> <a href='tel:707-812-5516' target='_blank' rel="noopener noreferrer">(707) 812-5516</a></span><br/>
         <span><i className="fas fa-envelope fa-1x"></i> <a href='mailto:phillipscons@gmail.com' target='_blank' rel="noopener noreferrer">phillipscons@gmail.com</a></span>
       </div>

@@ -9,8 +9,8 @@ const Service = (props) => {
       <div className='ServicesTitleandList'>
         <h1>{props.title}</h1>
         <ul>
-          {props.array.map(text =>
-            <li>{text}</li>
+          {props.array.map((text, index) =>
+            <li key={index}>{text}</li>
           )}
         </ul>
         <p id='inquire' onClick={()=>props.toggleView('contact')}>Inquire about our {props.title} services ></p>

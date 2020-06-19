@@ -10,8 +10,8 @@ const Home = (props) => {
   return (
     <div className='Home'>
       <ServicesLanding toggleView={props.toggleView}/>
-      <AboutLanding jason={props.jason} />
       <ContactLanding toggleView={props.toggleView}/>
+      <AboutLanding jason={props.jason} />
     </div>
   );
 }

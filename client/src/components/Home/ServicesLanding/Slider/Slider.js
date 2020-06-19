@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
+// import React, {useState, useEffect} from 'react';
 // import Images from './Images.js';
 
 // NEW CONSTRUCTION //
@@ -41,13 +42,13 @@ const Slider = (props) => {
   // PREVIOUS
   const prev = () => {
     x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100)
-    console.log(x);
+    // console.log(x);
   }
 
   // NEXT
   const next = () => {
     x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
-    console.log(x);
+    // console.log(x);
   }
 
 
@@ -61,7 +62,7 @@ const Slider = (props) => {
                 <div className='SliderText'>
                   <h1 className='SliderTitle' key={index}>{titleTextArr[index]}</h1>
                   <p className='SliderDescription' key={index+1}>{descriptionTextArr[index]}</p>
-                  <a id='LearnMore' onClick={()=> props.toggleView('services')}>Learn More ></a>
+                  <p id='LearnMore' onClick={()=> props.toggleView('services')}>Learn More ></p>
                 </div>
               </div>
             )
