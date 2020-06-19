@@ -98,6 +98,7 @@ class App extends Component {
     window.addEventListener('scroll', this.listenScrollEvent) // ON SCROLL
   }
 
+
   render() {
     return (
       <div className='App'>
@@ -112,7 +113,7 @@ class App extends Component {
           about={this.state.about}
           contact={this.state.contact}
         />
-          {this.state.home ? <Home toggleView={this.toggleView}/> : null}
+          {this.state.home ? <Home toggleView={this.toggleView} /> : null}
           {this.state.services ? <Services toggleView={this.toggleView}/> : null}
           {this.state.about ? <About jason={this.state.jason} /> : null}
           {this.state.contact ? <Contact /> : null}

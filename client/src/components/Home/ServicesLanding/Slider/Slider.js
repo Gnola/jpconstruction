@@ -37,7 +37,7 @@ const Slider = (props) => {
     'Demolition, Storm Shelters, Barn Design & Construction and Earthquake Retrofitting'
   ]
 
-  const [x, setX] = useState(0)
+  let [x, setX] = useState(0)
 
   // PREVIOUS
   const prev = () => {
@@ -51,7 +51,14 @@ const Slider = (props) => {
     // console.log(x);
   }
 
-
+  // Dynamic Slider
+  const go = () => {
+    setTimeout(function () {
+      x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
+      console.log(x);
+    }, 5000);
+  }
+  go()
 
   return (
     <div className='Slider'>
