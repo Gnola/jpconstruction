@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,13 +25,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-image: url("./components/headerimgs/DTNP.jpg");
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .App .Header #Logo {
   width: 50%;
   margin-top: 15vh;
+  cursor: pointer;
 }
 .App .Nav {
   background: white;
@@ -56,11 +58,12 @@ body {
   height: 100%;
   width: 14vw;
 }
-.App .Nav p {
+.App .Nav a {
   color: black;
   cursor: pointer;
+  text-decoration: none;
 }
-.App .Nav p:hover {
+.App .Nav a:hover {
   color: yellow;
   text-shadow: 0.1rem 0.1rem 0.2rem black;
 }
@@ -174,53 +177,105 @@ body {
   text-align: center;
 }
 .App .Home .ContactLanding {
-  border-bottom: 3px solid white;
+  width: 100%;
+}
+.App .Home .ContactLanding .ContactLanding-Bottom, .App .Home .ContactLanding .ContactLanding-Mid, .App .Home .ContactLanding .ContactLanding-Top {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 30%;
 }
-.App .Home .ContactLanding h1 {
+.App .Home .ContactLanding .ContactLanding-Top h1 {
   margin-top: 2vh;
   margin-bottom: 0;
+  font-size: 3rem;
 }
-.App .Home .ContactLanding h3 {
-  margin-top: 1vh;
+.App .Home .ContactLanding .ContactLanding-Top h2 {
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
 }
-.App .Home .ContactLanding .ContactLandingContainer {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-bottom: 4vh;
+.App .Home .ContactLanding .ContactLanding-Mid h3 {
+  font-style: italic;
 }
-.App .Home .ContactLanding .ContactLandingContainer .ContactLandingLeft {
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm {
+  border: 2px solid black;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  width: 40%;
+  margin-bottom: 1vh;
 }
-.App .Home .ContactLanding .ContactLandingContainer .ContactLandingLeft a {
-  color: yellow;
-  text-shadow: 1px 1px 3px black;
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo {
+  display: flex;
+  flex-direction: column;
 }
-.App .Home .ContactLanding .ContactLandingContainer .ContactLandingLeft i {
-  color: black;
-}
-.App .Home .ContactLanding .ContactLandingContainer .ContactLandingRight {
-  width: 50%;
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 4vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
 }
-.App .Home .ContactLanding .ContactLandingContainer .ContactLandingRight #contact-link {
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span label {
+  padding-left: 0.3vw;
+  width: 5.5vw;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span input {
+  width: 85%;
+  height: 3.5vh;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire {
+  display: flex;
+  flex-direction: column;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  margin-top: 0.5vh;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span label {
+  padding-left: 0.3vw;
+  width: 5.5vw;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span input {
+  width: 85%;
+  height: 3.5vh;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire #inquire-label {
+  margin: 1vh auto;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire textarea {
+  height: 20vh;
+  width: 98%;
+  margin: auto;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormButton {
+  display: flex;
+}
+.App .Home .ContactLanding .ContactLanding-Mid .ContactForm .ContactFormButton input {
+  margin: 1vh auto;
+  width: 7vw;
+  height: 4vh;
+  font-size: 1.1rem;
   cursor: pointer;
+}
+.App .Home .ContactLanding .ContactLanding-Bottom {
+  margin-bottom: 2vh;
+}
+.App .Home .ContactLanding .ContactLanding-Bottom h3 {
+  font-style: italic;
+}
+.App .Home .ContactLanding .ContactLanding-Bottom span, .App .Home .ContactLanding .ContactLanding-Bottom a {
+  color: black;
+  font-size: 1.2rem;
+}
+.App .Home .ContactLanding .ContactLanding-Bottom span:hover, .App .Home .ContactLanding .ContactLanding-Bottom a:hover {
   color: yellow;
   text-shadow: 1px 1px 3px black;
-  text-decoration: underline;
-  background-image: url();
 }
 .App .PageTitle {
   text-align: center;
@@ -237,16 +292,21 @@ body {
   justify-content: space-between;
   align-items: center;
   background: white;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 .App .ServicesContainer .ServiceRight .ServicesTitleandList, .App .ServicesContainer .ServiceLeft .ServicesTitleandList {
   width: 30%;
   text-align: center;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
+  display: flex;
+  flex-direction: column;
 }
 .App .ServicesContainer .ServiceRight .ServicesTitleandList h1, .App .ServicesContainer .ServiceLeft .ServicesTitleandList h1 {
   color: white;
   font-size: 2.8rem;
   text-shadow: 3px 3px black;
+  margin: 0.5vh auto;
 }
 .App .ServicesContainer .ServiceRight .ServicesTitleandList ul, .App .ServicesContainer .ServiceLeft .ServicesTitleandList ul {
   text-align: left;
@@ -257,17 +317,16 @@ body {
   font-size: 0.8rem;
   text-shadow: 1px 1px 3px black;
   cursor: pointer;
-  text-decoration: underline;
-  font-weight: lighter;
+  margin-bottom: 1vh;
 }
 .App .ServicesContainer .ServiceRight .ServicesImage, .App .ServicesContainer .ServiceLeft .ServicesImage {
-  margin: 1.5vh 1.5vw;
+  margin: 2vh 1.5vw;
 }
 .App .ServicesContainer .ServiceRight .ServicesImage img, .App .ServicesContainer .ServiceLeft .ServicesImage img {
   border-radius: 2px;
   box-shadow: 4px 3px 10px 5px;
-  width: 42.5vw;
-  height: 55vh;
+  width: 38vw;
+  height: 50vh;
 }
 .App .ServicesContainer .ServiceLeft {
   flex-direction: row-reverse;
@@ -288,56 +347,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.App .Contact .ContactForm {
-  border: 2px solid black;
-  height: 60vh;
-  width: 40vw;
-  margin-bottom: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
-}
-.App .Contact .ContactForm .ContactFormInfo {
-  font-size: 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.App .Contact .ContactForm .ContactFormInfo span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.App .Contact .ContactForm .ContactFormInfo input {
-  width: 10vw;
-  height: 3vh;
-  text-align: center;
-}
-.App .Contact .ContactForm .ContactFormInquire {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.App .Contact .ContactForm .ContactFormInquire textarea {
-  width: 90%;
-  height: 25vh;
-}
-.App .Contact .ContactForm .ContactFormButton {
-  align-self: center;
-}
-.App .Contact .ContactForm .ContactFormButton button {
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-  background: black;
-  border: 2px solid white;
-  box-shadow: 1px 1px 3px black;
-  width: 8vw;
-  height: 4vh;
-  border-radius: 5px;
 }
 .App footer {
   background: rgba(0, 0, 0, 0.8);

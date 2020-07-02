@@ -13,10 +13,11 @@ const Service = (props) => {
             <li key={index}>{text}</li>
           )}
         </ul>
-        <p id='inquire' onClick={()=>props.toggleView('contact')}>Inquire about our {props.title} services ></p>
+        <a id='inquire' href='#ContactLanding'>Inquire about our {props.title} services ></a>
       </div>
     </div>
   )
 }
 
 export default Service;
+// <p id='inquire' onClick={()=>props.toggleView('contact')}>Inquire about our {props.title} services ></p>

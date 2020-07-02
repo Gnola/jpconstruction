@@ -13,9 +13,6 @@ import Footer from './components/Footer.js';
 // TEMP COMPONENTS //
 // import TempLanding from './components/TempLanding.js';
 
-
-
-
 // STYLING //
 import './App.css';
 
@@ -23,58 +20,31 @@ import './App.css';
 class App extends Component {
 
   state = {
-    home: true,
-    services: false,
-    about: false,
-    contact: false,
+    view:'home',
     color:'',
-    display:'none'
+    display:'none',
   }
 
-  // Toggle View
-  toggleView = (currentView) => {
-    if (currentView === 'home') {
-      this.setState({
-        home: true,
-        services: false,
-        gallery: false,
-        about: false,
-        contact: false
-      })
-    } else if (currentView === 'services') {
-      this.setState({
-        home: false,
-        services: true,
-        gallery: false,
-        about: false,
-        contact: false
-      })
-    } else if (currentView === 'gallery') {
-      this.setState({
-        home: false,
-        services: false,
-        gallery: true,
-        about: false,
-        contact: false
-      })
-    } else if (currentView === 'about') {
-      this.setState({
-        home: false,
-        services: false,
-        gallery: false,
-        about: true,
-        contact: false
-      })
-    } else if (currentView === 'contact') {
-      this.setState({
-        home: false,
-        services: false,
-        gallery: false,
-        about: false,
-        contact: true
-      })
+  // Change Page View
+  changePage = page => {
+    switch (page) {
+      case "home":
+        this.setState({ view: "home" });
+        console.log("Hey");
+        break;
+      case "services":
+        this.setState({ view: "services" });
+        break;
+      case "about":
+        this.setState({ view: "about" });
+        break;
+      case "contact":
+        this.setState({ view: "contact" });
+        break;
+      default:
+        return;
     }
-  }
+  };
 
 
   // LISTEN TO SCROLL
@@ -102,22 +72,15 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Header toggleView={this.toggleView} />
+        <Header changePage={this.changePage} />
         <Nav
+          view={this.state.view}
           display={this.state.display}
           color={this.state.color}
-          toggleView={this.toggleView}
-          home={this.state.home}
-          services={this.state.services}
-          gallery={this.state.gallery}
-          about={this.state.about}
-          contact={this.state.contact}
+          changePage={this.changePage}
         />
-          {this.state.home ? <Home toggleView={this.toggleView} /> : null}
-          {this.state.services ? <Services toggleView={this.toggleView}/> : null}
-          {this.state.about ? <About jason={this.state.jason} /> : null}
-          {this.state.contact ? <Contact /> : null}
-        <Footer toggleView={this.toggleView}/>
+        <Home />
+        <Footer />
       </div>
     );
   }
@@ -129,3 +92,6 @@ export default App;
 //   <footer>
 //     Liscense #10644287 | Bonded and Insured <br/> Designed by Gianni Nola
 //   </footer>
+// {this.state.view === 'services' ? <Services toggleView={this.toggleView}/> : null}
+// {this.state.view === 'about' ? <About jason={this.state.jason} /> : null}
+// {this.state.view === 'contact' ? <Contact /> : null}

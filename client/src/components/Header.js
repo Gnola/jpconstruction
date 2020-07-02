@@ -1,13 +1,13 @@
 import React from 'react';
-// import Logo from './headerimgs/Logo.png';
-// import Logo from './headerimgs/Logo2.png';
-import Logo from './headerimgs/Logo3.png';
+// import Logo1 from './headerimgs/Logo.png';
+// import Logo2 from './headerimgs/Logo2.png';
+import Logo3 from './headerimgs/Logo3.png';
 
 // HEADER
 const Header = (props) => {
   return (
-    <div className='Header'>
-      <img id='Logo' alt='Logo' src={Logo} onClick={()=>props.toggleView('home')}/>
+    <div id='Header' className='Header'>
+      <img id='Logo' alt='Logo' src={Logo3} onClick={()=>props.changePage('home')}/>
     </div>
   )
 }

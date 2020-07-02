@@ -15,42 +15,39 @@ import School from './servicesimgs/School.jpg';
 // SERVICES //
 let newConstruction = {
   title:'New Construction',
-  services: ['Attic Conversion & Restoration', 'Baseboard Installation'],
+  services: ['Drywall Installation & Texturing', 'Window Installation', 'Countertop Installation', 'Cedar & Wood Siding Installation', 'Insulation Installation', 'Composition & Metal Roofing', 'Trim Work', 'Water Heater Installation', 'and MORE!'],
   img:Kitchen,
   cssClass:'ServiceLeft'
 }
 let remodeling = {
   title:'Remodeling',
-  services: ['Carport Installation', 'Cedar & Wood Siding'],
+  services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Outdoor Kitchen Construction', 'Porch Design and Construction', 'and MORE!'],
   img:Bathroom2,
   cssClass:'ServiceRight'
 }
 let renovations = {
   title:'Renovations',
-  services: ['Carport Installation', 'Cedar & Wood Siding'],
+  services: ['Tile Installation', 'Shower Installation', 'Carport Installation', 'Attic Restoration & Conversion', 'Exterior Door Installation', 'Finish Carpentry', 'Laminate, Linoleum & Wood Flooring Installation', 'Baseboard Installation', 'and MORE!'],
   img:Bar,
   cssClass:'ServiceLeft'
 }
 let restorations = {
   title:'Restorations',
-  services: ['Carport Installation', 'Cedar & Wood Siding'],
+  services: ['Foundation Construction & Repair', 'Basement Remodeling & Waterproofing', 'Deck Building & Repair', 'Soffit Installation & Repair', 'and MORE!'],
   img:Stone,
   cssClass:'ServiceRight'
 }
 let additionalServices = {
   title:'Additional Services',
-  services: ['Carport Installation', 'Cedar & Wood Siding'],
+  services: ['Fireplace Installation', 'Fencing', 'Barn Design & Construction', 'Demolition', 'Storm Shelter', 'Earthquake Retrofitting', 'and MORE!'],
   img:School,
   cssClass:'ServiceLeft'
 }
 
 // HOME
 const Services = (props) => {
-
-
-
   return (
-    <div className='ServicesContainer'>
+    <div id="ServicesLanding" className='ServicesContainer'>
       <div className='ServicesText'>
         <h1 className='PageTitle'>Services</h1>
         <p>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations</p>

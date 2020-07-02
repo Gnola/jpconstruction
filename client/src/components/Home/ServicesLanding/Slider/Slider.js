@@ -55,7 +55,7 @@ const Slider = (props) => {
   const go = () => {
     setTimeout(function () {
       x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
-      console.log(x);
+      // console.log(x);
     }, 5000);
   }
   go()
@@ -69,14 +69,15 @@ const Slider = (props) => {
                 <div className='SliderText'>
                   <h1 className='SliderTitle' key={index}>{titleTextArr[index]}</h1>
                   <p className='SliderDescription' key={index+1}>{descriptionTextArr[index]}</p>
-                  <p id='LearnMore' onClick={()=> props.toggleView('services')}>Learn More ></p>
+                  <a id='LearnMore' href='#ServicesLanding' >Learn More ></a>
                 </div>
               </div>
             )
           })
         }
+        {/*
         <button id='prev' onClick={prev}><i style={{color:'rgba(255,255,255,.5)'}} className='fas fa-chevron-left fa-3x'></i></button>
-      <button id='next' onClick={next}><i style={{color:'rgba(255,255,255,.5)'}} className='fas fa-chevron-right fa-3x'></i></button>
+      <button id='next' onClick={next}><i style={{color:'rgba(255,255,255,.5)'}} className='fas fa-chevron-right fa-3x'></i></button>*/}
     </div>
   )
 }

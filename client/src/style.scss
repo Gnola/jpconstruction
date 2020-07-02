@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -34,13 +35,15 @@ body {
     justify-content: flex-start;
     align-items: center;
     background-image: url("./components/headerimgs/DTNP.jpg");
+    background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-attachment: fixed;
 
     #Logo {
       width: 50%;
       margin-top: 15vh;
+      cursor: pointer;
     }
 
     // h1 { // Phillips Construction
@@ -89,9 +92,10 @@ body {
       width: 14vw;
     }
 
-    p { // Links
+    a { // Links
       color: black;
       cursor: pointer;
+      text-decoration: none;
 
       &:hover {
         color: yellow;
@@ -234,61 +238,141 @@ body {
 
     // CONTACT LANDING //
     .ContactLanding {
-      border-bottom: 3px solid white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       width: 100%;
-      height: 30%;
+      // border-bottom: 3px solid white;
 
-      h1 { // Contact Us!
-        margin-top: 2vh;
-        margin-bottom: 0;
-      }
-
-      h3 { // Monday - Friday
-        margin-top: 1vh;
-      }
-
-      .ContactLandingContainer { // Contact Container
+      %ContactLandingContent {
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        width: 70%;
-        justify-content: space-evenly;
-        text-align: center;
-        margin-bottom: 4vh;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .ContactLandingLeft { // LEFT
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 50%;
+      .ContactLanding-Top {
+        @extend %ContactLandingContent;
 
-          a { // Links
-            color: yellow;
-            text-shadow: 1px 1px 3px black;
-          }
-
-          i { // Icons
-            color: black;
-          }
+        h1 { // Contact Us!
+          margin-top: 2vh;
+          margin-bottom: 0;
+          font-size: 3rem;
         }
 
-        .ContactLandingRight { // RIGHT
-          width: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        h2 { // Monday - Friday
+          margin-top: .5vh;
+          margin-bottom: 1vh;
+        }
 
-          #contact-link { // Inquire Link
-            cursor: pointer;
+      } // ContactLanding-Top
+
+      .ContactLanding-Mid {
+        @extend %ContactLandingContent;
+
+        h3 { // inquire about...
+          font-style: italic;
+        }
+
+        .ContactForm { // FORM
+          border: 2px solid black;
+          box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+          padding: .5rem;
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          margin-bottom: 1vh;
+
+          .ContactFormInfo { // INFO - Name, Email, Phone
+            display: flex;
+            flex-direction: column;
+            // height: 20%;
+
+            span { // Name, email, phone
+              width: 100%;
+              display: flex;
+              align-items: center;
+              height: 4vh;
+              margin-top: .5vh;
+              margin-bottom: .5vh;
+
+              label {
+                padding-left: .3vw;
+                width: 5.5vw;
+              }
+              input {
+                width: 85%;
+                height: 3.5vh;
+              }
+            } // span
+
+          } // INFO //
+
+          .ContactFormInquire { // INQUIRE w/ TextArea
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+
+            span { // Subject
+              width: 100%;
+              display: flex;
+              align-items: center;
+              height: 4vh;
+              margin-top: .5vh;
+              // margin-bottom: .5vh;
+
+              label {
+                padding-left: .3vw;
+                width: 5.5vw;
+              }
+              input {
+                width: 85%;
+                height: 3.5vh;
+              }
+            } // span
+
+            #inquire-label {
+              margin: 1vh auto;
+            }
+
+            textarea {
+              height: 20vh;
+              width: 98%;
+              margin: auto;
+            }
+          } // INQUIRE //
+
+          .ContactFormButton { // BUTTON
+            display: flex;
+            // justify-content: center;
+            // height: 10%;
+
+            input {
+              margin: 1vh auto;
+              width: 7vw;
+              height: 4vh;
+              font-size: 1.1rem;
+              cursor: pointer;
+            }
+
+          } // BUTTON //
+
+        } // FORM
+      } // ContactLanding-Mid
+
+      .ContactLanding-Bottom {
+        @extend %ContactLandingContent;
+        margin-bottom: 2vh;
+        h3 {
+          font-style: italic;
+        }
+
+        span, a {
+          color: black;
+          font-size: 1.2rem;
+          &:hover {
             color: yellow;
             text-shadow: 1px 1px 3px black;
-            text-decoration: underline;
-            background-image: url();
           }
-        } // RIGHT
-      } // CONTACT CONTAINER
+        }
+      } // ContactLanding-Bottom
     } // CONTACT LANDING //
 
   } // HOME //
@@ -319,16 +403,22 @@ body {
       justify-content: space-between;
       align-items: center;
       background: white;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
 
       .ServicesTitleandList { // Title, List and Link CONTAINER
         width: 30%;
         text-align:center;
         box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
 
         h1 { // Title
           color: white;
           font-size: 2.8rem;
           text-shadow: 3px 3px black;
+          margin: .5vh auto;
         }
 
         ul { // List
@@ -341,19 +431,18 @@ body {
           font-size: .8rem;
           text-shadow: 1px 1px 3px black;
           cursor: pointer;
-          text-decoration: underline;
-          font-weight: lighter;
+          margin-bottom: 1vh;
         }
       } // Title, List and Link
 
       .ServicesImage { // Service Image Container
-        margin: 1.5vh 1.5vw;
+        margin: 2vh 1.5vw;
 
         img { // Service Image
           border-radius: 2px;
           box-shadow: 4px 3px 10px 5px;
-          width: 42.5vw;
-          height: 55vh;
+          width: 38vw;
+          height: 50vh;
         }
       } // Service Image Container
     } // Individual Service //
@@ -394,63 +483,6 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .ContactForm { // FORM
-      border: 2px solid black;
-      height: 60vh;
-      width: 40vw;
-      margin-bottom: 10vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
-
-      .ContactFormInfo { // INFO - Name, Email, Phone
-        font-size: 1rem;
-        width: 100%;
-        // height: 10%;
-        display: flex;
-        justify-content: space-around;
-
-        span { // Labels
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        input {
-          width: 10vw;
-          height: 3vh;
-          text-align: center;
-        }
-      } // INFO //
-
-      .ContactFormInquire { // INQUIRE w/ TextArea
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        textarea {
-          width: 90%;
-          height: 25vh;
-        }
-      } // INQUIRE //
-
-      .ContactFormButton { // BUTTON
-        align-self: center;
-
-        button {
-          cursor: pointer;
-          color: white;
-          font-size: 1.2rem;
-          background: black;
-          border: 2px solid white;
-          box-shadow: 1px 1px 3px black;
-          width: 8vw;
-          height: 4vh;
-          border-radius: 5px;
-        }
-      } // BUTTON //
-    } // FORM
   } // CONTACT PAGE //
 
   // PAGES //

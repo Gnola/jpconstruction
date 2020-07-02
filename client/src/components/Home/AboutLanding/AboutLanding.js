@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutLanding = (props) => {
   return (
-    <div className='AboutLanding'>
+    <div id='AboutLanding' className='AboutLanding'>
       <h1 className='LandingText'>About</h1>
       <div className='AboutLandingText'>
         <p>Here are a few things about Jason</p>

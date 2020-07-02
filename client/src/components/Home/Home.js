@@ -1,9 +1,9 @@
 import React from 'react';
 
 // COMPONENTS //
-import AboutLanding from './AboutLanding.js';
-import ContactLanding from './ContactLanding.js';
 import ServicesLanding from './ServicesLanding/ServicesLanding.js';
+import ContactLanding from './ContactLanding/ContactLanding.js';
+import AboutLanding from './AboutLanding/AboutLanding.js';
 
 // HOME
 const Home = (props) => {
