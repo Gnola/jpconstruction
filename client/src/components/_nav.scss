@@ -1,0 +1,44 @@
+// NAV //
+.Nav {
+  // background: rgba(0,0,0,0.5);
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  transition: .5s ease-in;
+
+  .nav-header { // Phillips Construction Mini Logo
+    color: white;
+    opacity: 1;
+    text-shadow: 3px 3px black;
+    transition: 1s ease-in;
+    cursor: pointer;
+    height: 100%;
+    width: 14vw;
+  }
+
+  a { // Links
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: yellow;
+      text-shadow: .1rem .1rem .2rem black;
+    }
+  }
+  .a-clicked { // Clicked Link
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: .1rem .1rem .2rem black;
+  }
+} // NAV //

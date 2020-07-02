@@ -1,0 +1,40 @@
+// ABOUT LANDING //
+.AboutLanding {
+  border-bottom: 2px solid gainsboro;
+  width: 90%;
+  margin: 3vh auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+
+  .AboutLanding-Top {
+    width: 100%;
+    display: flex;
+
+    h1 {
+      margin: auto;
+    }
+  }
+
+  .AboutLanding-Mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3vh;
+
+    .AboutLandingImg {
+      width: 18vw;
+      height: 35vh;
+    }
+    .AboutLandingText { // About paragraph
+      border: 1px solid black;
+      width: 40%;
+      // height: 90%;
+      text-align: center;
+    }
+  }
+
+
+} // ABOUT LANDING //

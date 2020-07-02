@@ -1,0 +1,15 @@
+// HOME //
+.Home {
+  width: 100%;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .LandingText { // Services / About / Contact
+    font-size: 3rem;
+    color: yellow;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+  }
+
+} // HOME //

@@ -1,0 +1,138 @@
+.ContactLanding {
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid gainsboro;
+
+  %ContactLandingContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ContactLanding-Top {
+    @extend %ContactLandingContent;
+
+    h1 { // Contact Us!
+      margin-top: 2vh;
+      margin-bottom: 0;
+      font-size: 3rem;
+    }
+
+    h2 { // Monday - Friday
+      margin-top: .5vh;
+      margin-bottom: 1vh;
+    }
+
+  } // ContactLanding-Top
+
+  .ContactLanding-Mid {
+    @extend %ContactLandingContent;
+
+    h3 { // inquire about...
+      font-style: italic;
+    }
+
+    .ContactForm { // FORM
+      border: 2px solid black;
+      box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+      padding: .5rem;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      margin-bottom: 1vh;
+
+      .ContactFormInfo { // INFO - Name, Email, Phone
+        display: flex;
+        flex-direction: column;
+        // height: 20%;
+
+        span { // Name, email, phone
+          width: 100%;
+          display: flex;
+          align-items: center;
+          height: 4vh;
+          margin-top: .5vh;
+          margin-bottom: .5vh;
+
+          label {
+            padding-left: .3vw;
+            width: 5.5vw;
+          }
+          input {
+            width: 85%;
+            height: 3.5vh;
+          }
+        } // span
+
+      } // INFO //
+
+      .ContactFormInquire { // INQUIRE w/ TextArea
+        // border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+
+        span { // Subject
+          width: 100%;
+          display: flex;
+          align-items: center;
+          height: 4vh;
+          margin-top: .5vh;
+          // margin-bottom: .5vh;
+
+          label {
+            padding-left: .3vw;
+            width: 5.5vw;
+          }
+          input {
+            width: 85%;
+            height: 3.5vh;
+          }
+        } // span
+
+        #inquire-label {
+          margin: 1vh auto;
+        }
+
+        textarea {
+          height: 20vh;
+          width: 98%;
+          margin: auto;
+        }
+      } // INQUIRE //
+
+      .ContactFormButton { // BUTTON
+        display: flex;
+        // justify-content: center;
+        // height: 10%;
+
+        input {
+          margin: 1vh auto;
+          width: 7vw;
+          height: 4vh;
+          font-size: 1.1rem;
+          cursor: pointer;
+        }
+
+      } // BUTTON //
+
+    } // FORM
+  } // ContactLanding-Mid
+
+  .ContactLanding-Bottom {
+    @extend %ContactLandingContent;
+    margin-bottom: 2vh;
+    h3 {
+      font-style: italic;
+    }
+
+    span, a {
+      color: black;
+      font-size: 1.2rem;
+      &:hover {
+        color: yellow;
+        text-shadow: 1px 1px 3px black;
+      }
+    }
+  } // ContactLanding-Bottom
+}
