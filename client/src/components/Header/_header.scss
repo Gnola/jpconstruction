@@ -5,7 +5,7 @@
   flex-direction:column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("./components/headerimgs/DTNP.jpg");
+  background-image: url("./components/Header/headerimgs/DTNP.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -28,3 +28,34 @@
 
 
 } // HEADER //
+
+// TABLETS
+@media screen and (max-width: 1100px) {
+  .Header {
+    background-size: cover;
+    background-position: center;
+    height: 55vw;
+
+    #Logo {
+      top:10vh;
+      width: 85%;
+    }
+  }
+
+}
+
+// PHONES //
+@media screen and (max-width: 500px) {
+
+  .Header {
+    background-size: cover;
+    background-position: center;
+    height: 60vw;
+
+    #Logo {
+      top:8vh;
+      width: 90%;
+    }
+  }
+
+}

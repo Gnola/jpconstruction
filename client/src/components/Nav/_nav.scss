@@ -92,3 +92,52 @@
   }
 
 } // NAV2 //
+
+
+
+// TABLETS
+@media screen and (max-width: 1100px) {
+  .Nav {
+    height: 5vh;
+
+    font-size: 1.5rem;
+
+    .a-clicked {
+      font-size: 1.6rem;
+    }
+  }
+
+  .Nav2 {
+    height: 6vh;
+
+    font-size: 1.5rem;
+    .a-clicked {
+      font-size: 1.6rem;
+    }
+    .nav-header {
+      width: 20%;
+      height: 90%;
+      left: 20vw;
+    }
+  }
+
+}
+
+
+
+// PHONES //
+@media screen and (max-width: 500px) {
+
+  .Nav {
+    height: 5vh;
+    font-size: .8rem;
+
+    .a-clicked {
+      font-size: .9rem;
+      margin-bottom: .5vh;
+    }
+  }
+
+
+
+}

@@ -36,7 +36,7 @@
         color:white;
         align-self: center;
         width: 32%;
-        margin-left: 13vw;
+        margin-left: 8vw;
 
         .SliderTitle { // SLIDER TITLES
           font-size: 3.9rem;
@@ -174,3 +174,62 @@
   }  // SERVICES CONTAINER //
 
 } // SERVICE LANDING //
+
+
+
+
+// TABLETS
+@media screen and (max-width: 1100px) {
+  .ServicesLanding {
+    .Slider {
+      .SliderImg {
+        .SliderText {
+          width: 50%;
+
+          .SliderTitle {
+            font-size: 4.5rem;
+          }
+          .SliderDescription {
+            font-size: 1.5rem;
+          }
+          #LearnMore {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHONES //
+@media screen and (max-width: 500px) {
+  .ServicesLanding {
+    .Slider {
+      .SliderImg {
+        text-align: center;
+
+        .SliderText {
+          background: rgba(0, 0, 0, .3);
+          width: 100%;
+          margin: 0;
+          padding: 1vw;
+
+          .SliderTitle {
+            font-size: 3.2rem;
+          }
+          .SliderDescription {
+            font-size: 1rem;
+          }
+        }
+      }
+    } // Slider
+
+  }
+
+
+
+
+
+
+
+}

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("./components/headerimgs/DTNP.jpg");
+  background-image: url("./components/Header/headerimgs/DTNP.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -28,6 +28,28 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .Header {
+    background-size: cover;
+    background-position: center;
+    height: 55vw;
+  }
+  .Header #Logo {
+    top: 10vh;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Header {
+    background-size: cover;
+    background-position: center;
+    height: 60vw;
+  }
+  .Header #Logo {
+    top: 8vh;
+    width: 90%;
+  }
+}
 .Nav2, .Nav {
   background: white;
   border-top: 1px solid black;
@@ -116,6 +138,38 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .Nav {
+    height: 5vh;
+    font-size: 1.5rem;
+  }
+  .Nav .a-clicked {
+    font-size: 1.6rem;
+  }
+
+  .Nav2 {
+    height: 6vh;
+    font-size: 1.5rem;
+  }
+  .Nav2 .a-clicked {
+    font-size: 1.6rem;
+  }
+  .Nav2 .nav-header {
+    width: 20%;
+    height: 90%;
+    left: 20vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Nav {
+    height: 5vh;
+    font-size: 0.8rem;
+  }
+  .Nav .a-clicked {
+    font-size: 0.9rem;
+    margin-bottom: 0.5vh;
+  }
+}
 footer {
   background: rgba(0, 0, 0, 0.8);
   bottom: 0;
@@ -230,7 +284,7 @@ footer .FooterConnect #IG {
   color: white;
   align-self: center;
   width: 32%;
-  margin-left: 13vw;
+  margin-left: 8vw;
 }
 .ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
   font-size: 3.9rem;
@@ -314,6 +368,37 @@ footer .FooterConnect #IG {
   margin: auto;
 }
 
+@media screen and (max-width: 1100px) {
+  .ServicesLanding .Slider .SliderImg .SliderText {
+    width: 50%;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
+    font-size: 4.5rem;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText .SliderDescription {
+    font-size: 1.5rem;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText #LearnMore {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ServicesLanding .Slider .SliderImg {
+    text-align: center;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+    padding: 1vw;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
+    font-size: 3.2rem;
+  }
+  .ServicesLanding .Slider .SliderImg .SliderText .SliderDescription {
+    font-size: 1rem;
+  }
+}
 .ContactLanding {
   width: 90%;
   margin: auto;
@@ -418,6 +503,79 @@ footer .FooterConnect #IG {
   text-shadow: 1px 1px 3px black;
 }
 
+@media screen and (max-width: 1100px) {
+  .ContactLanding {
+    font-size: 1.4rem;
+  }
+  .ContactLanding #form {
+    width: 98%;
+  }
+  .ContactLanding #form .ContactFormInfo span label {
+    font-size: 1.2rem;
+    width: 10%;
+  }
+  .ContactLanding #form .ContactFormInquire span {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .ContactLanding #form .ContactFormInquire span label {
+    width: 10%;
+    margin-bottom: 1vh;
+    font-size: 1.4rem;
+  }
+  .ContactLanding #form .ContactFormInquire span input {
+    width: 100%;
+    height: 4vh;
+  }
+  .ContactLanding #form .ContactFormInquire #inquire-label {
+    font-size: 1.4rem;
+    margin-top: 1.5vh;
+  }
+  .ContactLanding #form .ContactFormButton input {
+    margin-top: 1.5vh;
+    width: 15vw;
+  }
+  .ContactLanding .ContactLanding-Bottom a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ContactLanding {
+    font-size: 1.1rem;
+  }
+  .ContactLanding #form {
+    width: 98%;
+  }
+  .ContactLanding #form .ContactFormInfo span label {
+    width: 22%;
+  }
+  .ContactLanding #form .ContactFormInquire span {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .ContactLanding #form .ContactFormInquire span label {
+    width: 20%;
+    margin-bottom: 1vh;
+    font-size: 1.1rem;
+  }
+  .ContactLanding #form .ContactFormInquire span input {
+    width: 100%;
+    height: 4vh;
+  }
+  .ContactLanding #form .ContactFormInquire #inquire-label {
+    font-size: 1.1rem;
+    margin-top: 1.5vh;
+  }
+  .ContactLanding #form .ContactFormButton input {
+    margin-top: 1.5vh;
+    width: 20vw;
+  }
+  .ContactLanding .ContactLanding-Bottom span a {
+    font-size: 1.2rem;
+  }
+}
 .AboutLanding {
   border-bottom: 2px solid gainsboro;
   width: 90%;
@@ -449,22 +607,64 @@ footer .FooterConnect #IG {
   text-align: center;
 }
 
+@media screen and (max-width: 1100px) {
+  .AboutLanding .AboutLanding-Mid {
+    justify-content: space-between;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingImg {
+    width: 30vw;
+    height: 30vh;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText {
+    width: 55vw;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .AboutLanding .AboutLanding-Mid {
+    flex-direction: column-reverse;
+    margin-top: 2vh;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingImg {
+    margin-top: 2vh;
+    width: 60%;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText {
+    width: 95%;
+  }
+}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-family: "Roboto Slab", serif;
-  background-color: whitesmoke;
+  background-color: white;
   overflow-x: hidden;
   height: 100%;
 }
 
 .App {
-  background: white;
+  background: whitesmoke;
+}
+
+@media screen and (max-width: 1100px) {
+  .App {
+    background: green;
+  }
+}
+@media screen and (max-width: 500px) {
+  .App {
+    background: blue;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

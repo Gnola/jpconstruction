@@ -1,5 +1,5 @@
 import React from 'react';
-import Jason from '../../headerimgs/Jason.JPG';
+import Jason from '../..//Header/headerimgs/Jason.JPG';
 
 const AboutLanding = (props) => {
   return (

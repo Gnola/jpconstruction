@@ -41,7 +41,7 @@ class App extends Component {
 
   // LISTEN TO SCROLL
   listenScrollEvent = e => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 350) {
       this.setState({ display:'Nav2'})
     } else {
       this.setState({ display:'Nav'})

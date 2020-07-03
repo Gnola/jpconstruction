@@ -38,3 +38,54 @@
 
 
 } // ABOUT LANDING //
+
+
+
+// TABLETS --> up to 1100px
+@media screen and (max-width: 1100px) {
+  .AboutLanding {
+    .AboutLanding-Top {
+
+    }
+
+    .AboutLanding-Mid {
+      justify-content: space-between;
+
+      .AboutLandingImg {
+        width: 30vw;
+        height: 30vh;
+      }
+      .AboutLandingText {
+        width: 55vw;
+        // height: 80%;
+        height: 30vh;
+      }
+    }
+
+
+  } // ABOUT LANDING //
+}
+
+// PHONES --> up to 500px
+@media screen and (max-width: 500px) {
+  .AboutLanding {
+    .AboutLanding-Top {
+
+    }
+
+    .AboutLanding-Mid {
+      flex-direction: column-reverse;
+      margin-top: 2vh;
+
+      .AboutLandingImg {
+        margin-top: 2vh;
+        width: 60%;
+      }
+      .AboutLandingText {
+        width: 95%;
+      }
+    }
+
+
+  } // ABOUT LANDING //
+}
