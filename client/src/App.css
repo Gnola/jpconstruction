@@ -12,47 +12,108 @@
 }
 .Header #Logo {
   width: 50%;
-  margin-top: 15vh;
+  position: relative;
+  top: 15vh;
+  opacity: 0;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.Nav {
+.Nav2, .Nav {
   background: white;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7vh;
   border-top: 1px solid black;
   border-bottom: 2px solid black;
   border-radius: 2px;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
-  transition: 0.5s ease-in;
 }
-.Nav .nav-header {
-  color: white;
-  opacity: 1;
-  text-shadow: 3px 3px black;
-  transition: 1s ease-in;
-  cursor: pointer;
-  height: 100%;
-  width: 14vw;
-}
-.Nav a {
+.Nav2 a, .Nav a {
   color: black;
-  cursor: pointer;
   text-decoration: none;
+  cursor: pointer;
+  position: relative;
 }
-.Nav a:hover {
+.Nav2 a:hover, .Nav a:hover {
   color: yellow;
   text-shadow: 0.1rem 0.1rem 0.2rem black;
 }
-.Nav .a-clicked {
+.Nav2 .a-clicked, .Nav .a-clicked {
   font-size: 1.3rem;
   font-weight: bold;
   color: yellow;
   text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.Nav2 .nav-header, .Nav .nav-header {
+  width: 14vw;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.Nav {
+  justify-content: space-between;
+}
+.Nav .nav-header {
+  left: -20vw;
+}
+.Nav a {
+  opacity: 0;
+  left: -15vw;
+  animation: navOriginal;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes navOriginal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Nav2 {
+  justify-content: space-around;
+}
+.Nav2 .nav-header {
+  animation: navSecondary;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.Nav2 a {
+  animation: navSecondaryLinks;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes navSecondary {
+  0% {
+    left: -20vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+@keyframes navSecondaryLinks {
+  0% {
+    left: -15vw;
+  }
+  100% {
+    left: 0vw;
+  }
 }
 
 footer {

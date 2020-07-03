@@ -1,0 +1,94 @@
+// NAV //
+%Nav {
+  background: white;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index: 1;
+
+  a { // Links
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      color: yellow;
+      text-shadow: .1rem .1rem .2rem black;
+    }
+
+  }
+  .a-clicked { // Clicked Link
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: .1rem .1rem .2rem black;
+  }
+
+  .nav-header { // Mini Logo
+    width: 14vw;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+// NAV //
+.Nav {
+  @extend %Nav;
+  justify-content: space-between;
+
+  .nav-header { // Mini Logo
+    left:-20vw;
+  }
+
+  a {
+    opacity: 0;
+    left:-15vw;
+    animation: navOriginal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes navOriginal {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+
+} // NAV //
+
+// NAV2 //
+.Nav2 {
+  @extend %Nav;
+  justify-content: space-around;
+
+  .nav-header { // Mini Logo
+    animation: navSecondary;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  a {
+    // left: 0;
+    animation: navSecondaryLinks;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes navSecondary {
+    0% {left:-20vw;}
+    100%{left: 0vw;}
+  }
+  @keyframes navSecondaryLinks {
+    0% {left:-15vw;}
+    100%{left: 0vw;}
+  }
+
+} // NAV2 //

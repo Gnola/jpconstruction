@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
+import './App.css';
 
 // COMPONENTS //
-import Header from './components/Header.js';
-import Nav from './components/Nav.js';
-  import Home from './components/Home/Home.js';
-  import Services from './components/Services/Services.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header/Header.js';
+import Nav from './components/Nav/Nav.js';
+import Home from './components/Home/Home.js';
+import Footer from './components/Footer/Footer.js';
+// import TempLanding from './components/TempLanding/TempLanding.js';
 
-
-// TEMP COMPONENTS //
-// import TempLanding from './components/TempLanding.js';
-
-// STYLING //
-import './App.css';
 
 // APP --> HOME
 class App extends Component {
 
   state = {
     view:'home',
-    color:'',
-    display:'none',
+    display:'Nav',
   }
 
   // Change Page View
@@ -47,22 +41,16 @@ class App extends Component {
 
   // LISTEN TO SCROLL
   listenScrollEvent = e => {
-    if (window.scrollY > 400) { // WHEN SCROLLING
-      this.setState({
-        // color: 'black', // NAV
-        display:'inline', // NAV-HEADER
-        sticky:'sticky' // NAV
-      })
+    if (window.scrollY > 400) {
+      this.setState({ display:'Nav2'})
     } else {
-      this.setState({ // ON LOAD
-        // color: 'snow', // NAV
-        display:'none' // NAV-HEADER
-      })
+      this.setState({ display:'Nav'})
     }
   }
 
   // COMPONENT DID MOUNT
   componentDidMount() {
+  this.setState({ display:'Nav'})
     window.addEventListener('scroll', this.listenScrollEvent) // ON SCROLL
   }
 
