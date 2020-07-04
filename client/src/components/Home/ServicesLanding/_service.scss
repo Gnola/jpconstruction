@@ -1,7 +1,8 @@
 // SERVICE LANDING //
 .ServicesLanding {
   width: 100%;
-  height: 75%;
+  // height: 75%;
+  background: white;
 
   // Proudly serving...
   .ServiceText {
@@ -9,21 +10,24 @@
     color: inherit;
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.3rem;
       font-family: 'Playfair Display';
-      // margin-bottom: 0;
+      margin-bottom: 2.5vh;
     }
     p {
+      width: 87.5%;
+      font-size: 1.2rem;
+      line-height: 4vh;
       text-align: center;
-      width: 98%;
-      margin: 0 auto 2.5vh auto;
+      font-style: italic;
+      margin: 0 auto 3vh auto;
     }
   }
 
   // SLIDER //
   .Slider {
     width: 100%;
-    max-height: 70vh;
+    // max-height: 70vh;
     position: relative;
     // box-sizing: border-box;
     margin: 0;
@@ -37,7 +41,7 @@
       max-height: 100%;
       transition: 0.5s;
       overflow: hidden;
-      height: 68vh;
+      height: 75vh;
       background-size: cover;
       background-position: center;
       display: flex;
@@ -107,8 +111,14 @@
   .ServicesContainer {
 
     .ServicesText { // Services PageTitle and Text
+      h1 {
+        margin: 2vh auto;
+      }
       p {
+        font-size: 1.1rem;
         text-align: center;
+        width: 95%;
+        margin: 2.5vh auto 4vh;
       }
     }
 
@@ -117,12 +127,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: white;
-      margin-top: 1vh;
-      margin-bottom: 1vh;
+      padding-bottom: 2vh;
+      padding-top: 2vh;
 
       .ServicesTitleandList { // Title, List and Link CONTAINER
-        width: 30%;
+        width: 35%;
         text-align:center;
         box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
         display: flex;
@@ -143,10 +152,10 @@
         #inquire { // Link
           color: yellow;
           text-align: center;
-          font-size: .8rem;
+          font-size: .9rem;
           text-shadow: 1px 1px 3px black;
           cursor: pointer;
-          margin-bottom: 1vh;
+          margin-bottom: 2vh;
         }
       } // Title, List and Link
 
@@ -213,18 +222,39 @@
   }
 }
 
-// PHONES //
+// PHONE (L) //
+@media screen and (max-width: 900px) {
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+// PHONE (P) //
 @media screen and (max-width: 500px) {
   .ServicesLanding {
+    .ServiceText {
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        line-height: 3vh;
+        width: 90%;
+      }
+    }
     .Slider {
       .SliderImg {
         text-align: center;
+        height: 60vh;
 
         .SliderText {
           background: rgba(0, 0, 0, .3);
           width: 100%;
           margin: 0;
           padding: 1vw;
+          padding-bottom: 2vw;
 
           .SliderTitle {
             font-size: 3.2rem;
@@ -235,13 +265,41 @@
         }
       }
     } // Slider
+    .ServicesContainer {
+      .ServiceLeft, .ServiceRight {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin: 0;
 
+        .ServicesImage {
+          display: flex;
+          width: 100%;
+          // width: auto;
+          justify-content: center;
+
+          img {
+            width: 95%;
+            height: 35vh;
+            // margin: auto;
+          }
+        }
+        .ServicesTitleandList {
+          width: 100%;
+          box-shadow: none;
+          text-align: center;
+
+          h1 {
+            margin: 0;
+          }
+
+          ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
-
-
-
-
-
-
-
 }

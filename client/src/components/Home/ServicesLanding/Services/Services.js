@@ -50,7 +50,7 @@ const Services = (props) => {
     <div id="ServicesLanding" className='ServicesContainer'>
       <div className='ServicesText'>
         <h1 className='LandingText'>Services</h1>
-        <p>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations</p>
+        <p>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations.</p>
       </div>
       <Service title={newConstruction.title} array={newConstruction.services} img={newConstruction.img} cssClass={newConstruction.cssClass} toggleView={props.toggleView}/>
       <Service title={remodeling.title} array={remodeling.services} img={remodeling.img} cssClass={remodeling.cssClass} toggleView={props.toggleView}/>

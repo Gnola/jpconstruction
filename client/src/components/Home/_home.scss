@@ -7,9 +7,18 @@
 
   .LandingText { // Services / About / Contact
     font-size: 3rem;
-    color: yellow;
-    text-shadow: 2px 2px 3px black;
+    // color: yellow;
+    // text-shadow: 2px 2px 3px black;
     text-align: center;
   }
 
 } // HOME //
+
+
+@media screen and (max-width: 500px) {
+  .Home {
+    .LandingText {
+      font-size: 2.5rem;
+    }
+  }
+}

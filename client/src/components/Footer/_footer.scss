@@ -77,3 +77,38 @@ footer {
     }
   } // RIGHT //
 } // FOOTER //
+
+
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+
+    h4 { // Contact Us / Connect with Us
+      display: none;
+    }
+
+    .FooterContact { // LEFT
+      order: 1;
+      align-self: flex-start;
+      width: 40%;
+      margin-top: -3.5vh;
+      margin-left: 10vw;
+      font-size: 1.1rem;
+
+    } // LEFT //
+
+    .FooterInfo { // MIDDLE
+      margin: 0 auto 1vh;
+
+    } // MIDDLE //
+
+    .FooterConnect { // RIGHT
+      order: 2;
+      width: 25%;
+      margin-right: 8vw;
+      margin-bottom: -1.5vh;
+      align-self: flex-end;
+    } // RIGHT //
+  } // FOOTER //
+}
