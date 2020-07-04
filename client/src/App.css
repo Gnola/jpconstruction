@@ -11,9 +11,10 @@
   background-repeat: no-repeat;
 }
 .Header #Logo {
-  width: 50%;
+  margin: auto;
+  width: 60%;
   position: relative;
-  top: 15vh;
+  bottom: 5vh;
   opacity: 0;
   animation: heading;
   animation-duration: 3s;
@@ -35,19 +36,26 @@
     height: 55vw;
   }
   .Header #Logo {
-    top: 10vh;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Header {
+    height: 60vh;
+  }
+  .Header #Logo {
     width: 85%;
   }
 }
 @media screen and (max-width: 500px) {
   .Header {
+    height: 50vw;
     background-size: cover;
     background-position: center;
-    height: 60vw;
   }
   .Header #Logo {
-    top: 8vh;
-    width: 90%;
+    width: 95%;
+    bottom: 2.5vh;
   }
 }
 .Nav2, .Nav {
@@ -65,22 +73,22 @@
 }
 .Nav2 a, .Nav a {
   color: black;
+  font-size: 1.2rem;
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  font-weight: bold;
 }
 .Nav2 a:hover, .Nav a:hover {
   color: yellow;
-  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 .Nav2 .a-clicked, .Nav .a-clicked {
-  font-size: 1.3rem;
-  font-weight: bold;
   color: yellow;
-  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 .Nav2 .nav-header, .Nav .nav-header {
-  width: 14vw;
+  width: 15%;
   height: 100%;
   cursor: pointer;
   position: relative;
@@ -112,6 +120,7 @@
   justify-content: space-around;
 }
 .Nav2 .nav-header {
+  width: 15%;
   animation: navSecondary;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -134,38 +143,88 @@
     left: -15vw;
   }
   100% {
-    left: 0vw;
+    left: -3vw;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .Nav {
-    height: 5vh;
-    font-size: 1.5rem;
+    height: 7vh;
   }
-  .Nav .a-clicked {
-    font-size: 1.6rem;
+  .Nav a, .Nav .a-clicked {
+    font-size: 1.3rem;
   }
 
   .Nav2 {
-    height: 6vh;
-    font-size: 1.5rem;
+    height: 8vh;
   }
-  .Nav2 .a-clicked {
-    font-size: 1.6rem;
+  .Nav2 a, .Nav2 .a-clicked {
+    font-size: 1.3rem;
+  }
+  .Nav2 .nav-header {
+    width: 15%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Nav {
+    height: 8vh;
+  }
+  .Nav a, .Nav .a-clicked {
+    font-size: 1rem;
+  }
+
+  .Nav2 {
+    height: 8vh;
+  }
+  .Nav2 .nav-header {
+    width: 15%;
+    height: 100%;
+  }
+  .Nav2 a, .Nav2 .a-clicked {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Nav {
+    height: 5vh;
+  }
+  .Nav a, .Nav .a-clicked {
+    font-size: 1rem;
+  }
+
+  .Nav2 {
+    height: 5vh;
   }
   .Nav2 .nav-header {
     width: 20%;
-    height: 90%;
-    left: 20vw;
+    height: 100%;
+  }
+  .Nav2 a, .Nav2 .a-clicked {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 500px) {
   .Nav {
     height: 5vh;
-    font-size: 0.8rem;
+  }
+  .Nav a {
+    font-size: 0.9rem;
   }
   .Nav .a-clicked {
+    font-size: 0.9rem;
+    margin-bottom: 0.5vh;
+  }
+
+  .Nav2 {
+    height: 5vh;
+    font-size: 0.8rem;
+  }
+  .Nav2 .nav-header {
+    width: 20%;
+    height: 65%;
+  }
+  .Nav2 .a-clicked {
     font-size: 0.9rem;
     margin-bottom: 0.5vh;
   }
@@ -258,11 +317,19 @@ footer .FooterConnect #IG {
   text-align: center;
   color: inherit;
 }
+.ServicesLanding .ServiceText h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display";
+}
+.ServicesLanding .ServiceText p {
+  text-align: center;
+  width: 98%;
+  margin: 0 auto 2.5vh auto;
+}
 .ServicesLanding .Slider {
   width: 100%;
-  max-height: 65vh;
+  max-height: 70vh;
   position: relative;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -274,7 +341,7 @@ footer .FooterConnect #IG {
   max-height: 100%;
   transition: 0.5s;
   overflow: hidden;
-  height: 65vh;
+  height: 68vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -640,28 +707,31 @@ footer .FooterConnect #IG {
 
 html {
   width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-family: "Roboto Slab", serif;
-  background-color: white;
-  overflow-x: hidden;
   height: 100%;
 }
 
-.App {
-  background: whitesmoke;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: "Open Sans";
 }
 
 @media screen and (max-width: 1100px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .App {
     background: green;
   }
 }
 @media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .App {
     background: blue;
   }
