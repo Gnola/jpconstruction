@@ -22,7 +22,6 @@ class App extends Component {
     switch (page) {
       case "home":
         this.setState({ view: "home" });
-        console.log("Hey");
         break;
       case "services":
         this.setState({ view: "services" });
@@ -45,6 +44,15 @@ class App extends Component {
       this.setState({ display:'Nav2'})
     } else {
       this.setState({ display:'Nav'})
+    }
+    if (window.scrollY < 1400) {
+      this.setState({ view: "home" });
+    } else if (window.scrollY > 1400 && window.scrollY < 4225) {
+      this.setState({ view: "services" });
+    } else if (window.scrollY > 4225 && window.scrollY < 5000) {
+      this.setState({ view: "contact" });
+    }else if (window.scrollY > 5000) {
+      this.setState({ view: "about" });
     }
   }
 

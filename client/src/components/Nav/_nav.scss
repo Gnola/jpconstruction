@@ -1,4 +1,3 @@
-// NAV //
 %Nav {
   background: white;
   border-top: 1px solid black;
@@ -15,21 +14,39 @@
   a { // Links
     color: black;
     font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    font-weight: bold;
+    // border-bottom: 3px solid rgba(255,255,0, 0);
 
-    &:hover {
-      color: yellow;
-      text-shadow: .1rem .1rem .1rem black;
-
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: all 0.4s ease-in-out;
+      // transition-duration: 0.5s;
+      opacity: 0;
+      background-color: rgba(255,255,0);
     }
 
-  }
+    &:hover {
+
+      &:before {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  } // Links
+
+
   .a-clicked { // Clicked Link
-    color: yellow;
-    text-shadow: .1rem .1rem .1rem black;
+    font-weight: 600;
+    border-bottom: 4px solid rgba(255,255,0);
   }
 
   .nav-header { // Mini Logo
@@ -38,7 +55,8 @@
     cursor: pointer;
     position: relative;
   }
-}
+
+} // NAV
 
 // NAV //
 .Nav {

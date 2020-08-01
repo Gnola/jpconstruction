@@ -74,18 +74,30 @@
 .Nav2 a, .Nav a {
   color: black;
   font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
   text-decoration: none;
   cursor: pointer;
   position: relative;
-  font-weight: bold;
 }
-.Nav2 a:hover, .Nav a:hover {
-  color: yellow;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+.Nav2 a:before, .Nav a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  background-color: yellow;
+}
+.Nav2 a:hover:before, .Nav a:hover:before {
+  width: 100%;
+  opacity: 1;
 }
 .Nav2 .a-clicked, .Nav .a-clicked {
-  color: yellow;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  font-weight: 600;
+  border-bottom: 4px solid yellow;
 }
 .Nav2 .nav-header, .Nav .nav-header {
   width: 15%;
@@ -811,4 +823,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */
