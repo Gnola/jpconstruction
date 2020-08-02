@@ -3,7 +3,7 @@ import Form from './Form'
 
 const ContactLanding = (props) => {
   return (
-    <div id='ContactLanding' className='ContactLanding'>
+    <div id='ContactLanding'>
       <div className='ContactLanding-Top'>
         <h1 className='LandingText'>Contact Us!</h1>
         <h2>Monday - Friday | 9am - 5pm</h2>

@@ -15,39 +15,39 @@ import School from './servicesimgs/School.jpg';
 // SERVICES //
 let newConstruction = {
   title:'New Construction',
-  services: ['Drywall Installation & Texturing', 'Window Installation', 'Countertop Installation', 'Cedar & Wood Siding Installation', 'Insulation Installation', 'Composition & Metal Roofing', 'Trim Work', 'Water Heater Installation', 'and MORE!'],
+  services: ['Drywall Installation & Texturing', 'Window Installation', 'Countertop Installation', 'Cedar & Wood Siding Installation', 'Insulation Installation', 'Composition & Metal Roofing', 'Trim Work', 'Water Heater Installation'],
   img:Kitchen,
   cssClass:'ServiceLeft'
 }
 let remodeling = {
   title:'Remodeling',
-  services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Outdoor Kitchen Construction', 'Porch Design and Construction', 'and MORE!'],
+  services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Outdoor Kitchen Construction', 'Porch Design and Construction'],
   img:Bathroom2,
   cssClass:'ServiceRight'
 }
 let renovations = {
   title:'Renovations',
-  services: ['Tile Installation', 'Shower Installation', 'Carport Installation', 'Attic Restoration & Conversion', 'Exterior Door Installation', 'Finish Carpentry', 'Laminate, Linoleum & Wood Flooring Installation', 'Baseboard Installation', 'and MORE!'],
+  services: ['Tile Installation', 'Shower Installation', 'Carport Installation', 'Attic Restoration & Conversion', 'Exterior Door Installation', 'Finish Carpentry', 'Laminate, Linoleum & Wood Flooring Installation', 'Baseboard Installation'],
   img:Bar,
   cssClass:'ServiceLeft'
 }
 let restorations = {
   title:'Restorations',
-  services: ['Foundation Construction & Repair', 'Basement Remodeling & Waterproofing', 'Deck Building & Repair', 'Soffit Installation & Repair', 'and MORE!'],
+  services: ['Foundation Construction & Repair', 'Basement Remodeling & Waterproofing', 'Deck Building & Repair', 'Soffit Installation & Repair'],
   img:Stone,
   cssClass:'ServiceRight'
 }
 let additionalServices = {
   title:'Additional Services',
-  services: ['Fireplace Installation', 'Fencing', 'Barn Design & Construction', 'Demolition', 'Storm Shelter', 'Earthquake Retrofitting', 'and MORE!'],
+  services: ['Fireplace Installation', 'Fencing', 'Barn Design & Construction', 'Demolition', 'Storm Shelter', 'Earthquake Retrofitting'],
   img:School,
   cssClass:'ServiceLeft'
 }
 
 // HOME
-const Services = (props) => {
+const ServicesContainer = (props) => {
   return (
-    <div id="ServicesLanding" className='ServicesContainer'>
+    <div id="ServicesContainer" className='ServicesContainer'>
       <div className='ServicesText'>
         <h1 className='LandingText'>Services</h1>
         <p>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations.</p>
@@ -61,4 +61,4 @@ const Services = (props) => {
   );
 }
 
-export default Services;
+export default ServicesContainer;

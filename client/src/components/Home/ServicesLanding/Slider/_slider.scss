@@ -1,0 +1,122 @@
+#Slider {
+  width: 100%;
+  // max-height: 70vh;
+  height: 94vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+
+  .SliderImg { // SLIDER IMAGES
+    position: relative;
+    min-width: 100%;
+    max-height: 100%;
+    transition: 0.8s;
+    overflow: hidden;
+    height: 94vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+
+    .SliderText { // SLIDER TEXT CONTAINER
+      color:white;
+      align-self: center;
+      width: 35%;
+      margin-left: 8vw;
+
+      .SliderTitle { // SLIDER TITLES
+        font-size: 5rem;
+        text-shadow: 3px 3px black;
+        margin: 0;
+        line-height: 9vh;
+      }
+
+      .SliderDescription { // SLIDER DESCRIPTIONS
+        font-size: 1.6rem;
+        font-style: italic;
+        text-shadow: 1px 1px black;
+        margin: auto;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+      }
+
+      #LearnMore { // SLIDER LINK
+        color: yellow;
+        text-shadow: 1px 1px 3px black;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding-left: .5vw;
+      }
+    } // SLIDER TEXT //
+  } // SLIDER IMG //
+} // SLIDER //
+
+
+// // SLIDER BUTTONS //
+// %btn-styles {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   width: 8%;
+//   height: 100%;
+//   background: none;
+//   border: none;
+//   outline: none;
+//   color: white;
+//   transition: .5s;
+//     &:hover {
+//       background: rgba(5, 5, 5, 0.47);
+//       cursor: pointer;
+//     }
+// }
+// #prev {
+//   left: 0;
+//   @extend %btn-styles;
+// }
+// #next {
+//   right: 0;
+//   @extend %btn-styles;
+// } // SLIDER BUTTONS //
+
+
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
+  #Slider {
+    .SliderImg .SliderText  {
+      width: 40%;
+      .SliderTitle {
+        font-size: 4rem;
+      }
+      .SliderDescription {
+        font-size: 1.3rem;
+      }
+      #LearnMore {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  #Slider {
+    height: 70vh;
+    .SliderImg .SliderText  {
+      width: 80%;
+      .SliderTitle {
+        font-size: 3rem;
+      }
+      .SliderDescription {
+        font-size: 1.2rem;
+      }
+      #LearnMore {
+        font-size: .9rem;
+      }
+    }
+  }
+}

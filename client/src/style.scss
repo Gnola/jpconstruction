@@ -3,10 +3,15 @@
 './components/TempLanding/tempLanding',
 './components/Header/header',
 './components/Nav/nav',
+'./components/Home/ServicesLanding/servicesLanding',
+'./components/Home/ServicesLanding/Slider/slider',
+'./components/Home/ServicesLanding/Services/servicesContainer',
+'./components/Home/ServicesLanding/Services/service',
 './components/Footer/footer',
 './components/Home/home',
 './components/Home/ServicesLanding/service',
 './components/Home/ContactLanding/contact',
+'./components/Home/ContactLanding/form',
 './components/Home/AboutLanding/about'
 ;
 
@@ -18,42 +23,46 @@
 html {
   width: 100%;
   height: 100%;
-  // overflow-x: hidden;
+  // background: #f7f7f7;
 }
 
 body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: white;
+  background: #f7f7f7;
   // font-family: 'Roboto Slab', serif;
   font-family: 'Open Sans';
-  // overflow-x: hidden;
 }
 
-.App {
-  // background: yellow;
-}
-
-
-// TABLETS --> up to 1100px
-@media screen and (max-width: 1100px) {
-  html {
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  .App {
     overflow-x: hidden;
   }
-  .App {
-    background: green;
-  }
-
 }
 
-// PHONES --> up to 500px
-@media screen and (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
-  .App {
-    background: blue;
-  }
 
-}
+
+
+// // TABLETS --> up to 1100px
+// @media screen and (max-width: 1100px) {
+//   html {
+//     overflow-x: hidden;
+//   }
+//   .App {
+//     background: green;
+//   }
+//
+// }
+//
+// // PHONES --> up to 500px
+// @media screen and (max-width: 500px) {
+//   body {
+//     overflow-x: hidden;
+//   }
+//   .App {
+//     background: blue;
+//   }
+//
+// }

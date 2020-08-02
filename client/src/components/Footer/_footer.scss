@@ -78,9 +78,16 @@ footer {
   } // RIGHT //
 } // FOOTER //
 
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
+
+}
 
 
-@media screen and (max-width: 500px) {
+
+
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
   footer {
     flex-direction: column-reverse;
 
@@ -91,24 +98,29 @@ footer {
     .FooterContact { // LEFT
       order: 1;
       align-self: flex-start;
-      width: 40%;
-      margin-top: -3.5vh;
-      margin-left: 10vw;
+      width: 45%;
+      margin-top: -3vh;
+      margin-left: 5vw;
       font-size: 1.1rem;
-
     } // LEFT //
 
     .FooterInfo { // MIDDLE
       margin: 0 auto 1vh;
+      width: 100%;
+      margin: auto;
 
+      P {
+        font-size: .9rem;
+      }
     } // MIDDLE //
 
     .FooterConnect { // RIGHT
       order: 2;
       width: 25%;
-      margin-right: 8vw;
-      margin-bottom: -1.5vh;
+      margin-right: 5vw;
+      margin-bottom: -2.5vh;
       align-self: flex-end;
+
     } // RIGHT //
   } // FOOTER //
 }

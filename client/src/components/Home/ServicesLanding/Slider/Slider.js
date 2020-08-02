@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-// import React, {useState, useEffect} from 'react';
-// import Images from './Images.js';
 
 // NEW CONSTRUCTION //
 // import Kitchen1 from './sliderimgs/Kitchen1.jpg'
@@ -13,8 +11,6 @@ import Fireplace from './sliderimgs/Fireplace.jpg'
 
 // ADDITIONAL SERVICES //
 import Barn from './sliderimgs/Barn.jpg'
-
-
 
 
 const Slider = (props) => {
@@ -39,17 +35,17 @@ const Slider = (props) => {
 
   let [x, setX] = useState(0)
 
-  // PREVIOUS
-  const prev = () => {
-    x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100)
-    // console.log(x);
-  }
-
-  // NEXT
-  const next = () => {
-    x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
-    // console.log(x);
-  }
+  // // PREVIOUS
+  // const prev = () => {
+  //   x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100)
+  //   // console.log(x);
+  // }
+  //
+  // // NEXT
+  // const next = () => {
+  //   x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
+  //   // console.log(x);
+  // }
 
   // Dynamic Slider
   const go = () => {
@@ -58,10 +54,11 @@ const Slider = (props) => {
       // console.log(x);
     }, 5000);
   }
+
   go()
 
   return (
-    <div className='Slider'>
+    <div id='Slider'>
         {
           sliderArr.map((src, index) => {
             return (
@@ -83,22 +80,3 @@ const Slider = (props) => {
 }
 
 export default Slider;
-// let sliderArr = [
-//   <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>,
-//   <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>,
-//   <Images src='https://images.unsplash.com/photo-1500076656116-558758c991c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'/>
-// ]
-// <div className='Slider'>
-//     {
-//       sliderArr.map((image, index) => {
-//         return (
-//           <div key={index} className='SliderImg' style={{transform:`translateX(${x}%)`}}>
-//             {image}
-//           </div>
-//         )
-//       })
-//     }
-//     <button id='prev' onClick={prev}><i style={{color:'rgba(255,255,255,.5)'}} className='fas fa-chevron-left fa-3x'></i></button>
-//   <button id='next' onClick={next}><i style={{color:'rgba(255,255,255,.5)'}} className='fas fa-chevron-right fa-3x'></i></button>
-// </div>
-//

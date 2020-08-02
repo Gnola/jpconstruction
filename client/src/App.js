@@ -14,7 +14,7 @@ class App extends Component {
 
   state = {
     view:'home',
-    display:'Nav',
+    navDisplay:'Nav',
   }
 
   // Change Page View
@@ -41,10 +41,11 @@ class App extends Component {
   // LISTEN TO SCROLL
   listenScrollEvent = e => {
     if (window.scrollY > 350) {
-      this.setState({ display:'Nav2'})
+      this.setState({ navDisplay:'Nav2'})
     } else {
-      this.setState({ display:'Nav'})
+      this.setState({ navDisplay:'Nav'})
     }
+
     if (window.scrollY < 1400) {
       this.setState({ view: "home" });
     } else if (window.scrollY > 1400 && window.scrollY < 4225) {
@@ -58,7 +59,7 @@ class App extends Component {
 
   // COMPONENT DID MOUNT
   componentDidMount() {
-  this.setState({ display:'Nav'})
+    this.setState({ navDisplay:'Nav'})
     window.addEventListener('scroll', this.listenScrollEvent) // ON SCROLL
   }
 
@@ -66,10 +67,12 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Header changePage={this.changePage} />
+        <Header
+          changePage={this.changePage}
+        />
         <Nav
           view={this.state.view}
-          display={this.state.display}
+          navDisplay={this.state.navDisplay}
           color={this.state.color}
           changePage={this.changePage}
         />

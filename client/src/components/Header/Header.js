@@ -7,8 +7,9 @@ import Logo from './headerimgs/Logo4.png';
 // HEADER
 const Header = (props) => {
   return (
-    <div id='Header' className='Header'>
+    <div id='Header'>
       <img id='Logo' alt='Logo' src={Logo} onClick={()=>props.changePage('home')}/>
+      <h1>Proudly serving the Napa Valley</h1>
     </div>
   )
 }

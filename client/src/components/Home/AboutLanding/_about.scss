@@ -26,66 +26,155 @@
 
     .AboutLandingImg {
       width: 18vw;
-      height: 35vh;
+      height: 40vh;
     }
     .AboutLandingText { // About paragraph
-      border: 1px solid black;
-      width: 40%;
-      // height: 90%;
-      text-align: center;
+      width: 50%;
+
+      h1 {
+        text-align: center;
+        margin-top: 1vh;
+      }
+
+      h3 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 2.5vh;
+        text-align: center;
+        width: 100%;
+        // margin: auto;
+      }
     }
   }
-
-
 } // ABOUT LANDING //
 
 
-
-// TABLETS --> up to 1100px
-@media screen and (max-width: 1100px) {
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
   .AboutLanding {
+    height: 65vh;
+
     .AboutLanding-Top {
 
+
+      h1 {
+
+      }
     }
 
     .AboutLanding-Mid {
-      justify-content: space-between;
+
 
       .AboutLandingImg {
-        width: 30vw;
-        height: 30vh;
+        height: 45vh;
+        width: 20vw;
       }
-      .AboutLandingText {
-        width: 55vw;
-        // height: 80%;
-        height: 30vh;
+      .AboutLandingText { // About paragraph
+
+        h1 {
+          margin-bottom: 1vh;
+        }
+
+        p {
+          line-height: 3.5vh;
+
+        }
       }
     }
-
-
   } // ABOUT LANDING //
 }
 
-// PHONES --> up to 500px
-@media screen and (max-width: 500px) {
-  .AboutLanding {
-    .AboutLanding-Top {
 
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  .AboutLanding {
+    height: 115vh;
+    .AboutLanding-Top {
+      h1 {
+
+      }
     }
 
     .AboutLanding-Mid {
-      flex-direction: column-reverse;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       margin-top: 2vh;
 
       .AboutLandingImg {
-        margin-top: 2vh;
-        width: 60%;
+        width: 90%;
+        margin-bottom: 1vh;
       }
-      .AboutLandingText {
-        width: 95%;
+      .AboutLandingText { // About paragraph
+        width: 100%;
+        h1 {
+
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          width: 100%;
+        }
+
+        p {
+          line-height: normal;
+        }
       }
     }
-
-
   } // ABOUT LANDING //
 }
+
+
+// // TABLETS --> up to 1100px
+// @media screen and (max-width: 1100px) {
+//   .AboutLanding {
+//     .AboutLanding-Top {
+//
+//     }
+//
+//     .AboutLanding-Mid {
+//       justify-content: space-between;
+//
+//       .AboutLandingImg {
+//         width: 30vw;
+//         height: 30vh;
+//       }
+//       .AboutLandingText {
+//         width: 55vw;
+//         // height: 80%;
+//         height: 30vh;
+//       }
+//     }
+//
+//
+//   } // ABOUT LANDING //
+// }
+//
+// // PHONES --> up to 500px
+// @media screen and (max-width: 500px) {
+//   .AboutLanding {
+//     .AboutLanding-Top {
+//
+//     }
+//
+//     .AboutLanding-Mid {
+//       flex-direction: column-reverse;
+//       margin-top: 2vh;
+//
+//       .AboutLandingImg {
+//         margin-top: 2vh;
+//         width: 60%;
+//       }
+//       .AboutLandingText {
+//         width: 95%;
+//       }
+//     }
+//
+//
+//   } // ABOUT LANDING //
+// }

@@ -1,23 +1,50 @@
-.Header {
+#Header {
   width: 100%;
-  height: 55vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-image: url("./components/Header/headerimgs/DTNP.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  animation: headingContainer;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
-.Header #Logo {
-  margin: auto;
+@keyframes headingContainer {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 55vh;
+  }
+}
+#Header #Logo {
+  margin: 0 auto;
   width: 60%;
   position: relative;
-  bottom: 5vh;
+  bottom: 6.5vh;
   opacity: 0;
   animation: heading;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+#Header h1 {
+  color: #eee;
+  position: relative;
+  bottom: 6vh;
+  margin-top: 1vh;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  animation: heading;
+  animation-duration: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 @keyframes heading {
@@ -29,33 +56,23 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .Header {
-    background-size: cover;
-    background-position: center;
-    height: 55vw;
-  }
-  .Header #Logo {
-    width: 90%;
+@media screen and (max-width: 1400px) {
+  #Header h1 {
+    font-size: 2.3em;
   }
 }
-@media screen and (max-width: 900px) {
-  .Header {
-    height: 60vh;
-  }
-  .Header #Logo {
-    width: 85%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .Header {
-    height: 50vw;
-    background-size: cover;
+@media screen and (max-width: 400px) {
+  #Header {
     background-position: center;
+    height: 35vh !important;
   }
-  .Header #Logo {
+  #Header #Logo {
     width: 95%;
-    bottom: 2.5vh;
+    bottom: 3vh;
+  }
+  #Header h1 {
+    font-size: 1.35rem;
+    bottom: 3vh;
   }
 }
 .Nav2, .Nav {
@@ -64,7 +81,6 @@
   border-bottom: 2px solid black;
   border-radius: 2px;
   width: 100%;
-  height: 7vh;
   display: flex;
   align-items: center;
   position: sticky;
@@ -73,7 +89,7 @@
 }
 .Nav2 a, .Nav a {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.07em;
   text-decoration: none;
@@ -87,7 +103,7 @@
   width: 0px;
   height: 5px;
   margin: 5px 0 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   opacity: 0;
   background-color: yellow;
 }
@@ -159,86 +175,295 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .Nav {
-    height: 7vh;
+@media screen and (max-width: 1300px) {
+  .Nav, .Nav2 {
+    height: 8vh;
   }
-  .Nav a, .Nav .a-clicked {
+}
+@media screen and (max-width: 400px) {
+  .Nav, .Nav2 {
+    height: 6.5vh;
+  }
+  .Nav a, .Nav2 a {
+    margin-left: 5vw;
+    font-size: 1.2rem;
+  }
+}
+#ServicesLanding {
+  width: 100%;
+  background: #f7f7f7;
+}
+#ServicesLanding .ServiceText {
+  text-align: center;
+}
+#ServicesLanding .ServiceText h2 {
+  margin: 5vh auto 0 auto;
+  font-size: 2.3rem;
+  width: 55%;
+}
+#ServicesLanding .ServiceText .mission-statement {
+  width: 90%;
+  font-size: 1.5rem;
+  line-height: 4vh;
+  margin: 1.5vh auto 5vh;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1300px) {
+  #ServicesLanding .ServiceText h2 {
+    width: 70%;
+    margin: 5vh auto 0 auto;
+  }
+  #ServicesLanding .ServiceText .mission-statement {
+    width: 90%;
+    font-size: 1.3rem;
+    margin: 2vh auto 8.5vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  #ServicesLanding .ServiceText h2 {
+    margin-top: 2vh;
+    font-size: 1.6rem;
+    width: 95%;
+  }
+  #ServicesLanding .ServiceText .mission-statement {
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 2.5vh;
+    margin: 1vh auto 2vh;
+  }
+}
+#Slider {
+  width: 100%;
+  height: 94vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+#Slider .SliderImg {
+  position: relative;
+  min-width: 100%;
+  max-height: 100%;
+  transition: 0.8s;
+  overflow: hidden;
+  height: 94vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+}
+#Slider .SliderImg .SliderText {
+  color: white;
+  align-self: center;
+  width: 35%;
+  margin-left: 8vw;
+}
+#Slider .SliderImg .SliderText .SliderTitle {
+  font-size: 5rem;
+  text-shadow: 3px 3px black;
+  margin: 0;
+  line-height: 9vh;
+}
+#Slider .SliderImg .SliderText .SliderDescription {
+  font-size: 1.6rem;
+  font-style: italic;
+  text-shadow: 1px 1px black;
+  margin: auto;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+#Slider .SliderImg .SliderText #LearnMore {
+  color: yellow;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding-left: 0.5vw;
+}
+
+@media screen and (max-width: 1300px) {
+  #Slider .SliderImg .SliderText {
+    width: 40%;
+  }
+  #Slider .SliderImg .SliderText .SliderTitle {
+    font-size: 4rem;
+  }
+  #Slider .SliderImg .SliderText .SliderDescription {
     font-size: 1.3rem;
   }
-
-  .Nav2 {
-    height: 8vh;
-  }
-  .Nav2 a, .Nav2 .a-clicked {
-    font-size: 1.3rem;
-  }
-  .Nav2 .nav-header {
-    width: 15%;
-    height: 50%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .Nav {
-    height: 8vh;
-  }
-  .Nav a, .Nav .a-clicked {
-    font-size: 1rem;
-  }
-
-  .Nav2 {
-    height: 8vh;
-  }
-  .Nav2 .nav-header {
-    width: 15%;
-    height: 100%;
-  }
-  .Nav2 a, .Nav2 .a-clicked {
+  #Slider .SliderImg .SliderText #LearnMore {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 800px) {
-  .Nav {
-    height: 5vh;
+@media screen and (max-width: 400px) {
+  #Slider {
+    height: 70vh;
   }
-  .Nav a, .Nav .a-clicked {
-    font-size: 1rem;
+  #Slider .SliderImg .SliderText {
+    width: 80%;
   }
-
-  .Nav2 {
-    height: 5vh;
+  #Slider .SliderImg .SliderText .SliderTitle {
+    font-size: 3rem;
   }
-  .Nav2 .nav-header {
-    width: 20%;
-    height: 100%;
+  #Slider .SliderImg .SliderText .SliderDescription {
+    font-size: 1.2rem;
   }
-  .Nav2 a, .Nav2 .a-clicked {
-    font-size: 1rem;
+  #Slider .SliderImg .SliderText #LearnMore {
+    font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 500px) {
-  .Nav {
-    height: 5vh;
+#ServicesContainer {
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid gainsboro;
+}
+#ServicesContainer .ServicesText h1 {
+  margin: 2vh auto;
+}
+#ServicesContainer .ServicesText p {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 95%;
+  margin: 2vh auto 4vh;
+}
+
+@media screen and (max-width: 1300px) {
+  #ServicesContainer .ServicesText p {
+    line-height: 4vh;
   }
-  .Nav a {
-    font-size: 0.9rem;
+}
+@media screen and (max-width: 400px) {
+  #ServicesContainer .ServicesText p {
+    line-height: 3vh;
+    width: 90%;
   }
-  .Nav .a-clicked {
-    font-size: 0.9rem;
-    margin-bottom: 0.5vh;
+}
+.ServiceRight, .ServiceLeft {
+  border-bottom: 2px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
+  border-radius: 6px;
+  margin-bottom: 3vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ServiceRight .ServicesTitleandList, .ServiceLeft .ServicesTitleandList {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.ServiceRight .ServicesTitleandList h1, .ServiceLeft .ServicesTitleandList h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0.3vh auto 0;
+}
+.ServiceRight .ServicesTitleandList ul, .ServiceLeft .ServicesTitleandList ul {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  line-height: 3.5vh;
+  height: 18vh;
+  padding-left: 0;
+  padding-left: 2vw;
+  margin-bottom: 0.5vh;
+}
+.ServiceRight .ServicesTitleandList ul li, .ServiceLeft .ServicesTitleandList ul li {
+  list-style: circle;
+  font-size: 1.2rem;
+  margin-left: 1.5vw;
+  padding-left: 0;
+}
+.ServiceRight .ServicesTitleandList #inquire, .ServiceLeft .ServicesTitleandList #inquire {
+  color: yellow;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  margin-bottom: 2vh;
+}
+.ServiceRight .ServicesImage, .ServiceLeft .ServicesImage {
+  margin: 2vh 1.5vw;
+}
+.ServiceRight .ServicesImage img, .ServiceLeft .ServicesImage img {
+  border-radius: 2px;
+  box-shadow: 4px 3px 10px 5px;
+  width: 38vw;
+  height: 50vh;
+}
+
+.ServiceLeft {
+  flex-direction: row-reverse;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.ServiceRight {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.ServiceRight .ServicesTitleandList ul {
+  padding-left: 4vw;
+}
+
+@media screen and (max-width: 1300px) {
+  .ServiceLeft, .ServiceRight {
+    margin: auto;
+    margin-bottom: 3vh;
   }
 
-  .Nav2 {
-    height: 5vh;
-    font-size: 0.8rem;
+  .ServicesTitleandList ul {
+    width: 63% !important;
+    padding-left: 1.2vw !important;
+    margin-bottom: 1.5vh !important;
   }
-  .Nav2 .nav-header {
-    width: 20%;
-    height: 65%;
+  .ServicesTitleandList ul li {
+    margin-bottom: 0.1vh;
+    margin-left: 2vw !important;
   }
-  .Nav2 .a-clicked {
+
+  .ServicesImage img {
+    width: 40vw !important;
+    margin-left: 2.3vw;
+    margin-right: 1.8vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ServiceLeft, .ServiceRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ServiceLeft .ServicesTitleandList, .ServiceRight .ServicesTitleandList {
+    width: 98% !important;
+    margin: auto;
+  }
+  .ServiceLeft .ServicesTitleandList ul, .ServiceRight .ServicesTitleandList ul {
+    height: auto;
+    width: 90% !important;
+    margin: auto;
+  }
+  .ServiceLeft .ServicesTitleandList ul li, .ServiceRight .ServicesTitleandList ul li {
+    font-size: 1.1rem;
+    margin-left: 4vw !important;
+    line-height: 2.5vh;
+  }
+  .ServiceLeft .ServicesTitleandList #inquire, .ServiceRight .ServicesTitleandList #inquire {
     font-size: 0.9rem;
-    margin-bottom: 0.5vh;
+  }
+  .ServiceLeft .ServicesImage img, .ServiceRight .ServicesImage img {
+    width: 95% !important;
+    height: 35vh;
   }
 }
 footer {
@@ -309,7 +534,7 @@ footer .FooterConnect #IG {
   margin-left: 1vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   footer {
     flex-direction: column-reverse;
   }
@@ -319,19 +544,24 @@ footer .FooterConnect #IG {
   footer .FooterContact {
     order: 1;
     align-self: flex-start;
-    width: 40%;
-    margin-top: -3.5vh;
-    margin-left: 10vw;
+    width: 45%;
+    margin-top: -3vh;
+    margin-left: 5vw;
     font-size: 1.1rem;
   }
   footer .FooterInfo {
     margin: 0 auto 1vh;
+    width: 100%;
+    margin: auto;
+  }
+  footer .FooterInfo P {
+    font-size: 0.9rem;
   }
   footer .FooterConnect {
     order: 2;
     width: 25%;
-    margin-right: 8vw;
-    margin-bottom: -1.5vh;
+    margin-right: 5vw;
+    margin-bottom: -2.5vh;
     align-self: flex-end;
   }
 }
@@ -350,245 +580,125 @@ footer .FooterConnect #IG {
     font-size: 2.5rem;
   }
 }
-.ServicesLanding {
-  width: 100%;
-  background: white;
-}
-.ServicesLanding .ServiceText {
-  text-align: center;
-  color: inherit;
-}
-.ServicesLanding .ServiceText h2 {
-  font-size: 2.3rem;
-  font-family: "Playfair Display";
-  margin-bottom: 2.5vh;
-}
-.ServicesLanding .ServiceText p {
-  width: 87.5%;
-  font-size: 1.2rem;
-  line-height: 4vh;
-  text-align: center;
-  font-style: italic;
-  margin: 0 auto 3vh auto;
-}
-.ServicesLanding .Slider {
-  width: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-}
-.ServicesLanding .Slider .SliderImg {
-  position: relative;
-  min-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  overflow: hidden;
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: row;
-}
-.ServicesLanding .Slider .SliderImg .SliderText {
-  color: white;
-  align-self: center;
-  width: 32%;
-  margin-left: 8vw;
-}
-.ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
-  font-size: 3.9rem;
-  text-shadow: 3px 3px black;
-  margin: 0;
-}
-.ServicesLanding .Slider .SliderImg .SliderText .SliderDescription {
-  font-size: 1.2rem;
-  font-style: italic;
-  text-shadow: 1px 1px black;
-  margin: auto;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
-}
-.ServicesLanding .Slider .SliderImg .SliderText #LearnMore {
-  color: yellow;
-  text-shadow: 1px 1px 3px black;
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: lighter;
-  font-size: 0.8rem;
-}
-.ServicesLanding .ServicesContainer .ServicesText h1 {
-  margin: 2vh auto;
-}
-.ServicesLanding .ServicesContainer .ServicesText p {
-  font-size: 1.1rem;
-  text-align: center;
-  width: 95%;
-  margin: 2.5vh auto 4vh;
-}
-.ServicesLanding .ServicesContainer .ServiceRight, .ServicesLanding .ServicesContainer .ServiceLeft {
-  border-bottom: 2px solid gainsboro;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList {
-  width: 35%;
-  text-align: center;
-  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
-  display: flex;
-  flex-direction: column;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList h1, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList h1 {
-  color: white;
-  font-size: 2.8rem;
-  text-shadow: 3px 3px black;
-  margin: 0.5vh auto;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList ul, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList ul {
-  text-align: left;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList #inquire, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList #inquire {
-  color: yellow;
-  text-align: center;
-  font-size: 0.9rem;
-  text-shadow: 1px 1px 3px black;
-  cursor: pointer;
-  margin-bottom: 2vh;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesImage, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesImage {
-  margin: 2vh 1.5vw;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesImage img, .ServicesLanding .ServicesContainer .ServiceLeft .ServicesImage img {
-  border-radius: 2px;
-  box-shadow: 4px 3px 10px 5px;
-  width: 38vw;
-  height: 50vh;
-}
-.ServicesLanding .ServicesContainer .ServiceLeft {
-  flex-direction: row-reverse;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList {
-  margin: auto;
-}
-.ServicesLanding .ServicesContainer .ServiceRight {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList {
-  margin: auto;
-}
-
-@media screen and (max-width: 1100px) {
-  .ServicesLanding .Slider .SliderImg .SliderText {
-    width: 50%;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
-    font-size: 4.5rem;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText .SliderDescription {
-    font-size: 1.5rem;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText #LearnMore {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .ServicesLanding .ServiceText h2 {
-    font-size: 1.8rem;
-  }
-  .ServicesLanding .ServiceText p {
-    line-height: 3vh;
-    width: 90%;
-  }
-  .ServicesLanding .Slider .SliderImg {
-    text-align: center;
-    height: 60vh;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText {
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    margin: 0;
-    padding: 1vw;
-    padding-bottom: 2vw;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText .SliderTitle {
-    font-size: 3.2rem;
-  }
-  .ServicesLanding .Slider .SliderImg .SliderText .SliderDescription {
-    font-size: 1rem;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft, .ServicesLanding .ServicesContainer .ServiceRight {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft .ServicesImage, .ServicesLanding .ServicesContainer .ServiceRight .ServicesImage {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft .ServicesImage img, .ServicesLanding .ServicesContainer .ServiceRight .ServicesImage img {
-    width: 95%;
-    height: 35vh;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList, .ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList {
-    width: 100%;
-    box-shadow: none;
-    text-align: center;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList h1, .ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList h1 {
-    margin: 0;
-  }
-  .ServicesLanding .ServicesContainer .ServiceLeft .ServicesTitleandList ul, .ServicesLanding .ServicesContainer .ServiceRight .ServicesTitleandList ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-}
-.ContactLanding {
+#ContactLanding {
   width: 90%;
   margin: auto;
   border-bottom: 2px solid gainsboro;
+  height: 93vh;
 }
-.ContactLanding .ContactLanding-Bottom, .ContactLanding .ContactLanding-Mid, .ContactLanding .ContactLanding-Top {
+#ContactLanding .ContactLanding-Top {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ContactLanding .ContactLanding-Top h1 {
-  margin-top: 2vh;
+#ContactLanding .ContactLanding-Top h1 {
+  margin-top: 3vh;
   margin-bottom: 0;
   font-size: 3rem;
 }
-.ContactLanding .ContactLanding-Top h2 {
+#ContactLanding .ContactLanding-Top h2 {
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
-.ContactLanding .ContactLanding-Mid h3 {
+#ContactLanding .ContactLanding-Mid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ContactLanding .ContactLanding-Mid h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 2vh;
+}
+#ContactLanding .ContactLanding-Bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+#ContactLanding .ContactLanding-Bottom h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
   font-style: italic;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm {
+#ContactLanding .ContactLanding-Bottom span, #ContactLanding .ContactLanding-Bottom a {
+  color: black;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+#ContactLanding .ContactLanding-Bottom span:hover, #ContactLanding .ContactLanding-Bottom a:hover {
+  color: yellow;
+  text-shadow: 1px 1px 3px black;
+}
+
+@media screen and (max-width: 1300px) {
+  #ContactLanding {
+    height: 96vh;
+  }
+  #ContactLanding .ContactLanding-Top h1 {
+    font-size: 2.3rem;
+    margin-top: 1.5vh;
+  }
+  #ContactLanding .ContactLanding-Top h2 {
+    font-size: 1.5rem;
+  }
+  #ContactLanding .ContactLanding-Mid h3 {
+    font-size: 1.2rem;
+  }
+  #ContactLanding form {
+    width: 55%;
+    margin-bottom: 0;
+  }
+  #ContactLanding .ContactLanding-Bottom h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
+  }
+  #ContactLanding .ContactLanding-Bottom span {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  #ContactLanding .ContactLanding-Bottom span a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #ContactLanding {
+    height: 88vh;
+  }
+  #ContactLanding .ContactLanding-Top h1 {
+    font-size: 2.3rem;
+    margin-top: 1.5vh;
+  }
+  #ContactLanding .ContactLanding-Top h2 {
+    font-size: 1.3rem;
+  }
+  #ContactLanding .ContactLanding-Mid h3 {
+    font-size: 1.1rem;
+    margin-top: 1vh;
+  }
+  #ContactLanding .ContactLanding-Bottom h3 {
+    margin-bottom: 2vh;
+  }
+}
+.ContactForm {
   border: 2px solid black;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #BABECC;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50vw;
   margin-bottom: 1vh;
+  border-radius: 3px;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo {
+.ContactForm .ContactFormInfo {
   display: flex;
   flex-direction: column;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span {
+.ContactForm .ContactFormInfo span {
   width: 100%;
   display: flex;
   align-items: center;
@@ -596,137 +706,88 @@ footer .FooterConnect #IG {
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span label {
+.ContactForm .ContactFormInfo span label {
   padding-left: 0.3vw;
-  width: 5.5vw;
+  width: 4vw;
+  font-weight: bold;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInfo span input {
-  width: 85%;
+.ContactForm .ContactFormInfo span input {
+  width: 90%;
   height: 3.5vh;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire {
+.ContactForm .ContactFormInquire {
   display: flex;
   flex-direction: column;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span {
+.ContactForm .ContactFormInquire span {
   width: 100%;
   display: flex;
   align-items: center;
   height: 4vh;
   margin-top: 0.5vh;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span label {
+.ContactForm .ContactFormInquire span label {
   padding-left: 0.3vw;
-  width: 5.5vw;
+  font-weight: bold;
+  width: 4vw;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire span input {
-  width: 85%;
+.ContactForm .ContactFormInquire span input {
+  width: 90%;
   height: 3.5vh;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire #inquire-label {
+.ContactForm .ContactFormInquire #inquire-label {
   margin: 1vh auto;
+  font-weight: bold;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormInquire textarea {
+.ContactForm .ContactFormInquire textarea {
   height: 20vh;
   width: 98%;
   margin: auto;
+  padding: 0.5vh 0.5vw;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormButton {
+.ContactForm .ContactFormButton {
   display: flex;
 }
-.ContactLanding .ContactLanding-Mid .ContactForm .ContactFormButton input {
+.ContactForm .ContactFormButton input {
   margin: 1vh auto;
   width: 7vw;
   height: 4vh;
   font-size: 1.1rem;
   cursor: pointer;
 }
-.ContactLanding .ContactLanding-Bottom {
-  margin-bottom: 2vh;
-}
-.ContactLanding .ContactLanding-Bottom h3 {
-  font-style: italic;
-}
-.ContactLanding .ContactLanding-Bottom span, .ContactLanding .ContactLanding-Bottom a {
-  color: black;
-  font-size: 1.2rem;
-}
-.ContactLanding .ContactLanding-Bottom span:hover, .ContactLanding .ContactLanding-Bottom a:hover {
-  color: yellow;
-  text-shadow: 1px 1px 3px black;
-}
 
-@media screen and (max-width: 1100px) {
-  .ContactLanding {
-    font-size: 1.4rem;
+@media screen and (max-width: 1300px) {
+  .ContactForm .ContactFormInfo span label {
+    width: 5vw;
   }
-  .ContactLanding #form {
-    width: 98%;
-  }
-  .ContactLanding #form .ContactFormInfo span label {
-    font-size: 1.2rem;
-    width: 10%;
-  }
-  .ContactLanding #form .ContactFormInquire span {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  .ContactLanding #form .ContactFormInquire span label {
-    width: 10%;
-    margin-bottom: 1vh;
-    font-size: 1.4rem;
-  }
-  .ContactLanding #form .ContactFormInquire span input {
-    width: 100%;
+  .ContactForm .ContactFormInfo span input {
     height: 4vh;
   }
-  .ContactLanding #form .ContactFormInquire #inquire-label {
-    font-size: 1.4rem;
-    margin-top: 1.5vh;
+  .ContactForm .ContactFormInquire span label {
+    width: 5vw;
   }
-  .ContactLanding #form .ContactFormButton input {
-    margin-top: 1.5vh;
-    width: 15vw;
+  .ContactForm .ContactFormInquire span input {
+    height: 4vh;
   }
-  .ContactLanding .ContactLanding-Bottom a {
-    font-size: 1.5rem;
+  .ContactForm .ContactFormButton input {
+    height: 5vh;
+    margin-top: 2vh;
   }
 }
-@media screen and (max-width: 500px) {
-  .ContactLanding {
-    font-size: 1.1rem;
+@media screen and (max-width: 400px) {
+  .ContactForm {
+    width: 100% !important;
   }
-  .ContactLanding #form {
-    width: 98%;
+  .ContactForm .ContactFormInfo span label {
+    width: 18vw;
   }
-  .ContactLanding #form .ContactFormInfo span label {
-    width: 22%;
+  .ContactForm .ContactFormInquire span label {
+    width: 18vw;
   }
-  .ContactLanding #form .ContactFormInquire span {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-  }
-  .ContactLanding #form .ContactFormInquire span label {
-    width: 20%;
-    margin-bottom: 1vh;
-    font-size: 1.1rem;
-  }
-  .ContactLanding #form .ContactFormInquire span input {
-    width: 100%;
-    height: 4vh;
-  }
-  .ContactLanding #form .ContactFormInquire #inquire-label {
-    font-size: 1.1rem;
-    margin-top: 1.5vh;
-  }
-  .ContactLanding #form .ContactFormButton input {
-    margin-top: 1.5vh;
+  .ContactForm .ContactFormButton input {
     width: 20vw;
-  }
-  .ContactLanding .ContactLanding-Bottom span a {
-    font-size: 1.2rem;
+    height: 4vh;
+    margin-top: 2vh;
   }
 }
 .AboutLanding {
@@ -752,38 +813,65 @@ footer .FooterConnect #IG {
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingImg {
   width: 18vw;
-  height: 35vh;
+  height: 40vh;
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingText {
-  border: 1px solid black;
-  width: 40%;
+  width: 50%;
+}
+.AboutLanding .AboutLanding-Mid .AboutLandingText h1 {
+  text-align: center;
+  margin-top: 1vh;
+}
+.AboutLanding .AboutLanding-Mid .AboutLandingText h3 {
+  margin-top: 0;
   text-align: center;
 }
+.AboutLanding .AboutLanding-Mid .AboutLandingText p {
+  font-size: 1.2rem;
+  line-height: 2.5vh;
+  text-align: center;
+  width: 100%;
+}
 
-@media screen and (max-width: 1100px) {
-  .AboutLanding .AboutLanding-Mid {
-    justify-content: space-between;
+@media screen and (max-width: 1300px) {
+  .AboutLanding {
+    height: 65vh;
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingImg {
-    width: 30vw;
-    height: 30vh;
+    height: 45vh;
+    width: 20vw;
   }
-  .AboutLanding .AboutLanding-Mid .AboutLandingText {
-    width: 55vw;
-    height: 30vh;
+  .AboutLanding .AboutLanding-Mid .AboutLandingText h1 {
+    margin-bottom: 1vh;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText p {
+    line-height: 3.5vh;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
+  .AboutLanding {
+    height: 115vh;
+  }
   .AboutLanding .AboutLanding-Mid {
-    flex-direction: column-reverse;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 2vh;
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingImg {
-    margin-top: 2vh;
-    width: 60%;
+    width: 90%;
+    margin-bottom: 1vh;
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingText {
-    width: 95%;
+    width: 100%;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText h3 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText p {
+    line-height: normal;
   }
 }
 * {
@@ -800,26 +888,13 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: white;
+  background: #f7f7f7;
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 1100px) {
-  html {
-    overflow-x: hidden;
-  }
-
+@media screen and (max-width: 400px) {
   .App {
-    background: green;
-  }
-}
-@media screen and (max-width: 500px) {
-  body {
     overflow-x: hidden;
-  }
-
-  .App {
-    background: blue;
   }
 }
 

@@ -1,0 +1,208 @@
+.ContactForm { // FORM
+  border: 2px solid black;
+  box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin-bottom: 1vh;
+  border-radius: 3px;
+
+  .ContactFormInfo { // INFO - Name, Email, Phone
+    display: flex;
+    flex-direction: column;
+
+    span { // Name, email, phone
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 4vh;
+      margin-top: .5vh;
+      margin-bottom: .5vh;
+
+      label {
+        padding-left: .3vw;
+        width: 4vw;
+        font-weight: bold;
+      }
+      input {
+        width: 90%;
+        height: 3.5vh;
+        // border: none;
+        // background: none;
+        // border-bottom: 1px solid rgba(0,0,0,.3);
+      }
+    } // span
+
+  } // INFO //
+
+  .ContactFormInquire { // INQUIRE w/ TextArea
+    display: flex;
+    flex-direction: column;
+
+    span { // Subject
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 4vh;
+      margin-top: .5vh;
+      // margin-bottom: .5vh;
+
+      label {
+        padding-left: .3vw;
+        font-weight: bold;
+        width: 4vw;
+
+      }
+      input {
+        width: 90%;
+        height: 3.5vh;
+        // border: none;
+        // background: none;
+        // border-bottom: 1px solid rgba(0,0,0,.3);
+      }
+    } // span
+
+    #inquire-label {
+      margin: 1vh auto;
+      font-weight: bold;
+    }
+
+    textarea {
+      height: 20vh;
+      width: 98%;
+      margin: auto;
+      padding: .5vh .5vw;
+    }
+  } // INQUIRE //
+
+  .ContactFormButton { // BUTTON
+    display: flex;
+    // justify-content: center;
+    // height: 10%;
+
+    input {
+      margin: 1vh auto;
+      width: 7vw;
+      height: 4vh;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+  } // BUTTON //
+
+} // FORM
+
+
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
+  .ContactForm { // FORM
+
+
+    .ContactFormInfo { // INFO - Name, Email, Phone
+
+      span { // Name, email, phone
+
+        label {
+          width: 5vw;
+
+        }
+        input {
+          height: 4vh;
+
+        }
+      } // span
+
+    } // INFO //
+
+    .ContactFormInquire { // INQUIRE w/ TextArea
+
+
+      span { // Subject
+
+        label {
+          width: 5vw;
+
+        }
+        input {
+
+          height: 4vh;
+        }
+      } // span
+
+      #inquire-label {
+
+      }
+
+      textarea {
+
+      }
+    } // INQUIRE //
+
+    .ContactFormButton { // BUTTON
+
+
+      input {
+        height: 5vh;
+        margin-top: 2vh;
+      }
+
+    } // BUTTON //
+
+  } // FORM
+}
+
+
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  .ContactForm { // FORM
+    width: 100% !important;
+
+    .ContactFormInfo { // INFO - Name, Email, Phone
+
+      span { // Name, email, phone
+
+        label {
+          width: 18vw;
+
+        }
+        input {
+
+        }
+      } // span
+
+    } // INFO //
+
+    .ContactFormInquire { // INQUIRE w/ TextArea
+
+
+      span { // Subject
+
+        label {
+          width: 18vw;
+        }
+        input {
+
+        }
+      } // span
+
+      #inquire-label {
+      }
+
+      textarea {
+
+      }
+    } // INQUIRE //
+
+    .ContactFormButton { // BUTTON
+
+      input {
+        width: 20vw;
+        height: 4vh;
+        margin-top: 2vh;
+      }
+
+    } // BUTTON //
+
+  } // FORM
+}

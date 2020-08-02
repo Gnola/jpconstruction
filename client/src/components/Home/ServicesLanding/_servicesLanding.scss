@@ -1,0 +1,68 @@
+#ServicesLanding {
+  width: 100%;
+  background: #f7f7f7;
+
+  .ServiceText {
+    text-align: center;
+
+    h2 {
+      margin: 5vh auto 0 auto;
+      font-size: 2.3rem;
+      width: 55%;
+      // font-family: 'Playfair Display';
+    }
+
+    .mission-statement {
+      width: 90%;
+      font-size: 1.5rem;
+      // font-weight: bold;
+      line-height: 4vh;
+      margin: 1.5vh auto 5vh;
+      font-style: italic;
+    }
+  } // ServiceText
+
+  // SLIDER //
+
+  // SERVICES //
+
+}
+
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
+  #ServicesLanding {
+    .ServiceText {
+      h2 {
+        width: 70%;
+        margin: 5vh auto 0 auto;
+      }
+      .mission-statement {
+        width: 90%;
+        font-size: 1.3rem;
+        margin: 2vh auto 8.5vh;
+      }
+    } // ServiceText
+
+  }
+}
+
+
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  #ServicesLanding {
+    .ServiceText {
+      h2 {
+        margin-top: 2vh;
+        font-size: 1.6rem;
+        width: 95%;
+      }
+      .mission-statement {
+        width: 95%;
+        font-size: 1.1rem;
+        line-height: 2.5vh;
+        margin: 1vh auto 2vh;
+      }
+    } // ServiceText
+
+  }
+}

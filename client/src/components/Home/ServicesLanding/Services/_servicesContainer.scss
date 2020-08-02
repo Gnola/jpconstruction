@@ -1,0 +1,46 @@
+#ServicesContainer {
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid gainsboro;
+  .ServicesText {
+    h1 {
+      margin: 2vh auto;
+    }
+    p {
+      font-size: 1.4rem;
+      text-align: center;
+      width: 95%;
+      margin: 2vh auto 4vh;
+      // font-style: italic;
+    }
+  } // ServicesText
+
+  // SERVICE //
+
+}
+
+
+// LAPTOPS / IPAD PRO (Landscape)
+@media screen and (max-width: 1300px) {
+  #ServicesContainer {
+    .ServicesText {
+      p {
+        line-height: 4vh;
+      }
+    }
+  }
+}
+
+
+// PHONE (Portrait)
+@media screen and (max-width: 400px) {
+  #ServicesContainer {
+
+    .ServicesText {
+      p {
+        line-height: 3vh;
+        width: 90%;
+      }
+    }
+  }
+}
