@@ -1,59 +1,84 @@
 %Services { // Individual Service
-  border-bottom: 2px solid gainsboro;
+  // border-bottom: 2px solid gainsboro;
+  // border: 2px solid gainsboro;
+  // border: 2px solid #403F45;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2vh;
   padding-top: 2vh;
-  box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
   border-radius: 6px;
-  margin-bottom: 3vh;
-  background-color: rgba(0,0,0,.5);
-  // box-shadow: 4px 3px 10px 5px;
+  background-color: #403F45;
+  // box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+  box-shadow: 12px 13px 10px -1px rgba(0,0,0,0.55);
+  // height: 60vh;
+  margin-bottom: 5vh;
 
   .ServicesTitleandList { // Title, List and Link CONTAINER
     width: 45%;
     margin: auto;
-    text-align:center;
-    // box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
-    border-radius: 4px;
     display: flex;
     flex-direction: column;
+    // text-align:center;
 
     h1 { // Title
       color: white;
       font-size: 3rem;
-      // text-shadow: 3px 3px black;
       margin: .3vh auto 0;
+      text-align: center;
     }
 
     ul { // List
-      text-align: left;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      width: 70%;
-      line-height: 3.5vh;
+      width: 65%;
+      line-height: 3vh;
       height: 18vh;
-      padding-left: 0;
-      padding-left: 2vw;
-      margin-bottom: .5vh;
+      padding-left: 3vw;
+
 
       li {
+        color: #eee;
         list-style: circle;
-        font-size: 1.2rem;
-        margin-left: 1.5vw;
-        padding-left: 0;
+        font-size: 1.3rem;
+        margin-right: 2vw;
       }
     }
 
     #inquire { // Link
-      color: yellow;
       text-align: center;
       font-size: 1rem;
-      text-shadow: 1px 1px 3px black;
       cursor: pointer;
+      padding: 4px;
+      width: 20vw;
+      height: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
       margin-bottom: 2vh;
+      color: black;
+      font-weight: bold;
+      border: 2px solid #FDEC00;
+      background: #FDEC00;
+      border-radius: 2px;
+      box-shadow: 8px 6px 10px black;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background: none;
+        color: #FDEC00;
+      }
+
+      // background: none;
+      // color: #FDEC00;
+      // transition: all .2s ease-in-out;
+      //
+      // &:hover {
+      //   background: #FDEC00;
+      //   color: black;
+      // }
     }
   } // Title, List and Link
 
@@ -62,9 +87,12 @@
 
     img { // Service Image
       border-radius: 2px;
-      box-shadow: 4px 3px 10px 5px;
+      box-shadow: 4px 3px 15px 5px;
       width: 38vw;
       height: 50vh;
+      border-radius: 3px;
+      // box-shadow: -20px -19px 11px -7px rgba(0,0,0,0.75);
+
     }
   } // Service Image Container
 } // Individual Service //
@@ -96,29 +124,37 @@
 @media screen and (max-width: 1300px) {
   %Services {
     margin: auto;
-    margin-bottom: 3vh;
-  }
-  .ServicesTitleandList {
+    margin-bottom: 5vh;
 
-    ul {
-      width: 63% !important;
-      // height: 20vh !important;
-      padding-left: 1.2vw !important;
-      margin-bottom: 1.5vh !important;
-      // height: 20vh !important;
-      li {
-        margin-bottom: .1vh;
-        margin-left: 2vw !important;
+    .ServicesTitleandList {
+
+      ul {
+        width: 65%;
+        margin-bottom: 2.5vh;
+        padding-left: 3vw;
+
+        li {
+          margin-bottom: .1vh;
+          margin-right: 2vw;
+          font-size: 1.2rem;
+          line-height: 3.5vh;
+          // width: 17vw;
+        }
+      }
+      #inquire {
+        width: 25vw;
+        height: 5vh;
+      }
+    }
+    .ServicesImage {
+      img {
+        width: 40vw;
+        margin-left: 2.3vw;
+        margin-right: 1.8vw;
       }
     }
   }
-  .ServicesImage {
-    img {
-      width: 40vw !important;
-      margin-left: 2.3vw;
-      margin-right: 1.8vw;
-    }
-  }
+
 }
 
 
@@ -134,13 +170,16 @@
     margin: auto;
 
       h1 { // Title
+        font-size: 2.8rem;
+        margin-bottom: .5vh;
+        margin-top: 0;
 
       }
 
       ul { // List
       height: auto;
       width: 90% !important;
-      margin: auto;
+      margin: .5vh auto;
 
         li {
           font-size: 1.1rem;
@@ -150,7 +189,9 @@
       }
 
       #inquire { // Link
-
+        margin-top: 2vh;
+        width: 90%;
+        height: 4.2vh;
         font-size: .9rem;
       }
     } // Title, List and Link
@@ -158,8 +199,8 @@
     .ServicesImage { // Service Image Container
 
       img { // Service Image
-        width: 95% !important;
-        height: 35vh;
+        width: 95%;
+        height: 30vh;
       }
     } // Service Image Container
   } // Individual Service //

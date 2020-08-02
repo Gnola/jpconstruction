@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Service = (props) => {
+const Services = (props) => {
   return (
     <div className={props.cssClass}>
       <div className='ServicesImage'>
@@ -13,11 +13,11 @@ const Service = (props) => {
             <li key={index}>{text}</li>
           )}
         </ul>
-        <a id='inquire' href='#ContactLanding'>Inquire about our {props.title} services ></a>
+        <a id='inquire' href='#ContactLanding'>Inquire about our {props.title} ></a>
       </div>
     </div>
   )
 }
 
-export default Service;
+export default Services;
 // <p id='inquire' onClick={()=>props.toggleView('contact')}>Inquire about our {props.title} services ></p>

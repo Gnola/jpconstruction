@@ -14,8 +14,10 @@ const ContactLanding = (props) => {
       </div>
       <div className='ContactLanding-Bottom'>
         <h3>Or contact Jason Directly here:</h3>
-        <span><i className="fas fa-phone fa-1x"></i> <a href='tel:707-812-5516' target='_blank' rel="noopener noreferrer">(707) 812-5516</a></span><br/>
-        <span><i className="fas fa-envelope fa-1x"></i> <a href='mailto:phillipscons@gmail.com' target='_blank' rel="noopener noreferrer">phillipscons@gmail.com</a></span>
+        <div className='ContactLanding-Bottom-Links'>
+          <span><i className="fas fa-phone fa-1x"></i> <a href='tel:707-812-5516' target='_blank' rel="noopener noreferrer">(707) 812-5516</a></span>
+          <span><i className="fas fa-envelope fa-1x"></i> <a href='mailto:phillipscons@gmail.com' target='_blank' rel="noopener noreferrer">phillipscons@gmail.com</a></span>
+        </div>
       </div>
     </div>
   )

@@ -2,20 +2,21 @@
   width: 90%;
   margin: auto;
   border-bottom: 2px solid gainsboro;
+
   .ServicesText {
     h1 {
       margin: 2vh auto;
+      // color: #403F45;
     }
     p {
       font-size: 1.4rem;
       text-align: center;
-      width: 95%;
       margin: 2vh auto 4vh;
-      // font-style: italic;
+      font-style: italic;
     }
   } // ServicesText
 
-  // SERVICE //
+  // SERVICES //
 
 }
 

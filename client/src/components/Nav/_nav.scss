@@ -29,7 +29,7 @@
       margin: 5px 0 0;
       transition: all 0.5s ease-in-out;
       opacity: 0;
-      background-color: rgba(255,255,0);
+      background-color: #FDEC00;
     }
 
     &:hover {
@@ -44,7 +44,7 @@
 
   .a-clicked { // Clicked Link
     font-weight: 600;
-    border-bottom: 4px solid rgba(255,255,0);
+    border-bottom: 4px solid #FDEC00;
   }
 
   .nav-header { // Mini Logo

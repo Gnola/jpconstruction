@@ -46,13 +46,13 @@ class App extends Component {
       this.setState({ navDisplay:'Nav'})
     }
 
-    if (window.scrollY < 1400) {
+    if (window.scrollY < 1150) {
       this.setState({ view: "home" });
-    } else if (window.scrollY > 1400 && window.scrollY < 4225) {
+    } else if (window.scrollY > 1150 && window.scrollY < 3450) {
       this.setState({ view: "services" });
-    } else if (window.scrollY > 4225 && window.scrollY < 5000) {
+    } else if (window.scrollY > 3450 && window.scrollY < 4200) {
       this.setState({ view: "contact" });
-    }else if (window.scrollY > 5000) {
+    } else if (window.scrollY > 4200) {
       this.setState({ view: "about" });
     }
   }

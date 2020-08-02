@@ -5,35 +5,36 @@
   margin: 3vh auto;
   display: flex;
   flex-direction: column;
-  // justify-content: space-around;
-  // align-items: center;
 
   .AboutLanding-Top {
     width: 100%;
     display: flex;
 
     h1 {
-      margin: auto;
+      margin: 0 auto 3vh;
     }
   }
 
   .AboutLanding-Mid {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 3vh;
+    margin-bottom: 4vh;
 
     .AboutLandingImg {
       width: 18vw;
       height: 40vh;
     }
     .AboutLandingText { // About paragraph
-      width: 50%;
+      width: 45%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+      box-shadow: 0px 5px 33px 0px rgba(0,0,0,0.75);
 
       h1 {
         text-align: center;
-        margin-top: 1vh;
+        margin: 1vh auto;
       }
 
       h3 {
@@ -45,8 +46,9 @@
         font-size: 1.2rem;
         line-height: 2.5vh;
         text-align: center;
-        width: 100%;
-        // margin: auto;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2vh;
       }
     }
   }
@@ -56,10 +58,9 @@
 // LAPTOPS / IPAD PRO (Landscape)
 @media screen and (max-width: 1300px) {
   .AboutLanding {
-    height: 65vh;
+    height: 82vh;
 
     .AboutLanding-Top {
-
 
       h1 {
 
@@ -70,8 +71,8 @@
 
 
       .AboutLandingImg {
-        height: 45vh;
-        width: 20vw;
+        height: 50vh;
+        width: 24vw;
       }
       .AboutLandingText { // About paragraph
 
@@ -92,9 +93,10 @@
 // PHONE (Portrait)
 @media screen and (max-width: 400px) {
   .AboutLanding {
-    height: 115vh;
+    height: 135vh;
     .AboutLanding-Top {
       h1 {
+        margin-bottom: 0;
 
       }
     }
@@ -107,11 +109,15 @@
       margin-top: 2vh;
 
       .AboutLandingImg {
-        width: 90%;
+        width: 100%;
         margin-bottom: 1vh;
+        margin-top: 0;
       }
       .AboutLandingText { // About paragraph
         width: 100%;
+        box-shadow: 10px 8px 10px -2px rgba(0,0,0,0.5);
+        // width: 90%;
+
         h1 {
 
         }

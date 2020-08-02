@@ -1,7 +1,7 @@
 import React from 'react';
 
 // COMPONENTS //
-import Service from './Service.js'
+import Services from './Services.js'
 
 // IMAGES //
 import Stone from './servicesimgs/Stone.jpg';
@@ -52,11 +52,11 @@ const ServicesContainer = (props) => {
         <h1 className='LandingText'>Services</h1>
         <p>Whether it's residential or commercial we can help with interior & exterior construction, new construction, remodeling, renovations & restorations.</p>
       </div>
-      <Service title={newConstruction.title} array={newConstruction.services} img={newConstruction.img} cssClass={newConstruction.cssClass} toggleView={props.toggleView}/>
-      <Service title={remodeling.title} array={remodeling.services} img={remodeling.img} cssClass={remodeling.cssClass} toggleView={props.toggleView}/>
-      <Service title={renovations.title} array={renovations.services} img={renovations.img} cssClass={renovations.cssClass} toggleView={props.toggleView}/>
-      <Service title={restorations.title} array={restorations.services} img={restorations.img} cssClass={restorations.cssClass} toggleView={props.toggleView}/>
-      <Service title={additionalServices.title} array={additionalServices.services} img={additionalServices.img} cssClass={additionalServices.cssClass} toggleView={props.toggleView}/>
+      <Services title={newConstruction.title} array={newConstruction.services} img={newConstruction.img} cssClass={newConstruction.cssClass} toggleView={props.toggleView}/>
+      <Services title={remodeling.title} array={remodeling.services} img={remodeling.img} cssClass={remodeling.cssClass} toggleView={props.toggleView}/>
+      <Services title={renovations.title} array={renovations.services} img={renovations.img} cssClass={renovations.cssClass} toggleView={props.toggleView}/>
+      <Services title={restorations.title} array={restorations.services} img={restorations.img} cssClass={restorations.cssClass} toggleView={props.toggleView}/>
+      <Services title={additionalServices.title} array={additionalServices.services} img={additionalServices.img} cssClass={additionalServices.cssClass} toggleView={props.toggleView}/>
     </div>
   );
 }

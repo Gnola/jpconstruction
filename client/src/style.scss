@@ -6,7 +6,7 @@
 './components/Home/ServicesLanding/servicesLanding',
 './components/Home/ServicesLanding/Slider/slider',
 './components/Home/ServicesLanding/Services/servicesContainer',
-'./components/Home/ServicesLanding/Services/service',
+'./components/Home/ServicesLanding/Services/services',
 './components/Footer/footer',
 './components/Home/home',
 './components/Home/ServicesLanding/service',
@@ -14,6 +14,14 @@
 './components/Home/ContactLanding/form',
 './components/Home/AboutLanding/about'
 ;
+
+// #F4DD08
+// #FDEC00
+// #403F45
+// #f7f7f7
+
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Playfair Display';
 
 * {
   box-sizing: border-box;
@@ -30,8 +38,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: #f7f7f7;
-  // font-family: 'Roboto Slab', serif;
+  // background: #f7f7f7;
+  background: white;
   font-family: 'Open Sans';
 }
 
