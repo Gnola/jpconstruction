@@ -772,6 +772,7 @@ footer .FooterConnect #IG {
   height: 4.5vh;
   border-radius: 3px;
   border: 1px solid lightgrey;
+  padding-left: 0.7vh;
 }
 .ContactForm .ContactFormInquire span label, .ContactForm .ContactFormInfo span label {
   width: 5vw;
@@ -807,7 +808,7 @@ footer .FooterConnect #IG {
   height: 20vh;
   width: 98%;
   margin: 0 auto 1vh;
-  padding: 0.5vh 0.5vw;
+  padding: 1vh 0.5vw;
   border-radius: 3px;
 }
 .ContactForm .ContactFormButton {
