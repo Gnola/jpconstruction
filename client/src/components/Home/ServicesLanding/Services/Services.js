@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = (props) => {
   return (
-    <div className={props.cssClass}>
+    <div id={props.title} className={props.cssClass}>
       <div className='ServicesImage'>
         <img src={props.img} alt='placeholder'/>
       </div>

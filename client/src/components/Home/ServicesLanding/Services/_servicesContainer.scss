@@ -1,17 +1,18 @@
 #ServicesContainer {
-  width: 90%;
+  width: 95%;
   margin: auto;
   border-bottom: 2px solid gainsboro;
 
   .ServicesText {
     h1 {
-      margin: 2vh auto;
+      margin: 2.5vh auto .5vh;
       // color: #403F45;
     }
     p {
-      font-size: 1.4rem;
+      width: 95%;
+      font-size: 1.5rem;
       text-align: center;
-      margin: 2vh auto 4vh;
+      margin: 0 auto 2.5vh;
       font-style: italic;
     }
   } // ServicesText
@@ -27,6 +28,7 @@
     .ServicesText {
       p {
         line-height: 4vh;
+        margin: 0 auto 4vh;
       }
     }
   }
@@ -39,8 +41,10 @@
 
     .ServicesText {
       p {
+        font-size: 1.2rem;
+        margin-bottom: 2vh;
         line-height: 3vh;
-        width: 90%;
+        width: 95%;
       }
     }
   }

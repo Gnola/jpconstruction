@@ -49,7 +49,7 @@
         text-decoration: underline;
         font-weight: lighter;
         font-size: 1.2rem;
-        padding-left: .5vw;
+        padding-left: .2vw;
       }
     } // SLIDER TEXT //
   } // SLIDER IMG //
@@ -95,7 +95,7 @@
         font-size: 1.3rem;
       }
       #LearnMore {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
   }
@@ -105,14 +105,17 @@
 // PHONE (Portrait)
 @media screen and (max-width: 400px) {
   #Slider {
-    height: 70vh;
+    height: 75vh;
     .SliderImg .SliderText  {
-      width: 80%;
+      width: 90%;
       .SliderTitle {
-        font-size: 3rem;
+        font-size: 3.2rem;
+        line-height: 6vh;
       }
       .SliderDescription {
         font-size: 1.2rem;
+        width: 95%;
+        margin-left: 0;
       }
       #LearnMore {
         font-size: .9rem;

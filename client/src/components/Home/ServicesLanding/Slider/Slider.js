@@ -66,7 +66,7 @@ const Slider = (props) => {
                 <div className='SliderText'>
                   <h1 className='SliderTitle' key={index}>{titleTextArr[index]}</h1>
                   <p className='SliderDescription' key={index+1}>{descriptionTextArr[index]}</p>
-                  <a id='LearnMore' href='#ServicesLanding' >Learn More ></a>
+                  <a id='LearnMore' href='#Services' >Learn More ></a>
                 </div>
               </div>
             )

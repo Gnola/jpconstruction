@@ -1,22 +1,21 @@
 #ServicesLanding {
   width: 100%;
-
   .ServiceText {
     text-align: center;
 
     h2 {
-      margin: 5vh auto 0 auto;
-      font-size: 2.3rem;
       width: 53%;
+      font-size: 2.3rem;
+      margin: 3vh auto 0 auto;
+      // font-style: italic;
     }
 
     .mission-statement {
       width: 80%;
       font-size: 1.5rem;
       line-height: 4vh;
-      margin: 1.5vh auto 5vh;
+      margin: 1vh auto 4vh;
       font-style: italic;
-      // font-weight: bold;
     }
   } // ServiceText
 
@@ -28,12 +27,12 @@
     .ServiceText {
       h2 {
         width: 70%;
-        margin: 5vh auto 0 auto;
+        margin: 3.5vh auto 0 auto;
       }
       .mission-statement {
         width: 90%;
         font-size: 1.3rem;
-        margin: 2vh auto 8.5vh;
+        margin: 1.5vh auto 5vh;
       }
     } // ServiceText
 
@@ -47,11 +46,11 @@
     .ServiceText {
       h2 {
         margin-top: 2vh;
-        font-size: 1.6rem;
-        width: 95%;
+        font-size: 1.5rem;
+        width: 100%;
       }
       .mission-statement {
-        width: 95%;
+        width: 90%;
         font-size: 1.1rem;
         line-height: 2.5vh;
         margin: 1vh auto 2vh;

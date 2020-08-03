@@ -13,7 +13,7 @@ footer {
     margin-bottom: .5vh;
     // text-decoration: underline;
     text-align: center;
-    color: white;
+    color: #f7f7f7;
     opacity: .8;
   }
 
@@ -21,14 +21,12 @@ footer {
     margin-top: 1vh;
     margin-bottom: 1vh;
     text-align:left;
-    color: white;
     opacity: .8;
-    color: yellow;
+    color: #FDEC00;
     text-shadow: 2px 2px 3px black;
 
     span { // Links and Icon
       font-size: .9rem;
-      cursor: pointer;
     }
     i { // Icons - Phone and Mail
       // color: black;
@@ -46,18 +44,23 @@ footer {
     p { // Info
       margin-bottom: 0;
       margin-top: .7vh;
-      color: white;
+      color: #f7f7f7;
       opacity: .8;
     }
     #design-link {
-      font-size: .8rem;
+      font-size: .9rem;
       margin-bottom: .8vh;
       margin-top: 1.5vh;
       color: inherit;
-      opacity: .7;
+
+      &:hover a {
+        color: #f7f7f7;
+
+      }
       a {
         color: inherit;
       }
+
     }
   } // MIDDLE //
 
@@ -67,7 +70,7 @@ footer {
 
     i { // Icons
       margin-top: 1vh;
-      color: yellow;
+      color: #FDEC00;
       text-shadow: 1px 1px 3px black;
       opacity: .8;
       cursor: pointer;
@@ -77,6 +80,11 @@ footer {
     }
   } // RIGHT //
 } // FOOTER //
+
+
+
+
+
 
 // LAPTOPS / IPAD PRO (Landscape)
 @media screen and (max-width: 1300px) {
@@ -107,10 +115,13 @@ footer {
     .FooterInfo { // MIDDLE
       margin: 0 auto 1vh;
       width: 100%;
-      margin: auto;
 
       P {
         font-size: .9rem;
+        margin-bottom: 0;
+      }
+      #design-link {
+        margin-top: .6vh;
       }
     } // MIDDLE //
 
@@ -119,6 +130,7 @@ footer {
       width: 25%;
       margin-right: 5vw;
       margin-bottom: -2.5vh;
+      margin-top: 2vh;
       align-self: flex-end;
 
     } // RIGHT //

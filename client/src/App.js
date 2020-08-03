@@ -50,9 +50,9 @@ class App extends Component {
       this.setState({ view: "home" });
     } else if (window.scrollY > 1150 && window.scrollY < 3450) {
       this.setState({ view: "services" });
-    } else if (window.scrollY > 3450 && window.scrollY < 4200) {
+    } else if (window.scrollY > 3450 && window.scrollY < 4150) {
       this.setState({ view: "contact" });
-    } else if (window.scrollY > 4200) {
+    } else if (window.scrollY > 4150) {
       this.setState({ view: "about" });
     }
   }

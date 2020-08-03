@@ -125,7 +125,7 @@
         margin-top: 0;
 
         label {
-          width: 6vw;
+          width: 6.2vw;
         }
         input {
           height: 5vh;
@@ -140,11 +140,10 @@
       span { // Subject
         margin-top: 0;
         label {
-          width: 6vw;
+          width: 6.2vw;
         }
         input {
           height: 5vh;
-
         }
       } // span
 
@@ -162,6 +161,7 @@
       input {
         height: 5vh;
         margin-top: 2vh;
+        margin-bottom: .5vh;
         font-size: 1.1rem;
 
       }
@@ -178,8 +178,10 @@
     width: 100% !important;
 
     .ContactFormInfo { // INFO - Name, Email, Phone
+      margin-bottom: 1vh;
 
       span { // Name, email, phone
+        margin-bottom: 1vh;
 
         label {
           width: 20vw;
@@ -188,7 +190,6 @@
         }
         input {
           height: 4.5vh;
-
         }
       } // span
 
@@ -198,6 +199,7 @@
 
 
       span { // Subject
+        margin-bottom: 1vh;
 
         label {
           font-size: 1.1rem;

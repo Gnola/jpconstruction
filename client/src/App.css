@@ -64,14 +64,14 @@
 @media screen and (max-width: 400px) {
   #Header {
     background-position: center;
-    height: 35vh !important;
+    height: 30vh !important;
   }
   #Header #Logo {
     width: 95%;
     bottom: 3vh;
   }
   #Header h1 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     bottom: 3vh;
   }
 }
@@ -179,14 +179,17 @@
   .Nav, .Nav2 {
     height: 8vh;
   }
+  .Nav a, .Nav2 a {
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .Nav, .Nav2 {
     height: 6.5vh;
   }
   .Nav a, .Nav2 a {
-    margin-left: 5vw;
-    font-size: 1.2rem;
+    margin-left: 7vw;
+    font-size: 1.1rem;
   }
 }
 #ServicesLanding {
@@ -196,37 +199,37 @@
   text-align: center;
 }
 #ServicesLanding .ServiceText h2 {
-  margin: 5vh auto 0 auto;
-  font-size: 2.3rem;
   width: 53%;
+  font-size: 2.3rem;
+  margin: 3vh auto 0 auto;
 }
 #ServicesLanding .ServiceText .mission-statement {
   width: 80%;
   font-size: 1.5rem;
   line-height: 4vh;
-  margin: 1.5vh auto 5vh;
+  margin: 1vh auto 4vh;
   font-style: italic;
 }
 
 @media screen and (max-width: 1300px) {
   #ServicesLanding .ServiceText h2 {
     width: 70%;
-    margin: 5vh auto 0 auto;
+    margin: 3.5vh auto 0 auto;
   }
   #ServicesLanding .ServiceText .mission-statement {
     width: 90%;
     font-size: 1.3rem;
-    margin: 2vh auto 8.5vh;
+    margin: 1.5vh auto 5vh;
   }
 }
 @media screen and (max-width: 400px) {
   #ServicesLanding .ServiceText h2 {
     margin-top: 2vh;
-    font-size: 1.6rem;
-    width: 95%;
+    font-size: 1.5rem;
+    width: 100%;
   }
   #ServicesLanding .ServiceText .mission-statement {
-    width: 95%;
+    width: 90%;
     font-size: 1.1rem;
     line-height: 2.5vh;
     margin: 1vh auto 2vh;
@@ -280,7 +283,7 @@
   text-decoration: underline;
   font-weight: lighter;
   font-size: 1.2rem;
-  padding-left: 0.5vw;
+  padding-left: 0.2vw;
 }
 
 @media screen and (max-width: 1300px) {
@@ -294,50 +297,57 @@
     font-size: 1.3rem;
   }
   #Slider .SliderImg .SliderText #LearnMore {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 400px) {
   #Slider {
-    height: 70vh;
+    height: 75vh;
   }
   #Slider .SliderImg .SliderText {
-    width: 80%;
+    width: 90%;
   }
   #Slider .SliderImg .SliderText .SliderTitle {
-    font-size: 3rem;
+    font-size: 3.2rem;
+    line-height: 6vh;
   }
   #Slider .SliderImg .SliderText .SliderDescription {
     font-size: 1.2rem;
+    width: 95%;
+    margin-left: 0;
   }
   #Slider .SliderImg .SliderText #LearnMore {
     font-size: 0.9rem;
   }
 }
 #ServicesContainer {
-  width: 90%;
+  width: 95%;
   margin: auto;
   border-bottom: 2px solid gainsboro;
 }
 #ServicesContainer .ServicesText h1 {
-  margin: 2vh auto;
+  margin: 2.5vh auto 0.5vh;
 }
 #ServicesContainer .ServicesText p {
-  font-size: 1.4rem;
+  width: 95%;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 2vh auto 4vh;
+  margin: 0 auto 2.5vh;
   font-style: italic;
 }
 
 @media screen and (max-width: 1300px) {
   #ServicesContainer .ServicesText p {
     line-height: 4vh;
+    margin: 0 auto 4vh;
   }
 }
 @media screen and (max-width: 400px) {
   #ServicesContainer .ServicesText p {
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
     line-height: 3vh;
-    width: 90%;
+    width: 95%;
   }
 }
 .ServiceRight, .ServiceLeft {
@@ -359,8 +369,8 @@
 }
 .ServiceRight .ServicesTitleandList h1, .ServiceLeft .ServicesTitleandList h1 {
   color: white;
-  font-size: 3rem;
-  margin: 0.3vh auto 0;
+  font-size: 3.3rem;
+  margin: 0.3vh auto 0.5vh;
   text-align: center;
 }
 .ServiceRight .ServicesTitleandList ul, .ServiceLeft .ServicesTitleandList ul {
@@ -418,6 +428,9 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
+.ServiceLeft ul {
+  margin-bottom: 2.5vh;
+}
 
 .ServiceRight {
   margin-left: 5vw;
@@ -425,6 +438,7 @@
 }
 .ServiceRight .ServicesTitleandList ul {
   padding-left: 4vw;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -432,10 +446,13 @@
     margin: auto;
     margin-bottom: 5vh;
   }
+  .ServiceLeft .ServicesTitleandList h1, .ServiceRight .ServicesTitleandList h1 {
+    font-size: 3rem;
+  }
   .ServiceLeft .ServicesTitleandList ul, .ServiceRight .ServicesTitleandList ul {
     width: 65%;
     margin-bottom: 2.5vh;
-    padding-left: 3vw;
+    padding-left: 4vw;
   }
   .ServiceLeft .ServicesTitleandList ul li, .ServiceRight .ServicesTitleandList ul li {
     margin-bottom: 0.1vh;
@@ -502,21 +519,19 @@ footer h4 {
   margin-top: 0.3vh;
   margin-bottom: 0.5vh;
   text-align: center;
-  color: white;
+  color: #f7f7f7;
   opacity: 0.8;
 }
 footer .FooterContact {
   margin-top: 1vh;
   margin-bottom: 1vh;
   text-align: left;
-  color: white;
   opacity: 0.8;
-  color: yellow;
+  color: #FDEC00;
   text-shadow: 2px 2px 3px black;
 }
 footer .FooterContact span {
   font-size: 0.9rem;
-  cursor: pointer;
 }
 footer .FooterContact a {
   cursor: pointer;
@@ -529,15 +544,17 @@ footer .FooterInfo {
 footer .FooterInfo p {
   margin-bottom: 0;
   margin-top: 0.7vh;
-  color: white;
+  color: #f7f7f7;
   opacity: 0.8;
 }
 footer .FooterInfo #design-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 0.8vh;
   margin-top: 1.5vh;
   color: inherit;
-  opacity: 0.7;
+}
+footer .FooterInfo #design-link:hover a {
+  color: #f7f7f7;
 }
 footer .FooterInfo #design-link a {
   color: inherit;
@@ -548,7 +565,7 @@ footer .FooterConnect {
 }
 footer .FooterConnect i {
   margin-top: 1vh;
-  color: yellow;
+  color: #FDEC00;
   text-shadow: 1px 1px 3px black;
   opacity: 0.8;
   cursor: pointer;
@@ -575,16 +592,20 @@ footer .FooterConnect #IG {
   footer .FooterInfo {
     margin: 0 auto 1vh;
     width: 100%;
-    margin: auto;
   }
   footer .FooterInfo P {
     font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  footer .FooterInfo #design-link {
+    margin-top: 0.6vh;
   }
   footer .FooterConnect {
     order: 2;
     width: 25%;
     margin-right: 5vw;
     margin-bottom: -2.5vh;
+    margin-top: 2vh;
     align-self: flex-end;
   }
 }
@@ -604,10 +625,10 @@ footer .FooterConnect #IG {
   }
 }
 #ContactLanding {
-  width: 90%;
+  width: 95%;
   margin: auto;
   border-bottom: 2px solid gainsboro;
-  height: 100vh;
+  height: 95vh;
 }
 #ContactLanding .ContactLanding-Top {
   width: 100%;
@@ -647,12 +668,14 @@ footer .FooterConnect #IG {
   font-size: 1.4rem;
   font-weight: normal;
   font-style: italic;
-  margin-bottom: 1vh;
+  margin-top: 3vh;
+  margin-bottom: 1.5vh;
 }
 #ContactLanding .ContactLanding-Bottom .ContactLanding-Bottom-Links {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 2vw;
 }
 #ContactLanding .ContactLanding-Bottom .ContactLanding-Bottom-Links span i {
   font-size: 1.1rem;
@@ -687,7 +710,7 @@ footer .FooterConnect #IG {
   }
   #ContactLanding .ContactLanding-Bottom h3 {
     font-size: 1.2rem;
-    margin-bottom: 1.3vh;
+    margin-bottom: 2vh;
   }
   #ContactLanding .ContactLanding-Bottom .ContactLanding-Bottom-Links {
     width: 35%;
@@ -701,7 +724,7 @@ footer .FooterConnect #IG {
 }
 @media screen and (max-width: 400px) {
   #ContactLanding {
-    height: 95vh;
+    height: 97vh;
   }
   #ContactLanding .ContactLanding-Top h1 {
     font-size: 2.3rem;
@@ -817,7 +840,7 @@ footer .FooterConnect #IG {
     margin-top: 0;
   }
   .ContactForm .ContactFormInfo span label {
-    width: 6vw;
+    width: 6.2vw;
   }
   .ContactForm .ContactFormInfo span input {
     height: 5vh;
@@ -826,7 +849,7 @@ footer .FooterConnect #IG {
     margin-top: 0;
   }
   .ContactForm .ContactFormInquire span label {
-    width: 6vw;
+    width: 6.2vw;
   }
   .ContactForm .ContactFormInquire span input {
     height: 5vh;
@@ -840,6 +863,7 @@ footer .FooterConnect #IG {
   .ContactForm .ContactFormButton input {
     height: 5vh;
     margin-top: 2vh;
+    margin-bottom: 0.5vh;
     font-size: 1.1rem;
   }
 }
@@ -847,12 +871,21 @@ footer .FooterConnect #IG {
   .ContactForm {
     width: 100% !important;
   }
+  .ContactForm .ContactFormInfo {
+    margin-bottom: 1vh;
+  }
+  .ContactForm .ContactFormInfo span {
+    margin-bottom: 1vh;
+  }
   .ContactForm .ContactFormInfo span label {
     width: 20vw;
     font-size: 1.1rem;
   }
   .ContactForm .ContactFormInfo span input {
     height: 4.5vh;
+  }
+  .ContactForm .ContactFormInquire span {
+    margin-bottom: 1vh;
   }
   .ContactForm .ContactFormInquire span label {
     font-size: 1.1rem;
@@ -875,7 +908,7 @@ footer .FooterConnect #IG {
 }
 .AboutLanding {
   border-bottom: 2px solid gainsboro;
-  width: 90%;
+  width: 95%;
   margin: 3vh auto;
   display: flex;
   flex-direction: column;
@@ -898,11 +931,12 @@ footer .FooterConnect #IG {
   height: 40vh;
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingText {
-  width: 45%;
+  width: 40%;
   padding: 10px;
   border: 1px solid black;
   border-radius: 3px;
   box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+  background: #f7f7f7;
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingText h1 {
   text-align: center;
@@ -911,6 +945,7 @@ footer .FooterConnect #IG {
 .AboutLanding .AboutLanding-Mid .AboutLandingText h3 {
   margin-top: 0;
   text-align: center;
+  font-style: italic;
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingText p {
   font-size: 1.2rem;
@@ -929,6 +964,9 @@ footer .FooterConnect #IG {
     height: 50vh;
     width: 24vw;
   }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText {
+    width: 50%;
+  }
   .AboutLanding .AboutLanding-Mid .AboutLandingText h1 {
     margin-bottom: 1vh;
   }
@@ -938,7 +976,7 @@ footer .FooterConnect #IG {
 }
 @media screen and (max-width: 400px) {
   .AboutLanding {
-    height: 135vh;
+    height: 125vh;
   }
   .AboutLanding .AboutLanding-Top h1 {
     margin-bottom: 0;
@@ -958,6 +996,7 @@ footer .FooterConnect #IG {
   .AboutLanding .AboutLanding-Mid .AboutLandingText {
     width: 100%;
     box-shadow: 10px 8px 10px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: none;
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingText h3 {
     font-size: 1.2rem;
@@ -965,6 +1004,7 @@ footer .FooterConnect #IG {
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingText p {
     line-height: normal;
+    width: 100%;
   }
 }
 * {
@@ -981,7 +1021,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: white;
+  background: #f7f7f7;
   font-family: "Open Sans";
 }
 
@@ -991,4 +1031,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=App.css.map */
