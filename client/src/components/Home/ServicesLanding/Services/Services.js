@@ -13,7 +13,7 @@ const Services = (props) => {
             <li key={index}>{text}</li>
           )}
         </ul>
-        <a id='inquire' href='#ContactLanding'>Inquire about our {props.title} ></a>
+        <a id='inquire' href='#ContactLanding' onClick={()=>props.setSubject(props.title)}>Inquire about our {props.title} ></a>
       </div>
     </div>
   )

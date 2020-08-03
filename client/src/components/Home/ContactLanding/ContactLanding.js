@@ -10,7 +10,7 @@ const ContactLanding = (props) => {
       </div>
       <div className='ContactLanding-Mid'>
         <h3>Inquire about our services here:</h3>
-        <Form />
+        <Form subject={props.subject}/>
       </div>
       <div className='ContactLanding-Bottom'>
         <h3>Or contact Jason Directly here:</h3>

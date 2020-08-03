@@ -35,7 +35,7 @@ class Form extends Component {
           <span><label>Phone:</label> <input type='phone' id='phone' value={this.state.phone} onChange={this.handleChange} /></span>
         </div>
         <div className='ContactFormInquire'>
-          <span><label>Subject:</label> <input type='text' id='subject' value={this.state.subject} onChange={this.handleChange} /></span>
+          <span><label>Subject:</label> <input type='text' id='subject' placeholder={this.props.subject} value={this.state.subject} onChange={this.handleChange} /></span>
           <label id='inquire-label'>Inquiry</label>
           <textarea type='text' id='inquiry' onChange={this.handleChange} value={this.state.inquiry} placeholder='I would love to know more about your service...'/>
         </div>

@@ -13,7 +13,7 @@ const ServicesLanding = (props) => {
         <p className='mission-statement'> We pride ourselves on treating our customers, employees and vendors with loyalty and respect in order to promote a workplace that inspires new ideas, transformations and growth while strictly maintaining the highest level of expertise, integrity and equality.</p>
       </div>
       <Slider toggleView={props.toggleView}/>
-      <ServicesContainer />
+      <ServicesContainer setSubject={props.setSubject} />
     </div>
   )
 }
