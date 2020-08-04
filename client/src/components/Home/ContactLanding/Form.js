@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 class Form extends Component {
 
@@ -18,12 +18,24 @@ class Form extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    // emailjs.sendForm('gmail', 'template_bOtGo3ps', e.target, 'user_m4C35RBt84FZzFDpPhTSG')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+
+    const { name, email, phone, subject, inquiry} = this.state
+
+    let templateParams = {
+      name,
+      email,
+      phone,
+      subject,
+      inquiry
+     }
+
+    emailjs.send('gmail', 'inquiry', templateParams, 'user_m4C35RBt84FZzFDpPhTSG')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    this.props.sent()
     this.setState({
       name:'',
       email:'',

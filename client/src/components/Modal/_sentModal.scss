@@ -1,0 +1,115 @@
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: hidden;
+
+  .modal-container {
+    background: #f7f7f7;
+    width: 21vw;
+    height: 18vh;
+    padding: 3px;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #403F45;
+
+    p {
+      font-size: 1.6rem;
+      margin: 1.5vh auto 2.5vh;
+      color: #f7f7f7;
+
+    }
+
+    button {
+      cursor: pointer;
+      border-radius: 3px;
+      width: 6.5vw;
+      height: 5vh;
+      font-size: 1.1rem;
+      letter-spacing: .1vw;
+      border: 2px solid #FDEC00;
+      color: #FDEC00;
+      background: #403F45;
+      transition: all .2s ease-in-out;
+      margin-top: 0;
+
+      &:hover {
+        color: #403F45;
+        background: #FDEC00;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  .modal-overlay {
+    .modal-container {
+      width: 26vw;
+      height: 22vh;
+      padding: 3px;
+      border-radius: 4px;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: space-around;
+      // border: 2px solid #f7f7f7;
+      background: #403F45;
+
+      p {
+        font-size: 1.6rem;
+        margin: 1.5vh auto 2.6vh;
+        color: #f7f7f7;
+      }
+
+      button {
+        cursor: pointer;
+        border-radius: 3px;
+        width: 6.5vw;
+        height: 5.5vh;
+        font-size: 1.1rem;
+        letter-spacing: .1vw;
+        border: 2px solid #FDEC00;
+        color: #FDEC00;
+        background: #403F45;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-overlay {
+    .modal-container {
+      width: 85%;
+      height: 18vh;
+
+      p {
+        margin: 2vh auto;
+
+      }
+
+      button {
+        width: 23vw;
+        height: 5vh;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

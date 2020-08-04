@@ -6,6 +6,7 @@ import Header from './components/Header/Header.js';
 import Nav from './components/Nav/Nav.js';
 import Home from './components/Home/Home.js';
 import Footer from './components/Footer/Footer.js';
+import SentModal from './components/Modal/SentModal.js';
 // import TempLanding from './components/TempLanding/TempLanding.js';
 
 
@@ -15,6 +16,7 @@ class App extends Component {
   state = {
     view:'home',
     navDisplay:'Nav',
+    sent:false
   }
 
   // Change Page View
@@ -36,6 +38,14 @@ class App extends Component {
         return;
     }
   };
+
+  sent = () => {
+    this.setState({sent:true})
+  }
+
+  close = () => {
+    this.setState({sent:false})
+  }
 
 
   // LISTEN TO SCROLL
@@ -67,6 +77,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        {this.state.sent ? <SentModal close={this.close}/> : null}
         <Header
           changePage={this.changePage}
         />
@@ -76,7 +87,7 @@ class App extends Component {
           color={this.state.color}
           changePage={this.changePage}
         />
-        <Home />
+      <Home sent={this.sent} />
         <Footer />
       </div>
     );
