@@ -79,7 +79,7 @@
     transition: all 0.2s ease-in-out;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .modal-overlay .modal-container {
     width: 85%;
     height: 18vh;
@@ -278,7 +278,7 @@
     font-size: 1.25rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .Nav, .Nav2 {
     height: 6.5vh;
   }
@@ -317,7 +317,7 @@
     margin: 1.5vh auto 5vh;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #ServicesLanding .ServiceText h2 {
     margin-top: 2vh;
     font-size: 1.5rem;
@@ -395,7 +395,7 @@
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #Slider {
     height: 75vh;
   }
@@ -437,7 +437,7 @@
     margin: 0 auto 4vh;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #ServicesContainer .ServicesText p {
     font-size: 1.2rem;
     margin-bottom: 2vh;
@@ -565,7 +565,7 @@
     margin-right: 1.8vw;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .ServiceLeft, .ServiceRight {
     width: 100%;
     display: flex;
@@ -669,7 +669,7 @@ footer .FooterConnect #IG {
   margin-left: 1vh;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   footer {
     flex-direction: column-reverse;
   }
@@ -817,7 +817,7 @@ footer .FooterConnect #IG {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #ContactLanding {
     height: 97vh;
   }
@@ -963,7 +963,7 @@ footer .FooterConnect #IG {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .ContactForm {
     width: 100% !important;
   }
@@ -1070,7 +1070,7 @@ footer .FooterConnect #IG {
     line-height: 3.5vh;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .AboutLanding {
     height: 125vh;
   }
@@ -1121,7 +1121,7 @@ body {
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .App {
     overflow-x: hidden;
   }
