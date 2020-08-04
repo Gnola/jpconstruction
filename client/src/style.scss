@@ -41,13 +41,12 @@ body {
   margin: 0;
   background: #f7f7f7;
   font-family: 'Open Sans';
-  // font-family: 'Roboto Slab';
-  // font-family: 'Playfair Display';
 }
 
 // PHONE (Portrait)
 @media screen and (max-width: 420px) {
   .App {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 }

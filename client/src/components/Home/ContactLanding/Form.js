@@ -56,7 +56,7 @@ class Form extends Component {
         <div className='ContactFormInquire'>
           <span><label>Subject:</label> <input type='text' id='subject' placeholder={this.props.subject} value={this.state.subject} onChange={this.handleChange} /></span>
           <label id='inquire-label'>Inquiry</label>
-          <textarea type='text' id='inquiry' onChange={this.handleChange} value={this.state.inquiry} placeholder='I would love to know more about your service...'/>
+          <textarea type='text' id='inquiry' onChange={this.handleChange} value={this.state.inquiry} placeholder={`I would like to know more about your ${this.props.subject ? this.props.subject : 'services'}`}/>
         </div>
         <div className='ContactFormButton'>
           <input type='submit' value='Send'></input>

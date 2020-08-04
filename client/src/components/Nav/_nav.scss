@@ -127,8 +127,24 @@
   .Nav, .Nav2 {
     height: 6.5vh;
     a {
-      margin-left: 7vw;
+      margin-left: 7.5vw;
       font-size: 1.1rem;
+
+      &:hover {
+        &:before {
+          width: 100%;
+          opacity: 0;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .Nav2 {
+    a {
+      margin-left: 4vw;
+    }
+    .nav-header {
+      display: none;
     }
   }
 }
