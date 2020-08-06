@@ -50,3 +50,76 @@ body {
     scroll-behavior: smooth;
   }
 }
+
+
+
+// ANDROIDS //
+@media screen and (max-width: 360px) {
+  .App {
+    font-family: 'Open Sans', sans-serif;
+
+    .Nav, .Nav2 {
+      height: 7vh;
+      a {
+        margin-left: 5vw;
+      }
+    }
+
+    #ServicesLanding {
+      .mission-statement {
+        font-style: normal;
+        font-size: 1rem;
+        width: 95%;
+        line-height: 3vh;
+      }
+    }
+
+    #Slider {
+      .SliderImg {
+        .SliderTitle {
+          line-height: 8vh;
+        }
+      }
+    }
+
+
+    #ServicesContainer {
+
+      .ServicesText {
+        p {
+          font-style: normal;
+          font-size: 1rem;
+        }
+      }
+      .ServicesTitleandList {
+
+        ul {
+
+          li {
+            line-height: 3.2vh;
+
+          }
+        }
+        #inquire {
+          width: 95%;
+          height: 5vh;
+        }
+      }
+    }
+
+    #ContactLanding {
+      height: 105vh;
+    }
+
+    .AboutLanding {
+      height: 150vh;
+    }
+
+    footer {
+      .FooterContact { // LEFT
+        width: 50%;
+      }
+    }
+  }
+
+}

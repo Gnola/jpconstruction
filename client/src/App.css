@@ -1146,5 +1146,45 @@ body {
     scroll-behavior: smooth;
   }
 }
+@media screen and (max-width: 360px) {
+  .App {
+    font-family: "Open Sans", sans-serif;
+  }
+  .App .Nav, .App .Nav2 {
+    height: 7vh;
+  }
+  .App .Nav a, .App .Nav2 a {
+    margin-left: 5vw;
+  }
+  .App #ServicesLanding .mission-statement {
+    font-style: normal;
+    font-size: 1rem;
+    width: 95%;
+    line-height: 3vh;
+  }
+  .App #Slider .SliderImg .SliderTitle {
+    line-height: 8vh;
+  }
+  .App #ServicesContainer .ServicesText p {
+    font-style: normal;
+    font-size: 1rem;
+  }
+  .App #ServicesContainer .ServicesTitleandList ul li {
+    line-height: 3.2vh;
+  }
+  .App #ServicesContainer .ServicesTitleandList #inquire {
+    width: 95%;
+    height: 5vh;
+  }
+  .App #ContactLanding {
+    height: 105vh;
+  }
+  .App .AboutLanding {
+    height: 150vh;
+  }
+  .App footer .FooterContact {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */
