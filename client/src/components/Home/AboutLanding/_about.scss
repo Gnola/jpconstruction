@@ -72,8 +72,9 @@
 
 
       .AboutLandingImg {
-        height: 50vh;
-        width: 24vw;
+        height: 56vh;
+        width: 40vw;
+        // border: 1px solid black;
       }
       .AboutLandingText { // About paragraph
         width: 50%;
@@ -113,6 +114,7 @@
       .AboutLandingImg {
         width: 100%;
         margin-bottom: 1vh;
+        height: 50vh;
         margin-top: 0;
       }
       .AboutLandingText { // About paragraph
