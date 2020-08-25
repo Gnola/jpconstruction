@@ -11,18 +11,22 @@ import Kitchen from './servicesimgs/Kitchen.jpg';
 // import LivingRoom from './servicesimgs/LivingRoom.jpeg';
 import Bathroom2 from './servicesimgs/Bathroom2.jpeg';
 import School from './servicesimgs/School.jpg';
+import Sink from './servicesimgs/Sink.jpg';
+import Sink2 from './servicesimgs/Sink2.jpg';
+import Counter from './servicesimgs/Counter.jpg';
+import Stairs from './servicesimgs/Stairs.jpeg';
 
 // SERVICES //
 let newConstruction = {
   title:'New Construction',
   services: ['Drywall Installation & Texturing', 'Window Installation', 'Countertop Installation', 'Cedar & Wood Siding Installation', 'Insulation Installation', 'Composition & Metal Roofing', 'Trim Work', 'Water Heater Installation'],
-  img:Kitchen,
+  img:Stairs,
   cssClass:'ServiceLeft'
 }
 let remodeling = {
   title:'Remodeling',
   services: ['Kitchen Remodeling', 'Bathroom Remodeling', 'Outdoor Kitchen Construction', 'Porch Design and Construction'],
-  img:Bathroom2,
+  img:Counter,
   cssClass:'ServiceRight'
 }
 let renovations = {

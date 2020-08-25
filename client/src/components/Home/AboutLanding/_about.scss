@@ -92,6 +92,17 @@
   } // ABOUT LANDING //
 }
 
+@media screen and (max-width: 1100px) {
+  .AboutLanding {
+    .AboutLanding-Mid {
+      .AboutLandingImg {
+        width: 47vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+
 
 // PHONE (Portrait)
 @media screen and (max-width: 420px) {

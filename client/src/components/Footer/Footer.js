@@ -12,7 +12,7 @@ const Footer = (props) => {
       </div>
       <div className='FooterInfo'>
         <p>Jason Phillips, General B Contractor and Finish Carpenter</p>
-        <p>Liscense #10644287, Bonded and Insured</p>
+        <p>License #10644287, Bonded and Insured</p>
         <p id='design-link'>Website design by: <a href='https://www.gianninola.com/'target='_blank' rel="noopener noreferrer" >Gianni Nola </a></p>
       </div>
       <div className='FooterConnect'>

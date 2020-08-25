@@ -43,6 +43,12 @@ body {
   font-family: 'Open Sans';
 }
 
+@media screen and (max-width: 1400px) {
+  .App {
+    overflow-x: hidden;
+  }
+}
+
 // PHONE (Portrait)
 @media screen and (max-width: 420px) {
   .App {
