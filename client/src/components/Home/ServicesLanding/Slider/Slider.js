@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 
 // NEW CONSTRUCTION //
 // import Kitchen1 from './sliderimgs/Kitchen1.jpg'
-import Kitchen2 from './sliderimgs/Kitchen2.jpeg'
+// import Kitchen2 from './sliderimgs/Kitchen2.jpeg'
+import Living from './sliderimgs/Living.jpg'
 
 // COMMERCIAL CONSTRUCTION //
 // import Bar from './sliderimgs/Bar.jpg'
@@ -16,7 +17,7 @@ import Barn from './sliderimgs/Barn.jpg'
 const Slider = (props) => {
 
   let sliderArr = [
-    Kitchen2,
+    Living,
     Fireplace,
     Barn
   ]
