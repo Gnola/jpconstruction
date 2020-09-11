@@ -941,10 +941,16 @@ footer .FooterConnect #IG {
   padding: 1vh 0.5vw;
   border-radius: 3px;
 }
+.ContactForm .ContactFormInquire #error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1vh 0;
+}
 .ContactForm .ContactFormButton {
   display: flex;
 }
-.ContactForm .ContactFormButton input {
+.ContactForm .ContactFormButton .active {
   margin: 1vh auto;
   width: 8vw;
   height: 4.5vh;
@@ -957,9 +963,22 @@ footer .FooterConnect #IG {
   color: #FDEC00;
   transition: all 0.2s ease-in-out;
 }
-.ContactForm .ContactFormButton input:hover {
+.ContactForm .ContactFormButton .active:hover {
   background: #FDEC00;
   color: black;
+}
+.ContactForm .ContactFormButton .disabled {
+  margin: 1vh auto;
+  width: 8vw;
+  height: 4.5vh;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: none;
+  border-radius: 4px;
+  background: none;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #eee;
+  color: #eee;
 }
 
 @media screen and (max-width: 1300px) {
