@@ -18,11 +18,16 @@ class Form extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.email === '') {
+
+    if (!this.state.email) {
       this.setState({error:'Please include a valid email address'})
+    } else if (!this.state.subject) {
+      this.setState({error:'Please include a subject'})
+    } else if (!this.state.inquiry) {
+      this.setState({error:'Please include an inquiry'})
     } else {
-      const { name, email, phone, subject, inquiry} = this.state
-      console.log(name, email, phone, subject, inquiry);
+
+      const { name, email, phone, subject, inquiry } = this.state
 
       let templateParams = {
         name,
@@ -31,14 +36,13 @@ class Form extends Component {
         subject,
         inquiry
        }
-       console.log(templateParams);
 
       emailjs.send('gmail', 'inquiry', templateParams, 'user_m4C35RBt84FZzFDpPhTSG')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+      .then(
+        (result) => { console.log(result.text) },
+        (error) => { console.log(error.text) }
+
+      )
       this.props.sent()
       this.setState({
         name:'',
@@ -65,7 +69,7 @@ class Form extends Component {
           {this.state.error === '' ? null : <p id='error-message'>{this.state.error}</p>}
         </div>
         <div className='ContactFormButton'>
-          <button className={this.state.email === '' ? 'disabled' : 'active'} >Send</button>
+          <button className={this.state.email === '' ? 'disabled' : 'active'} disabled={this.state.email === ''}>Send</button>
         </div>
       </form>
     );
