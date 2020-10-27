@@ -1,0 +1,65 @@
+#InstagramLanding {
+
+  h3 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  a {
+    // color: #FDEC00;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .Feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+
+    a {
+      height: 20rem;
+      margin: 1.5rem;
+      border-radius: 3px;
+      box-shadow: 2px 2px 5px grey;
+      transition: 0.3s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        max-width:100%;
+        max-height:100%;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #InstagramLanding {
+    .Feed {
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  #InstagramLanding {
+    .Feed {
+      margin: 0;
+      width: 100%;
+      a {
+        width: 90%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

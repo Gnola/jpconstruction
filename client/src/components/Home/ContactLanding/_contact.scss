@@ -129,6 +129,16 @@
 }
 
 
+@media screen and (max-width: 1100px) {
+  .ContactLanding-Bottom {
+
+    .ContactLanding-Bottom-Links {
+      width: 60% !important;
+    }
+  }
+}
+
+
 // PHONE (Portrait)
 @media screen and (max-width: 420px) {
   #ContactLanding {

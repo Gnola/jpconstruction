@@ -288,6 +288,7 @@
 @media screen and (max-width: 1100px) {
   .Nav2 .nav-header {
     width: 20vw;
+    height: 7vh;
   }
 }
 @media screen and (max-width: 420px) {
@@ -591,13 +592,33 @@
   }
 }
 @media screen and (max-width: 1100px) {
+  .ServiceLeft, .ServiceRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ServiceLeft .ServicesImage img, .ServiceRight .ServicesImage img {
+    width: 95%;
+    max-width: 95%;
+    height: 40vh;
+  }
+  .ServiceLeft .ServicesTitleandList, .ServiceRight .ServicesTitleandList {
+    width: 95%;
+    margin: auto;
+  }
   .ServiceLeft .ServicesTitleandList ul, .ServiceRight .ServicesTitleandList ul {
-    width: 60%;
-    padding-left: 1vw;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 0.5vh;
+    height: 15vh;
   }
   .ServiceLeft .ServicesTitleandList ul li, .ServiceRight .ServicesTitleandList ul li {
+    font-size: 1.2rem;
+    margin-right: 4vw;
+  }
+  .ServiceLeft .ServicesTitleandList #inquire, .ServiceRight .ServicesTitleandList #inquire {
+    width: auto;
     font-size: 1.1rem;
-    margin-left: 0;
   }
 }
 @media screen and (max-width: 420px) {
@@ -852,6 +873,11 @@ footer .FooterConnect #IG {
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 1100px) {
+  .ContactLanding-Bottom .ContactLanding-Bottom-Links {
+    width: 60% !important;
+  }
+}
 @media screen and (max-width: 420px) {
   #ContactLanding {
     height: 97vh;
@@ -1017,6 +1043,14 @@ footer .FooterConnect #IG {
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 1100px) {
+  .ContactForm {
+    width: 80% !important;
+  }
+  .ContactForm span label {
+    margin-right: 4vw;
+  }
+}
 @media screen and (max-width: 420px) {
   .ContactForm {
     width: 100% !important;
@@ -1050,10 +1084,11 @@ footer .FooterConnect #IG {
   .ContactForm .ContactFormInquire textarea {
     width: 100%;
   }
-  .ContactForm .ContactFormButton input {
-    width: 25vw;
-    height: 4.5vh;
-    margin-top: 2vh;
+  .ContactForm .ContactFormButton .active {
+    width: 15vw;
+  }
+  .ContactForm .ContactFormButton .disabled {
+    width: 15vw;
   }
 }
 .AboutLanding {
@@ -1096,6 +1131,7 @@ footer .FooterConnect #IG {
   margin-top: 0;
   text-align: center;
   font-style: italic;
+  font-weight: lighter;
 }
 .AboutLanding .AboutLanding-Mid .AboutLandingText p {
   font-size: 1.2rem;
@@ -1125,9 +1161,21 @@ footer .FooterConnect #IG {
   }
 }
 @media screen and (max-width: 1100px) {
+  .AboutLanding {
+    height: 95vh;
+  }
+  .AboutLanding .AboutLanding-Mid {
+    flex-direction: column;
+  }
   .AboutLanding .AboutLanding-Mid .AboutLandingImg {
-    width: 47vw;
-    height: 50vh;
+    width: 65vw;
+    height: 40vh;
+    margin-top: -1vh;
+    margin-bottom: 1.5vh;
+  }
+  .AboutLanding .AboutLanding-Mid .AboutLandingText {
+    width: 90vw;
+    height: 43vh;
   }
 }
 @media screen and (max-width: 420px) {
@@ -1161,6 +1209,55 @@ footer .FooterConnect #IG {
   }
   .AboutLanding .AboutLanding-Mid .AboutLandingText p {
     line-height: normal;
+    width: 100%;
+  }
+}
+#InstagramLanding h3 {
+  text-align: center;
+  font-weight: lighter;
+}
+#InstagramLanding a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+#InstagramLanding .Feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+#InstagramLanding .Feed a {
+  height: 20rem;
+  margin: 1.5rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px grey;
+  transition: 0.3s ease-in;
+}
+#InstagramLanding .Feed a:hover {
+  transform: scale(1.1);
+}
+#InstagramLanding .Feed a img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1100px) {
+  #InstagramLanding .Feed {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #InstagramLanding .Feed {
+    margin: 0;
+    width: 100%;
+  }
+  #InstagramLanding .Feed a {
+    width: 90%;
+  }
+  #InstagramLanding .Feed a img {
     width: 100%;
   }
 }
