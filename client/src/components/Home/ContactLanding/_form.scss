@@ -140,6 +140,10 @@
   .ContactForm { // FORM
     height: 65vh;
 
+    span label {
+      margin-right: 1vw;
+    }
+
     .ContactFormInfo { // INFO - Name, Email, Phone
 
       span { // Name, email, phone
@@ -198,7 +202,19 @@
     width: 80% !important;
 
     span label {
-      margin-right: 4vw;
+      margin-right: 1.5vw;
+    }
+
+    .ContactFormButton {
+
+      .active {
+        width: 15vw;
+      }
+
+      .disabled {
+        width: 15vw;
+      }
+
     }
 
   }
@@ -253,26 +269,21 @@
       }
     } // INQUIRE //
 
-    // .ContactFormButton { // BUTTON
-    //
-    //   input {
-    //     width: 25vw;
-    //     height: 4.5vh;
-    //     margin-top: 2vh;
-    //   }
-    //
-    // } // BUTTON //
-    .ContactFormButton { // BUTTON
+    .ContactFormButton {
+
+      //   input {
+      //     width: 25vw;
+      //     height: 4.5vh;
+      //     margin-top: 2vh;
+      //   }
 
       .active {
-        width: 15vw;
+        width: 20vw;
       }
 
       .disabled {
-        width: 15vw;
+        width: 20vw;
       }
-
-    } // BUTTON //
-
+    }
   } // FORM
 }
