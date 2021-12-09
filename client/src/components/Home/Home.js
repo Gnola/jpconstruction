@@ -16,9 +16,9 @@ const Home = (props) => {
       <ServicesLanding toggleView={props.toggleView} setSubject={setSubject}/>
       <ContactLanding toggleView={props.toggleView} subject={subject} sent={props.sent}/>
       <AboutLanding jason={props.jason} />
-      <InstagramLanding />
     </div>
   );
 }
 
 export default Home;
+// <InstagramLanding />
