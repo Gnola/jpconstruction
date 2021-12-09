@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import ServicesLanding from './ServicesLanding/ServicesLanding.js';
 import ContactLanding from './ContactLanding/ContactLanding.js';
 import AboutLanding from './AboutLanding/AboutLanding.js';
-import InstagramLanding from './InstagramLanding/InstagramLanding.js';
+// import InstagramLanding from './InstagramLanding/InstagramLanding.js';
 
 // HOME
 const Home = (props) => {
