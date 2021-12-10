@@ -37,7 +37,7 @@ class Form extends Component {
         inquiry
        }
 
-      emailjs.send('gmail', 'inquiry', templateParams, 'user_m4C35RBt84FZzFDpPhTSG')
+      emailjs.send('gmail', 'inquiry', templateParams, process.env.REACT_APP_EMAILJS_API_KEY)
       .then(
         (result) => { console.log(result.text) },
         (error) => { console.log(error.text) }
